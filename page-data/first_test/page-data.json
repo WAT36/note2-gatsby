@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-blog-post-js",
+    "path": "/first_test/",
+    "result": {"data":{"site":{"siteMetadata":{"title":"WAT Note(II)"}},"markdownRemark":{"id":"c646f281-e534-58dd-8dd7-8d98b2eb696d","excerpt":"自前ブログVer.2、初投稿テスト！ 前のでも良かったけど Javascript類の勉強のため このGatsby製ブログに移行します 前の記事も徐々に移行する予定 まあぼちぼちよろしくね","html":"<p>自前ブログVer.2、初投稿テスト！</p>\n<p>前のでも良かったけど Javascript類の勉強のため</p>\n<p>このGatsby製ブログに移行します</p>\n<p>前の記事も徐々に移行する予定</p>\n<p>まあぼちぼちよろしくね</p>","frontmatter":{"title":"テスト投稿","date":"May 09, 2022","description":"ブログ記事投稿のテスト"}},"previous":null,"next":null},"pageContext":{"id":"c646f281-e534-58dd-8dd7-8d98b2eb696d","previousPostId":null,"nextPostId":null}},
+    "staticQueryHashes": ["2841359383","3257411868"]}
