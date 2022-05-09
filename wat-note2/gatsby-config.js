@@ -11,6 +11,7 @@ module.exports = {
       twitter: `kylemathews`,
     },
   },
+  pathPrefix: `/note2-gatsby`,
   plugins: [
     `gatsby-plugin-image`,
     {
