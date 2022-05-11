@@ -11,7 +11,7 @@ const About = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <h1 className="main-heading">About</h1>
-      <Seo title="Index" />
+      <Seo title="About" />
       <Bio />
       <p>
         作成中・・・
