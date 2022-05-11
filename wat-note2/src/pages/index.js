@@ -10,6 +10,7 @@ const Index = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
+      <h1 className="main-heading">{siteTitle}</h1>
       <Seo title="Index" />
       <Bio />
       <p>
