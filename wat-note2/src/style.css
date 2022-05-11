@@ -252,6 +252,7 @@ a:focus {
 
 .global-header {
   margin-bottom: var(--spacing-12);
+  background-color: var(--color-primary);
 }
 
 .main-heading {
@@ -284,6 +285,7 @@ a:focus {
   font-family: var(--font-heading);
   text-decoration: none;
   font-size: var(--fontSize-2);
+  margin: 0px 10px;
 }
 
 .bio {
@@ -317,6 +319,14 @@ a:focus {
 
 .gatsby-highlight {
   margin-bottom: var(--spacing-8);
+}
+
+.white-text {
+  color: #ffffff;
+}
+
+.right-placed {
+  float: right;
 }
 
 /* Media queries */
