@@ -28,6 +28,9 @@ const NotesIndex = ({ data, location }) => {
       <h1 className="main-heading">Notes</h1>
       <Seo title="All notes" />
       <Bio />
+      <p>
+        作成中・・・
+      </p>
       {/* <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
