@@ -22,10 +22,6 @@ const Index = ({ data, location }) => {
       <p>
       まあ、よろしく
       </p>
-
-      <Link to="/blog_top">
-        <p>ブログ</p>
-      </Link>
     </Layout>
   )
 
