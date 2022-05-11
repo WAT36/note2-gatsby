@@ -11,6 +11,9 @@ const Header = ({ title }) => {
                 <Link className="header-link-home white-text" to="/blog_top">
                     Blog
                 </Link>
+                <Link className="header-link-home white-text" to="/notes">
+                    Notes
+                </Link>
             </span>
         </header>
     )
