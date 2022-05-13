@@ -57,6 +57,44 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       })
     })
   }
+
+
+  // Define a template for note
+  const noteTemplate = path.resolve(`./src/templates/note.js`)
+
+  // Get all markdown note
+  const result_note = await graphql(
+    `
+      {
+        allMarkdownRemark(
+          filter: {fileAbsolutePath: {regex: "//notes//"}}
+        ) {
+          nodes {
+            id
+            fields {
+              slug
+            }
+          }
+        }
+      }
+    `
+  )
+
+  const notes = result_note.data.allMarkdownRemark.nodes
+
+  // Create note pages
+  if (notes.length > 0) {
+    notes.forEach((note) => {
+      createPage({
+        path: note.fields.slug,
+        component: noteTemplate,
+        context: {
+          id: note.id,
+        },
+      })
+    })
+  }
+
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
