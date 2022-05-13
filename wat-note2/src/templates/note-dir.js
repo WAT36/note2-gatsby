@@ -1,18 +1,20 @@
 import * as React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const NotesIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
+const NoteDirTemplate = ({ data, location }) => {
   const posts = data.allDirectory.nodes
+  const siteTitle = data.site.siteMetadata?.title || `Title`
+  // const { previous, next } = data
+
 
   if (posts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
-        <Seo title="All posts" />
+        <Seo title="notes" />
         <Bio />
         <p>
           No blog posts found. Add markdown posts to "content/blog" (or the
@@ -26,7 +28,7 @@ const NotesIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <h1 className="main-heading">Notes</h1>
-      <Seo title="All notes" />
+      <Seo title="notes" />
       <Bio />
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
@@ -41,19 +43,20 @@ const NotesIndex = ({ data, location }) => {
               >
                 <header>
                   <h2>
-                    {/* <Link to={post.fields.slug} itemProp="url"> */}
+                    <Link to={"/notes/" + post.relativePath} itemProp="url">
                       <span itemProp="headline">{title}</span>
-                    {/* </Link> */}
+                    </Link>
                   </h2>
+                  {/* <small>{post.frontmatter.date}</small> */}
                 </header>
-                {/* <section>
-                  <p
+                <section>
+                  {/* <p
                     dangerouslySetInnerHTML={{
                       __html: post.frontmatter.description || post.excerpt,
                     }}
                     itemProp="description"
-                  />
-                </section> */}
+                  /> */}
+                </section>
               </article>
             </li>
           )
@@ -63,18 +66,23 @@ const NotesIndex = ({ data, location }) => {
   )
 }
 
-export default NotesIndex
+export default NoteDirTemplate
 
 export const pageQuery = graphql`
-  query {
+  query NoteDirBySlug(
+    $absolutePath: String
+  ) {
     site {
       siteMetadata {
         title
       }
     }
-    allDirectory(filter: {dir: {regex: "//notes$/"}}) {
+    allDirectory(filter: {dir: { eq: $absolutePath }}) {
       nodes {
+        absolutePath
+        id
         relativePath
+        dir
         name
       }
     }

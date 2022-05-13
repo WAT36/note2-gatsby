@@ -95,6 +95,39 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     })
   }
 
+
+  // Define a template for notedir
+  const noteDirTemplate = path.resolve(`./src/templates/note-dir.js`)
+
+  // Get all note directory
+  const result_notedir = await graphql(
+    `
+      {
+        allDirectory(filter: {absolutePath: {regex: "//notes/"}}) {
+          nodes {
+            absolutePath
+            relativePath
+          }
+        }
+      }
+    `
+  )
+
+  const notedirs = result_notedir.data.allDirectory.nodes
+
+  // Create note pages
+  if (notedirs.length > 0) {
+    notedirs.forEach((notedir) => {
+      createPage({
+        path: "/notes/" + notedir.relativePath,
+        component: noteDirTemplate,
+        context: {
+          absolutePath: notedir.absolutePath,
+        },
+      })
+    })
+  }
+    
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
