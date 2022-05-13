@@ -123,6 +123,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         component: noteDirTemplate,
         context: {
           absolutePath: notedir.absolutePath,
+          markdownRegexPath: "/"+notedir.absolutePath+"/[^/]*.md/"
         },
       })
     })

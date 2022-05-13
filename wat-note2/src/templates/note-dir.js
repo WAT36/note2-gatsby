@@ -7,11 +7,12 @@ import Seo from "../components/seo"
 
 const NoteDirTemplate = ({ data, location }) => {
   const posts = data.allDirectory.nodes
+  const mds = data.allMarkdownRemark.nodes
   const siteTitle = data.site.siteMetadata?.title || `Title`
   // const { previous, next } = data
 
 
-  if (posts.length === 0) {
+  if (posts.length === 0 && mds.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
         <Seo title="notes" />
@@ -62,6 +63,38 @@ const NoteDirTemplate = ({ data, location }) => {
           )
         })}
       </ol>
+      <ol style={{ listStyle: `none` }}>
+        {mds.map(md => {
+          const title = md.frontmatter.title || md.fields.slug
+
+          return (
+            <li key={md.fields.slug}>
+              <article
+                className="post-list-item"
+                itemScope
+                itemType="http://schema.org/Article"
+              >
+                <header>
+                  <h2>
+                    <Link to={md.fields.slug} itemProp="url">
+                      <span itemProp="headline">{title}</span>
+                    </Link>
+                  </h2>
+                  <small>{md.frontmatter.date}</small>
+                </header>
+                <section>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: md.frontmatter.description || md.excerpt,
+                    }}
+                    itemProp="description"
+                  />
+                </section>
+              </article>
+            </li>
+          )
+        })}
+      </ol>
     </Layout>
   )
 }
@@ -71,6 +104,7 @@ export default NoteDirTemplate
 export const pageQuery = graphql`
   query NoteDirBySlug(
     $absolutePath: String
+    $markdownRegexPath: String
   ) {
     site {
       siteMetadata {
@@ -84,6 +118,19 @@ export const pageQuery = graphql`
         relativePath
         dir
         name
+      }
+    }
+    allMarkdownRemark(filter: {fileAbsolutePath: {regex: $markdownRegexPath}}, sort: { fields: [frontmatter___date], order: DESC }) {
+      nodes {
+        excerpt
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          description
+        }
       }
     }
   }
