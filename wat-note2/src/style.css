@@ -333,6 +333,13 @@ a:focus {
   height: var(--spacing-12);
 }
 
+.programming-language-tag {
+  padding: 3px;
+  margin: 1px 4px;
+  border-style: none double double double;
+  border-radius: 0px 0px 10px 10px;
+}
+
 /* Media queries */
 
 @media (max-width: 42rem) {

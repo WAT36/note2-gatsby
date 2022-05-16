@@ -2,8 +2,10 @@ import * as React from "react"
 
 const ProgrammingLanguageTag = ({ name }) => {
     return (
-        <span className={"programming-language-tag " + name}>
-            {name}
+        <span className="right-placed">
+            <span className={"programming-language-tag " + name}>
+                {name}
+            </span>
         </span>
     )
 }
