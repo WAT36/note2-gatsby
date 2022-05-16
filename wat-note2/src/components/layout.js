@@ -9,6 +9,9 @@ const Layout = ({ location, title, children }) => {
   return (
     <div id="all-wrapper" >
       <Header title={title}></Header>
+      <div className="programming-language-tagbar">
+                <p>test</p>
+      </div>
       <div className="global-wrapper" data-is-root-path={isRootPath}>
         <main>{children}</main>
         <footer>

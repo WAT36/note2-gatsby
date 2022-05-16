@@ -329,6 +329,10 @@ a:focus {
   float: right;
 }
 
+.programming-language-tagbar {
+  height: var(--spacing-12);
+}
+
 /* Media queries */
 
 @media (max-width: 42rem) {
