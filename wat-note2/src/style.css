@@ -330,14 +330,19 @@ a:focus {
 }
 
 .programming-language-tagbar {
-  height: var(--spacing-12);
+  height: var(--spacing-20);
 }
 
 .programming-language-tag {
-  padding: 3px;
-  margin: 1px 4px;
+  height: var(--spacing-10);
+  color: #ffffff;
+  padding: var(--spacing-1) var(--spacing-4);
+  margin: var(--spacing-0) var(--spacing-4);
   border-style: none double double double;
-  border-radius: 0px 0px 10px 10px;
+  border-width: var(--spacing-2);
+  border-radius: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-4);
+  border-color: #ffffff;
+  background-color: #000080;
 }
 
 /* Media queries */
