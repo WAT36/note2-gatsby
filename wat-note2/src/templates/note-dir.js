@@ -5,6 +5,8 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+import Constants from "../common/constants"
+
 const NoteDirTemplate = ({ data, location }) => {
   const posts = data.allDirectory.nodes
   const mds = data.allMarkdownRemark.nodes
@@ -33,7 +35,7 @@ const NoteDirTemplate = ({ data, location }) => {
       <Bio />
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
-          const title = post.name
+          const title = Constants.noteDirName[post.name] || post.name
 
           return (
             <li key={post.name}>
