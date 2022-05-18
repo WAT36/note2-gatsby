@@ -343,6 +343,7 @@ a:focus {
   border-radius: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-4);
   border-color: #ffffff;
   background-color: #000080;
+  font-family: var(--font-heading);
 }
 
 /* Media queries */
