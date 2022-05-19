@@ -346,6 +346,17 @@ a:focus {
   font-family: var(--font-heading);
 }
 
+.plang_radio {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+}
+
+.plang_radio:checked + .programming-language-tag {
+  color: #000080;
+  border-color: #000080;
+  background-color: #ffffff;
+}
+
 /* Media queries */
 
 @media (max-width: 42rem) {
