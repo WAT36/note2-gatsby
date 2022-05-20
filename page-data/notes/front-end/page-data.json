@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-note-dir-js",
+    "path": "/notes/front-end",
+    "result": {"data":{"site":{"siteMetadata":{"title":"WAT Note(II)"}},"allDirectory":{"nodes":[]},"allMarkdownRemark":{"nodes":[]}},"pageContext":{"absolutePath":"/Users/watarutsukagoshi/Desktop/WTFiles/gatsby-blog/wat-note2/content/notes/front-end","markdownRegexPath":"//Users/watarutsukagoshi/Desktop/WTFiles/gatsby-blog/wat-note2/content/notes/front-end/[^/]*.md/"}},
+    "staticQueryHashes": ["2841359383","3257411868"]}

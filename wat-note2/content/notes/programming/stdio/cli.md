@@ -8,7 +8,7 @@ tags: ["Java","Python"]
 
 標準入力のコマンドライン引数について。
 
-------
+
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-note-dir-js",
+    "path": "/notes/programming/stdio",
+    "result": {"data":{"site":{"siteMetadata":{"title":"WAT Note(II)"}},"allDirectory":{"nodes":[]},"allMarkdownRemark":{"nodes":[{"excerpt":"標準入力のコマンドライン引数について。 クラスはここではMain.javaとする Javaではコマンドライン引数は\nクラス内で宣言するmainメソッドの引数であるString型の配列(上記コード中の”args…","fields":{"slug":"/programming/stdio/cli/"},"frontmatter":{"date":"October 12, 2019","title":"コマンドライン引数","description":"stdioテスト"}}]}},"pageContext":{"absolutePath":"/Users/watarutsukagoshi/Desktop/WTFiles/gatsby-blog/wat-note2/content/notes/programming/stdio","markdownRegexPath":"//Users/watarutsukagoshi/Desktop/WTFiles/gatsby-blog/wat-note2/content/notes/programming/stdio/[^/]*.md/"}},
+    "staticQueryHashes": ["2841359383","3257411868"]}

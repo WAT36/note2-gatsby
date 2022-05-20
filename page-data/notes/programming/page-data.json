@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-note-dir-js",
+    "path": "/notes/programming",
+    "result": {"data":{"site":{"siteMetadata":{"title":"WAT Note(II)"}},"allDirectory":{"nodes":[{"absolutePath":"/Users/watarutsukagoshi/Desktop/WTFiles/gatsby-blog/wat-note2/content/notes/programming/stdio","id":"524eba22-f316-55be-9721-ccb9f0e345c5","relativePath":"programming/stdio","dir":"/Users/watarutsukagoshi/Desktop/WTFiles/gatsby-blog/wat-note2/content/notes/programming","name":"stdio"}]},"allMarkdownRemark":{"nodes":[]}},"pageContext":{"absolutePath":"/Users/watarutsukagoshi/Desktop/WTFiles/gatsby-blog/wat-note2/content/notes/programming","markdownRegexPath":"//Users/watarutsukagoshi/Desktop/WTFiles/gatsby-blog/wat-note2/content/notes/programming/[^/]*.md/"}},
+    "staticQueryHashes": ["2841359383","3257411868"]}
