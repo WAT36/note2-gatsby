@@ -24,8 +24,8 @@ class Main{
 JavaではStringクラスに **toLowerCase()** というメソッドがあり、これにより文字列を全て英小文字に変換して表示してくれる。<br>
 ただし、これも文字列自体が変換されるわけではないので、反映させたい場合は出力を元の変数に代入してやる必要がある。
 
-{{< /tab >}}
-{{< tab "Python" >}}
+</div>
+<div class="note_content_by_programming_language" id="note_content_Python">
 
 ```python
 s = "test"
@@ -37,7 +37,7 @@ Pythonは文字列型のstrオブジェクトにメソッド **lower()** があ�
 
 
 </div>
-<div class="note_content_by_programming_language" id="note_content_Python">
+<div class="note_content_by_programming_language" id="note_content_Javascript">
 
 ```javascript
 var s = "TEST"
@@ -57,4 +57,3 @@ Javascriptではメソッド **toLowerCase()** により文字列を全て小文
 
 
 </div>
-<div class="note_content_by_programming_language" id="note_content_Javascript">
