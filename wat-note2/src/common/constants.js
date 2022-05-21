@@ -10,7 +10,8 @@ class Constants {
         "programming":"プログラミング",
 
         //プログラミング以下
-        "stdio"     :"標準入力・出力"
+        "stdio"     :"標準入力・出力",
+        "string"    :"文字列"
     }
 
 
