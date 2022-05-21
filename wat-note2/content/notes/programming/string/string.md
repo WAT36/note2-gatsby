@@ -1,6 +1,6 @@
 ---
 title: "文字列を宣言する"
-date: 2019-10-17T22:05:28+09:00
+date: "2019-10-17T22:05:28+09:00"
 description: "文字列を宣言する方法。"
 tags: ["Java","Python","Javascript"]
 ---
