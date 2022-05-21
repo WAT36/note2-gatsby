@@ -1,5 +1,5 @@
 ---
-title: "英字文字列を全て英字小文字にする"
+title: "英字小文字に変換"
 date: "2019-10-14T23:40:21+09:00"
 description: "英字文字列を全て英字小文字にする方法。"
 tags: ["Java","Python","Javascript"]
