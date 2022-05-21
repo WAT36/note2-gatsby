@@ -2,7 +2,7 @@
 title: "標準出力"
 date: 2019-10-12T17:19:30+09:00
 description: "プログラムから値をコンソール画面上に出力する方法。"
-tags: ["Java","Python"]
+tags: ["Java","Python","Javascript"]
 ---
 
 標準出力について。
@@ -42,12 +42,12 @@ Pythonでコンソール画面への出力を扱うには組み込み関数の *
 詳しくは以下の公式ドキュメント参照。<br>
 https://docs.python.org/ja/3/library/functions.html#print
 
-{{< /tab >}}
-{{< tab "Javascript" >}}
+</div>
+<div class="note_content_by_programming_language" id="note_content_Javascript">
 
 Javascriptはブラウザ上で扱う言語のため、ここではブラウザ上のログ画面への出力という意味で記す。
 
-Javascriptでは、**console.log()**を利用する。
+Javascriptでは、**console.log()** を利用する。
 引数には出力したい値及び変数を入力する。
 
 ```javascript
