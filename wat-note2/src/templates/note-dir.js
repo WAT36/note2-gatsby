@@ -122,7 +122,7 @@ export const pageQuery = graphql`
         name
       }
     }
-    allMarkdownRemark(filter: {fileAbsolutePath: {regex: $markdownRegexPath}}, sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(filter: {fileAbsolutePath: {regex: $markdownRegexPath}}, sort: { fields: [frontmatter___date], order: ASC }) {
       nodes {
         excerpt
         fields {
