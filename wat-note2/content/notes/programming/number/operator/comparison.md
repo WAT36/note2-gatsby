@@ -1,0 +1,66 @@
+---
+title: "比較演算子"
+date: "2019-10-16T21:35:30+09:00"
+description: "数値の比較をする方法。"
+tags: ["Java","Python","Javascript"]
+---
+
+比較演算子についてをまとめておく。
+
+
+<div class="note_content_by_programming_language" id="note_content_Java">
+
+Javaでの主な比較演算子は以下の通り。
+
+|演算子|意味|例|
+|:---|:---|:---|
+| < |未満| a < b|
+| <= |以下| a <= b|
+| > |より大きい|a > b|
+| >= |以上| a >= b |
+| == |等しい| a == b |
+| != |等しく無い| a != b |
+
+
+</div>
+<div class="note_content_by_programming_language" id="note_content_Python">
+
+Pythonでの主な比較演算子は以下の通り。
+
+|演算子|意味|例|
+|:---|:---|:---|
+| < |未満| a < b|
+| <= |以下| a <= b|
+| > |より大きい|a > b|
+| >= |以上| a >= b |
+| == |等しい| a == b |
+| != |等しく無い| a != b |
+
+</div>
+<div class="note_content_by_programming_language" id="note_content_Javascript">
+
+Javascriptでの主な比較演算子は以下の通り。
+
+|演算子|意味|例|
+|:---|:---|:---|
+| < |未満| a < b|
+| <= |以下| a <= b|
+| > |より大きい|a > b|
+| >= |以上| a >= b |
+| == |等しい| a == b |
+| != |等しく無い| a != b |
+| === |等しい(かつ型も等しい) | a == b |
+| !== |等しく無い(あるいは型が等しくない) | a != b |
+
+- Javascriptでは、==演算子でオブジェクト型とプリミティブ型を比較すると、**オブジェクト型がプリミティブ型に変換された上で比較**される。さらに、文字列と数値を比較すると、文字列が数値に変換されて比較される。
+例えば、以下のようなコードは全てtrueになる。
+
+```javascript
+console.log(Number(100) == 100)
+console.log(String(100) == 100)
+console.log("100" == 100)
+```
+
+</div>
+
+
