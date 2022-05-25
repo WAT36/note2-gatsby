@@ -2,6 +2,33 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`
 })
 
+// gatsby-config.js
+const myQuery = `{
+  posts: allMarkdownRemark {
+    edges {
+      node {
+        fields {
+          slug
+        }
+        frontmatter {
+          tags
+          title
+        }
+        id
+      }
+    }
+  }
+}`;
+
+const queries = [
+  {
+    query: myQuery,
+    transformer: ({ data }) => {
+      return data.posts.edges.map(edge => edge.node)
+    },
+  },
+];
+
 module.exports = {
   siteMetadata: {
     title: `WAT Note(II)`,
@@ -140,5 +167,15 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-algolia`,
+      options: {
+        appId: process.env.ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_API_KEY,
+        indexName: process.env.ALGOLIA_INDEX_NAME,
+        queries,
+        chunkSize: 10000, // default: 1000
+      },
+    },
   ],
 }
