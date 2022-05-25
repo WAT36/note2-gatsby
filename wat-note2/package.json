@@ -8,7 +8,9 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "dotenv": "^16.0.1",
     "gatsby": "^4.13.1",
+    "gatsby-plugin-algolia": "^0.26.0",
     "gatsby-plugin-feed": "^4.13.0",
     "gatsby-plugin-gatsby-cloud": "^4.13.0",
     "gatsby-plugin-google-analytics": "^4.13.0",
@@ -51,7 +53,7 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1", 
-    "deploy": "gatsby build --prefix-paths && cp -pvr public/* ../ && git add ../ && git commit -m 'Deploy to production' && git push"  
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby build --prefix-paths && cp -pvr public/* ../ && git add ../ && git commit -m 'Deploy to production' && git push"
   }
 }
