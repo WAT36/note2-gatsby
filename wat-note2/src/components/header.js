@@ -1,5 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import Search from "./search"
+const searchIndices = [{ name: `Pages`, title: `Pages` }]
 
 const Header = ({ title }) => {
     return (
@@ -21,6 +23,7 @@ const Header = ({ title }) => {
                     免責事項
                 </Link>
             </span>
+            <Search indices={searchIndices} />
         </header>
     )
 }
