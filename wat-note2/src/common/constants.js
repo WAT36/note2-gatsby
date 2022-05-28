@@ -14,6 +14,12 @@ class Constants {
         "string"    :"文字列",
         "number"    :"数値",
         "list"      :"配列・リスト",
+        "control"   :"制御構文",
+        "map"       :"辞書、Map",
+        "class_func":"クラス・関数",
+        "exception" :"例外処理",
+        "file_io"   :"ファイル入出力",
+        "other"     :"その他",
 
         //// number以下
         "log"       :"対数",
@@ -24,7 +30,11 @@ class Constants {
 
         //// list以下
         "array"     :"配列",
-        "list_tuple":"リスト（・タプル）"
+        "list_tuple":"リスト（・タプル）",
+
+        //// class_func以下
+        "class"     :"クラス",
+        "function"  :"関数・メソッド"
     }
 
 
