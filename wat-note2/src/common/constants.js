@@ -10,37 +10,37 @@ class Constants {
         "programming":"プログラミング",
 
         //プログラミング以下
-        "stdio"     :"標準入力・出力",
-        "string"    :"文字列",
-        "number"    :"数値",
-        "list"      :"配列・リスト",
-        "control"   :"制御構文",
-        "map"       :"辞書、Map",
-        "class_func":"クラス・関数",
-        "exception" :"例外処理",
-        "file_io"   :"ファイル入出力",
-        "other"     :"その他",
-        "graph_data":"グラフ・データ処理",
+        "001_stdio"     :"標準入力・出力",
+        "002_string"    :"文字列",
+        "003_number"    :"数値",
+        "004_list"      :"配列・リスト",
+        "005_control"   :"制御構文",
+        "006_map"       :"辞書、Map",
+        "007_class_func":"クラス・関数",
+        "008_exception" :"例外処理",
+        "009_file_io"   :"ファイル入出力",
+        "010_other"     :"その他",
+        "011_graph_data":"グラフ・データ処理",
 
         //// number以下
-        "log"       :"対数",
-        "round"     :"四捨五入",
-        "operator"  :"演算子",
-        "other_func":"その他関数",
-        "base"      :"基数",
+        "001_log"       :"対数",
+        "002_round"     :"四捨五入",
+        "003_operator"  :"演算子",
+        "004_other_func":"その他関数",
+        "005_base"      :"基数",
 
         //// list以下
-        "array"     :"配列",
-        "list_tuple":"リスト（・タプル）",
+        "001_array"     :"配列",
+        "002_list_tuple":"リスト（・タプル）",
 
         //// class_func以下
-        "class"     :"クラス",
-        "function"  :"関数・メソッド",
+        "001_class"     :"クラス",
+        "002_function"  :"関数・メソッド",
 
         //// graph_data以下
-        "graph"     :"グラフ",
-        "2Dgraph"   :"２次元グラフ",
-        "3Dgraph"   :"３次元グラフ"
+        "001_graph"     :"グラフ",
+        "101_2Dgraph"   :"２次元グラフ",
+        "102_3Dgraph"   :"３次元グラフ"
     }
 
 
