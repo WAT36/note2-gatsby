@@ -20,6 +20,7 @@ class Constants {
         "exception" :"例外処理",
         "file_io"   :"ファイル入出力",
         "other"     :"その他",
+        "graph_data":"グラフ・データ処理",
 
         //// number以下
         "log"       :"対数",
@@ -34,7 +35,12 @@ class Constants {
 
         //// class_func以下
         "class"     :"クラス",
-        "function"  :"関数・メソッド"
+        "function"  :"関数・メソッド",
+
+        //// graph_data以下
+        "graph"     :"グラフ",
+        "2Dgraph"   :"２次元グラフ",
+        "3Dgraph"   :"３次元グラフ"
     }
 
 
