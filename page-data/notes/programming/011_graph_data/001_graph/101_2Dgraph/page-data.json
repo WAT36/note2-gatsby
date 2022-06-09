@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-note-dir-js",
+    "path": "/notes/programming/011_graph_data/001_graph/101_2Dgraph",
+    "result": {"data":{"site":{"siteMetadata":{"title":"WAT Note(II)"}},"allDirectory":{"nodes":[]},"allMarkdownRemark":{"nodes":[{"excerpt":"グラフを描くためには matplotlib の pyplot ライブラリを利用する。 ここでは2次元の折れ線グラフを作成する。\nそのために、グラフに描画するための座標データを作成する。 実行結果","fields":{"slug":"/programming/011_graph_data/001_graph/101_2Dgraph/plot/"},"frontmatter":{"date":"October 24, 2019","title":"(折れ線)グラフを描画する","description":"大域変数と局所変数について"}}]}},"pageContext":{"absolutePath":"/Users/watarutsukagoshi/Desktop/WTFiles/gatsby-blog/wat-note2/content/notes/programming/011_graph_data/001_graph/101_2Dgraph","markdownRegexPath":"//Users/watarutsukagoshi/Desktop/WTFiles/gatsby-blog/wat-note2/content/notes/programming/011_graph_data/001_graph/101_2Dgraph/[^/]*.md/"}},
+    "staticQueryHashes": ["2841359383","3257411868"]}

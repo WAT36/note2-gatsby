@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-note-js",
+    "path": "/programming/010_other/undefined/",
+    "result": {"data":{"site":{"siteMetadata":{"title":"WAT Note(II)"}},"markdownRemark":{"id":"fe486494-8b30-504a-b138-d7b3b4775894","excerpt":"Javascriptのundefinedについて記載する。 変数を設定し、初期値を設定しなかった時、Javascriptはデフォルトでundefinedを設定する。 値をreturnしない関数も、undefinedを返す。また、定義されていないプロパティを参照しようとした時もundefined…","html":"<p>Javascriptのundefinedについて記載する。</p>\n<div class=\"note_content_by_programming_language\" id=\"note_content_Javascript\">\nundefinedとはJavascriptのグローバルオブジェクトのプロパティの一つである。\n<p>変数を設定し、初期値を設定しなかった時、Javascriptはデフォルトでundefinedを設定する。</p>\n<p>値をreturnしない関数も、undefinedを返す。また、定義されていないプロパティを参照しようとした時もundefinedを返す。</p>\n<p>undefinedはnullと混同しやすいが、undefinedは「定義されていない」、nullは「空である」という状態になる。</p>\n</div>","frontmatter":{"title":"undefined(javascript)","date":"October 23, 2019","description":"undefinedについて","tags":["Javascript"]}}},"pageContext":{"id":"fe486494-8b30-504a-b138-d7b3b4775894"}},
+    "staticQueryHashes": ["2841359383","3257411868"]}
