@@ -3,6 +3,9 @@ import * as React from "react"
 import Header from "../components/header"
 import ProgrammingLanguageTag from "./programming_language_tag"
 
+import Search from "./search"
+const searchIndices = [{ name: `Pages`, title: `Pages` }]
+
 const Layout = ({ location, title, children, plang_tags = [] }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
@@ -16,6 +19,7 @@ const Layout = ({ location, title, children, plang_tags = [] }) => {
         ))}
       </div>
       <div className="global-wrapper" data-is-root-path={isRootPath}>
+        <Search indices={searchIndices} />
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with

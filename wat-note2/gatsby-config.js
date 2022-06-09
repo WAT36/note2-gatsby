@@ -1,33 +1,6 @@
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`
-})
+require("dotenv").config()
 
 // gatsby-config.js
-const myQuery = `{
-  posts: allMarkdownRemark {
-    edges {
-      node {
-        fields {
-          slug
-        }
-        frontmatter {
-          tags
-          title
-        }
-        id
-      }
-    }
-  }
-}`;
-
-const queries = [
-  {
-    query: myQuery,
-    transformer: ({ data }) => {
-      return data.posts.edges.map(edge => edge.node)
-    },
-  },
-];
 
 module.exports = {
   siteMetadata: {
@@ -170,11 +143,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-algolia`,
       options: {
-        appId: process.env.ALGOLIA_APP_ID,
-        apiKey: process.env.ALGOLIA_API_KEY,
-        indexName: process.env.ALGOLIA_INDEX_NAME,
-        queries,
-        chunkSize: 10000, // default: 1000
+        appId: process.env.GATSBY_ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_ADMIN_KEY,
+        queries: require("./src/utils/algolia-queries")
       },
     },
     `gatsby-plugin-styled-components`,

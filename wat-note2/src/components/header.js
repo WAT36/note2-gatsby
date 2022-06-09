@@ -23,7 +23,6 @@ const Header = ({ title }) => {
                     免責事項
                 </Link>
             </span>
-            <Search indices={searchIndices} />
         </header>
     )
 }
