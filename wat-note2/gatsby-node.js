@@ -103,7 +103,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const result_notedir = await graphql(
     `
       {
-        allDirectory(filter: {absolutePath: {regex: "//notes//"}}) {
+        allDirectory(filter: {absolutePath: {regex: "//notes/"}}) {
           nodes {
             absolutePath
             relativePath
