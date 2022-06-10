@@ -1,11 +1,9 @@
 ---
-title: "(折れ線)グラフを描画する"
+title: "(折れ線)グラフ"
 date: "2019-10-24T17:28:30+09:00"
-description: "大域変数と局所変数について"
-tags: ["Python"]
+description: "(折れ線)グラフを描画する方法について"
+tags: []
 ---
-
-<div class="note_content_by_programming_language" id="note_content_Python">
 
 グラフを描くためには **matplotlib** の **pyplot** ライブラリを利用する。  
 ここでは2次元の折れ線グラフを作成する。
@@ -35,10 +33,6 @@ array([100, 400, 200, 700, 800, 300, 500, 600, 900, 400])
 
 実行結果
 
-<!-- <img src="/img/datascience/Figure_1.png" width=50%> -->
-
-
-
-</div>
+![Figure 1](./Figure_1.png)
 
 
