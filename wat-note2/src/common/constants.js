@@ -21,6 +21,7 @@ class Constants {
         "009_file_io"   :"ファイル入出力",
         "010_other"     :"その他",
         "011_graph_data":"グラフ・データ処理",
+        "012_machine_learning":"機械学習",
 
         //// number以下
         "001_log"       :"対数",
@@ -40,7 +41,13 @@ class Constants {
         //// graph_data以下
         "001_graph"     :"グラフ",
         "101_2Dgraph"   :"２次元グラフ",
-        "102_3Dgraph"   :"３次元グラフ"
+        "102_3Dgraph"   :"３次元グラフ",
+
+        //// machine_learning以下
+        "001_supervised_learning"   :"教師あり学習",
+        "002_unsupervised_learning" :"教師なし学習",
+        "101_regression"            :"回帰",
+        "102_classification"        :"分類"
     }
 
 
