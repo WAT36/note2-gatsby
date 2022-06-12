@@ -7,6 +7,8 @@ import Seo from "../components/seo"
 
 import Constants from "../common/constants"
 
+import "katex/dist/katex.min.css"
+
 const NoteDirTemplate = ({ data, location }) => {
   const posts = data.allDirectory.nodes
   const mds = data.allMarkdownRemark.nodes
