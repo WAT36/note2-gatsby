@@ -46,6 +46,8 @@ class Constants {
         //// machine_learning以下
         "001_supervised_learning"   :"教師あり学習",
         "002_unsupervised_learning" :"教師なし学習",
+        "003_deep_learning"         :"深層学習(ディープラーニング)",
+        "004_math"                  :"数学系",
         "101_regression"            :"回帰",
         "102_classification"        :"分類"
     }
