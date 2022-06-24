@@ -22,6 +22,7 @@ class Constants {
         "010_other"     :"その他",
         "011_graph_data":"グラフ・データ処理",
         "012_machine_learning":"機械学習",
+        "013_procon"    :"競プロテク",
 
         //// number以下
         "001_log"       :"対数",
@@ -49,7 +50,12 @@ class Constants {
         "003_deep_learning"         :"深層学習(ディープラーニング)",
         "004_math"                  :"数学系",
         "101_regression"            :"回帰",
-        "102_classification"        :"分類"
+        "102_classification"        :"分類",
+
+        //// procon以下
+        "001_search"            :"探索",
+        "002_data_structure"    :"データ構造",
+        "003_graph"             :"グラフ",
     }
 
 
