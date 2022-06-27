@@ -21,10 +21,10 @@ a,bを整数、mを自然数とした時、
 
 「aをmで割った余り」と「bをmで割った余り」が等しいことを以下の式で表す。
 
-{{< katex  >}}
+$$
 \tag{1}
 a  \equiv b \pmod{m}
-{{< /katex >}}
+$$
 
 この式を**合同式**という。
 
@@ -46,37 +46,37 @@ a%m == b%m
 
 整数a,b,c,d、自然数mにおいて　a≡b (mod m) ,c≡d (mod m) の時、以下の式が成立する。
 
-{{< katex  >}}
+$$
 \tag{2}
 a+c  \equiv b+d \pmod{m}
-{{< /katex >}}
+$$
 
 ### 合同式の差
 
 同様に、整数a,b,c,d、自然数mにおいて　a≡b (mod m) ,c≡d (mod m) の時、以下の式が成立する。
 
-{{< katex  >}}
+$$
 \tag{3}
 a-c  \equiv b-d \pmod{m}
-{{< /katex >}}
+$$
 
 ### 合同式の積
 
 同様に、整数a,b,c,d、自然数mにおいて　a≡b (mod m) ,c≡d (mod m) の時、以下の式が成立する。
 
-{{< katex  >}}
+$$
 \tag{4}
 ac  \equiv bd \pmod{m}
-{{< /katex >}}
+$$
 
 以上の式より、
 
-{{< katex  >}}
+$$
 \tag{5}
 a+c  \equiv b+c \pmod{m} \\
 a-c  \equiv b-c \pmod{m} \\
 ac  \equiv bc \pmod{m} 
-{{< /katex >}}
+$$
 
 も成立し、これらの式から、合同式は移項・乗法も可能である。
 
@@ -85,33 +85,33 @@ ac  \equiv bc \pmod{m}
 
 整数a,b、自然数mにおいて　a≡b (mod m) の時、以下の式が成立する。
 
-{{< katex  >}}
+$$
 \tag{6}
 a^n  \equiv b^n \pmod{m}
-{{< /katex >}}
+$$
 
 
 #### (証明)
 
 整数a,b,c,dを、自然数mと整数p,q,r,s,t,uを用い、以下のように定義する。
 
-{{< katex  >}}
+$$
 a = pm + t \\
 b = qm + t \\
 c = rm + u \\
 d = sm + u 
-{{< /katex >}}
+$$
 
 この時、
 
-{{< katex  >}}
+$$
 a  \equiv b \pmod{m} \\
 c  \equiv d \pmod{m}
-{{< /katex >}}
+$$
 
 であり、また
 
-{{< katex  >}}
+$$
 \begin{aligned}
 a+c  &= (p+r)m + (t+u) \\
 b+d  &= (q+s)m + (t+u) \\
@@ -122,18 +122,18 @@ bd   &= (qsm + qu+st)m + tu \\
 a^n  &= (p^{n} m^{n-1} + {}_n \mathrm{C} _1 p^{n-1} m^{n-2} t + \cdots + {}_n \mathrm{C} _{n-1} p t^{n-1})m + t^n \\
 b^n  &= (q^{n} m^{n-1} + {}_n \mathrm{C} _1 p^{n-1} m^{n-2} t + \cdots + {}_n \mathrm{C} _{n-1} p t^{n-1})m + t^n
 \end{aligned}
-{{< /katex >}}
+$$
 
 である。これらより、
 
-{{< katex  >}}
+$$
 \begin{aligned}
 a+c  & \equiv b+d & \pmod{m} \\
 a-c  & \equiv b-d & \pmod{m} \\
 ac   & \equiv bd  & \pmod{m} \\
 a^n  & \equiv b^n & \pmod{m}
 \end{aligned}
-{{< /katex >}}
+$$
 
 が成立する。
 
@@ -143,27 +143,27 @@ a^n  & \equiv b^n & \pmod{m}
 
 整数a,b,c、 自然数mにおいて　ab≡ac (mod m) の時でかつ**aとmが互いに素**の時、以下の式が成立する。
 
-{{< katex  >}}
+$$
 \tag{7}
 \begin{aligned}
 ab  & \equiv ac & \pmod{m} \\
 \Leftrightarrow　b  & \equiv c & \pmod{m}
 \end{aligned}
-{{< /katex >}}
+$$
 
 
 #### (証明)
 
 ab≡ac (mod m)　、かつaとmが互いに素の時において
 
-{{< katex  >}}
+$$
 \tag{8}
 \begin{aligned}
 ab  & \equiv ac & \pmod{m} \\
 \Leftrightarrow　ab-ac   & \equiv 0 & \pmod{m} \\
 \Leftrightarrow　a(b-c)  & \equiv 0 & \pmod{m}
 \end{aligned}
-{{< /katex >}}
+$$
 
 となり、この式において、a(b-c)と0はmで割った余りが同じであり、0をmで割った余りは0なので、a(b-c)をmで割った余りも0、つまりa(b-c)はmで割り切れる(=mの倍数)ということになる。
 
@@ -171,13 +171,13 @@ aとmは互いに素なので、b-cがmの倍数という事になる。
 
 これより、(b-c)≡0 (mod m)が成立するので、
 
-{{< katex  >}}
+$$
 \tag{9}
 \begin{aligned}
 (b-c)  & \equiv 0 & \pmod{m} \\
 \Leftrightarrow　b   & \equiv c & \pmod{m} 
 \end{aligned}
-{{< /katex >}}
+$$
 
 となり、aとmが互いに素でab≡ac (mod m)の時、b≡c (mod m)が成立する。
 
@@ -195,80 +195,80 @@ aとmは互いに素なので、b-cがmの倍数という事になる。
 
 modを使った方程式を解いてみることを考える。例えばa,bを整数、mを自然数とした、以下のような式があったとする。
 
-{{< katex  >}}
+$$
 \tag{10}
 ax  \equiv b \pmod{m}
-{{< /katex >}}
+$$
 
 この式でxを求めるにはどのようにすれば良いのだろうか。
 
 この時、
 
-{{< katex  >}}
+$$
 \tag{11}
 ay \equiv 1 \pmod{m}
-{{< /katex >}}
+$$
 
 となるような整数yが存在した場合、合同式の積の定理から、
 
-{{< katex  >}}
+$$
 \tag{12}
 \begin{aligned}
 x & \equiv x & \pmod{m} \\
 \Leftrightarrow 1 \cdot x & \equiv ay \cdot x & \pmod{m} \\
 \Leftrightarrow x & \equiv y \cdot ax & \pmod{m} 
 \end{aligned}
-{{< /katex >}}
+$$
 
-{{< katex  >}}
+$$
 \tag{13}
 \begin{aligned}
 ax & \equiv b & \pmod{m} \\
 \Leftrightarrow y \cdot ax & \equiv y \cdot b & \pmod{m}
 \end{aligned}
-{{< /katex >}}
+$$
 
 が成り立つ。これより、
 
-{{< katex  >}}
+$$
 \tag{14}
 \begin{aligned}
 x & \equiv y \cdot ax & \pmod{m} \\
   & \equiv y \cdot b & \pmod{m}
 \end{aligned}
-{{< /katex >}}
+$$
 
 と求めることができる。
 
 このように、a,mに対して
 
-{{< katex  >}}
+$$
 \tag{15}
 ay \equiv 1 \pmod{m}
-{{< /katex >}}
+$$
 
 となるような整数yのことを、aの**逆元**といい、大体はa<sup>-1</sup>と書く。
 
-{{< katex  >}}
+$$
 \tag{16}
 a \cdot a^{-1} \equiv 1 \pmod{m}
-{{< /katex >}}
+$$
 
 また、式(10)において、a,mが互いに素でない場合以下のように書き換えることもできる。
 
-{{< katex  >}}
+$$
 \tag{17}
 \frac{ax}{gcd(a,m)}  \equiv \frac{b}{gcd(a,m)} \pmod{ \frac{m}{gcd(a,m)} }
-{{< /katex >}}
+$$
 
 ここで、gcd(a,m)はaとmの最大公約数である。
 
 式(14),(16),(17)より、式(10)の解は
 
-{{< katex  >}}
+$$
 \tag{18}
 x  =  \left(\frac{a}{gcd(a,m)}\right)^{-1} \cdot \frac{b}{gcd(a,m)} +  k \cdot \frac{m}{gcd(a,m)} \pmod{ m } 
-{{< /katex >}}
+$$
 
 となる。ただしkは0 ≦ k ≦ gcd(a,m)を満たす整数である。
 
@@ -277,28 +277,28 @@ x  =  \left(\frac{a}{gcd(a,m)}\right)^{-1} \cdot \frac{b}{gcd(a,m)} +  k \cdot \
 
 pが素数の時、任意の整数xに対して
 
-{{< katex  >}}
+$$
 \tag{19}
 x^p  \equiv x \pmod{p}
-{{< /katex >}}
+$$
 
 が成り立つ。
 
 特にxがpで割り切れない場合(互いに素)の時は、合同式の除法より
 
-{{< katex  >}}
+$$
 \tag{20}
 x^{p-1}  \equiv 1 \pmod{p}
-{{< /katex >}}
+$$
 
 が成り立つ。
 
 式(20)より
 
-{{< katex  >}}
+$$
 \tag{21}
 x \cdot x^{p-2}  \equiv 1 \pmod{p}
-{{< /katex >}}
+$$
 
 となるので、pが素数の時、整数xの逆元はx<sup>p-2</sup>であることもわかる。
 
@@ -311,24 +311,24 @@ x \cdot x^{p-2}  \equiv 1 \pmod{p}
 
 合成数pを
 
-{{< katex  >}}
+$$
 \tag{22}
 p = p_{1}^{e_{1}} p_{2}^{e_{2}} \cdots p_{n}^{e_{n}}
-{{< /katex >}}
+$$
 
 と表した時、オイラー関数φ(p)を以下のように定義する。
 
-{{< katex  >}}
+$$
 \tag{23}
 \phi(p) = p \prod_{i=1}^n \frac{p_{i}-1}{p_{i}}
-{{< /katex >}}
+$$
 
 式(23)は、実はp以下のpと互いに素な自然数の個数と等しくなる。
 
 またこの時、pと互いに素な整数xについて、以下の式も成り立つ。
 
-{{< katex  >}}
+$$
 \tag{24}
 x^{\phi(p)}  \equiv 1 \pmod{p}
-{{< /katex >}}
+$$
 -->
