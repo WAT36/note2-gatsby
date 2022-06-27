@@ -15,7 +15,7 @@ $$
 
 が最小となる値はどのように求めるべきか。
 
-[１次元入力２クラス分類]({{< relref "/docs/programming/machine_learning/1d_2class.md" >}})の章で用いた入力データで、平均交差エントロピー誤差を可視化してみよう。グラフ表示したものを以下に示す([コード](https://github.com/WAT36/python/blob/master/machine_learning/classification/cee_visualize.py))
+１次元入力２クラス分類の章で用いた入力データで、平均交差エントロピー誤差を可視化してみよう。グラフ表示したものを以下に示す([コード](https://github.com/WAT36/python/blob/master/machine_learning/classification/cee_visualize.py))
 
 ![Figure 30](./Figure_30.png)
 
@@ -195,7 +195,7 @@ def d_cee(w,x,t):
 
 この関数を用い、勾配法で最適なwを求めていく。平均二乗誤差の章ではfor文ループで求めていたが、実はループを用いずに最適解を求める方法がある。
 
-それが**scipy.optimize**ライブラリに含まれる**minimize()**関数である。
+それが**scipy.optimize**ライブラリに含まれる **minimize()** 関数である。
 
 minimize関数に勾配法で最適解を求めたい関数、変数の初期値、関数の引数、関数の導関数(微分した関数)、勾配法の種類(method="CG")を指定すると、勾配法を用いて最適解を導出してくれる。
 

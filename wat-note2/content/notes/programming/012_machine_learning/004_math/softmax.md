@@ -11,17 +11,27 @@ tags: []
 
 1: 各 x<sub>i</sub> のexpの和を求める。  
 
- u = exp(x<sub>1</sub>) + exp(x<sub>2</sub>) + ... + exp(x<sub>i</sub>)
+$$
+u = \exp(x_{1}) + \exp(x_{2}) + \ldots + \exp(x_{i})
+$$
 
 2: 各 x<sub>i</sub> を1.の値で割った値を y<sub>i</sub> とおく。
 
- y<sub>0</sub> = exp( x<sub>0</sub> ) / u,  
-  
- y<sub>1</sub> = exp( x<sub>1</sub> ) / u,  
+$$
+y_{0} = \frac{\exp(x_{0})}{u}
+$$
 
- ...  
-  
- y_i = exp( x_i ) / u
+$$
+y_{1} = \frac{\exp(x_{1})}{u}
+$$
+
+$$
+\vdots
+$$
+
+$$
+y_{i} = \frac{\exp(x_{i})}{u}
+$$
 
 実装例を以下に示す。
 
