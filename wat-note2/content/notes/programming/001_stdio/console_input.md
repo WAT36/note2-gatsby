@@ -7,8 +7,7 @@ tags: ["Java","Python"]
 プログラムを起動した後に、コンピュータからコマンドを入力して受け付ける方法がある。この入力を**コンソール入力**という。
 ```
 $ ./a.exe  (実行ファイル(またはプログラム))
-10
-aa    (ファイル実行後に、値を入力することができる。)
+10    (ファイル実行後に、値を入力することができる。)
 ```
 ここでは、コンソール入力を読み取る方法を記載する。
 
@@ -23,14 +22,10 @@ class Main{
     //Scannerのインスタンスを生成
     Scanner sc = new Scanner(System.in);
 
-    //入力を何のデータ型で受け取るかで別れる
-    //(例)int型
-    int i = sc.nextInt();
+    //String型で１行読み込む
+    String s = sc.nextLine();
 
-    //String型（スペース等で区切った一部分ずつ）
-    String s = sc.next();
-
-    System.out.println(i+":"+s);
+    System.out.println("入力された値:"+s);
   }
 }
 ```
@@ -52,8 +47,7 @@ javaでコンソールからの入力を扱うには **Scanner** クラスをイ
 $ javac Main.java 
 $ java Main
 10
-aa
-10:aa
+入力された値:10
 ```
 
 </div>
@@ -61,12 +55,21 @@ aa
 
 ```python
 s = input() # コンソールからの入力をsに格納する
+print("入力された値:",s)
 ```
 
-Pythonでコンソールからの入力を扱うには組み込み関数の **input()** を使う。<br>
-基本入力１行を読み込み、文字列に変換して渡される。<br>
-数値にしたい場合はint()で囲うなどし、スペースを区切りたい時などはsplit()等を使う。<br>
-詳しくは以下の公式ドキュメント参照。<br>
-https://docs.python.org/ja/3/library/functions.html#input
+Pythonでコンソールからの入力を扱うには組み込み関数の **input()** を使う。
+
+基本入力１行を読み込み、文字列に変換して渡される。
+
+数値にしたい場合はint()で囲うなどし、スペースを区切りたい時などはsplit()等を使う。
+
+実行例
+
+```
+$ python main.py 
+10
+入力された値: 10
+```
 
 </div>
