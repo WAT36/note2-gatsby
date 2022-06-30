@@ -17,10 +17,11 @@ $ (実行ファイル名) 値1 値2..
 <div class="note_content_by_programming_language" id="note_content_Java">
 
 ```java
+import java.util.Arrays;
+
 class Main{
     public static void main(String args[]){
-      System.out.println(args[0]); // 1番目のコマンドライン引数を表示
-      System.out.println(args[1]); // 2番目のコマンドライン引数を表示
+        System.out.println(Arrays.toString(args));
     }
 }
 ```
@@ -31,10 +32,9 @@ Javaではコマンドライン引数はクラス内で宣言するmainメソッ
 
 実行例
 ```
-$ javac Main.java
-$ java Main aa ss
-aa
-ss
+$ javac Main.java 
+$ java Main aa 10
+[aa, 10]
 ```
 
 </div>
