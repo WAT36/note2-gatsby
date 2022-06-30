@@ -1,7 +1,7 @@
 ---
 title: "コマンドライン引数"
 date: "2019-10-12T16:42:45+09:00"
-tags: ["Java","Python"]
+tags: ["Java","Python","Node.js"]
 ---
 
 プログラム(実行ファイル)をターミナルやコマンドプロンプト等から実行する時、同時に値を入力した上で実行することができる。この入力する値を**コマンドライン引数**という。
@@ -57,6 +57,30 @@ Pythonはsysモジュールのargv属性にコマンドライン引数がリス�
 $ python main.py aa ss
 main.py
 aa
+```
+
+</div>
+</div>
+<div class="note_content_by_programming_language" id="note_content_Node.js">
+
+```javascript
+console.log(process.argv);
+```
+
+Javascript(Node.js)では、processオブジェクトの**argv**プロパティにコマンドライン引数が配列形式で入る。
+（processオブジェクトとは、Node.jsで利用されているグローバルオブジェクトである）
+指定した引数のみを取り出したい場合は、process.argvで得られる配列の指定したインデックスを参照して取り出す。
+
+実行例（上のファイルをmain.jsとする）
+
+```
+$ node main.js AA 10
+[
+  '（nodeがあるディレクトリ、略）/node/v14.15.4/bin/node',
+  '（main.jsがあるディレクトリ、略）/main.js',
+  'AA',
+  '10'
+]
 ```
 
 </div>
