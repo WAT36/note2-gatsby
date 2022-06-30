@@ -42,8 +42,7 @@ $ java Main aa 10
 
 ```python
 import sys          # sysモジュールをインポート
-print(sys.argv[0])  # 1番目のコマンドライン引数 = ファイル名
-print(sys.argv[1])  # 2番目のコマンドライン引数
+print(sys.argv)  
 ```
 
 Pythonはsysモジュールのargv属性にコマンドライン引数がリストとして入る。   
@@ -54,9 +53,8 @@ Pythonはsysモジュールのargv属性にコマンドライン引数がリス�
 
 実行例
 ```
-$ python main.py aa ss
-main.py
-aa
+$ python cli.py aa 10
+['cli.py', 'aa', '10']
 ```
 
 </div>
