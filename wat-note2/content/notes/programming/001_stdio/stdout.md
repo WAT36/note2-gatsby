@@ -8,8 +8,6 @@ tags: ["Java","Python","Node.js"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-クラスはここではMain.javaとする
-
 ```java
 class Main{
     public static void main(String args[]){
@@ -17,6 +15,8 @@ class Main{
     }
 }
 ```
+
+クラスはここではMain.javaとする
 
 javaで画面に出力したい時は **System.out.println()** を利用する。
 
