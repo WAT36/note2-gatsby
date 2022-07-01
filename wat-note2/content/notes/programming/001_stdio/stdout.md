@@ -13,7 +13,7 @@ tags: ["Java","Python","Javascript"]
 ```java
 class Main{
     public static void main(String args[]){
-        System.out.println(変数もしくはデータ);
+        System.out.println(変数もしくは値);
     }
 }
 ```
@@ -28,16 +28,15 @@ javaで画面に出力したい時は **System.out.println()** を利用する�
 <div class="note_content_by_programming_language" id="note_content_Python">
 
 ```python
-x=(変数もしくはデータ)
-print(x)        # xを画面に出力して改行する
-print(x,end="") # xを画面に出力して改行しない
+print(変数もしくは値)
 ```
 
-Pythonでコンソール画面への出力を扱うには組み込み関数の **print()** を使う。<br>
-基本、入力された引数を画面に出力する。<br>
-改行したくない場合はprint()のendパラメータに""を指定。<br>
-詳しくは以下の公式ドキュメント参照。<br>
-https://docs.python.org/ja/3/library/functions.html#print
+Pythonでコンソール画面への出力を扱うには組み込み関数の **print()** を使う。
+
+基本、入力された引数を画面に出力する。
+
+改行したくない場合はprint()のendパラメータに""を指定する（`print(値,end="")`）。
+
 
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
