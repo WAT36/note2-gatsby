@@ -13,17 +13,16 @@ tags: ["Java","Python"]
 ```java
 class Main{
     public static void main(String args[]){
-        //出力後、改行したい時
         System.err.println(変数もしくはデータ);
-
-        //出力後、改行したくない時
-        System.err.print(変数もしくはデータ);
     }
 }
 ```
 
-基本標準出力の時と同じ。<br>
-ただし、エラー出力はjavaの場合例外処理を受け取ったときに利用するため、そのときに出たエラーメッセージを出力するのが普通。
+基本標準出力と似ており、メソッドは**System.err.println()**を利用する。
+
+出力後改行したくない時は、同様に**System.err.print()**を利用する。
+
+ただし、エラー出力はjavaの場合例外処理を受け取ったときに利用するため、そのときに出たエラーメッセージを出力するのが普通である。
 
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
