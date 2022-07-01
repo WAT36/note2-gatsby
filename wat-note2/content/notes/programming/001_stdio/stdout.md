@@ -13,17 +13,15 @@ tags: ["Java","Python","Javascript"]
 ```java
 class Main{
     public static void main(String args[]){
-        //出力後、改行したい時
         System.out.println(変数もしくはデータ);
-
-        //出力後、改行したくない時
-        System.out.print(変数もしくはデータ);
     }
 }
 ```
 
-javaで画面に出力したい時は **System.out.println()** を利用する。<br>
+javaで画面に出力したい時は **System.out.println()** を利用する。
+
 引数には画面に出力したい変数またはデータを入れる。
+
 出力後改行したくない時は System.out. **print()** を使う。
 
 </div>
