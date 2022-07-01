@@ -1,11 +1,10 @@
 ---
 title: "標準出力"
 date: "2019-10-12T17:19:30+09:00"
-description: "プログラムから値をコンソール画面上に出力する方法。"
 tags: ["Java","Python","Javascript"]
 ---
 
-標準出力について。
+標準出力とはプログラムから値を出力することで、通常はコンソール画面上に出力される。ここではその方法について示す。
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
