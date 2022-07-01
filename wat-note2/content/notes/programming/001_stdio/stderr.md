@@ -1,11 +1,10 @@
 ---
 title: "標準エラー出力"
 date: "2019-10-12T17:25:47+09:00"
-description: "プログラムから値をコンソール画面上に(エラー情報として)出力する方法。"
 tags: ["Java","Python"]
 ---
 
-標準エラー出力について。
+標準エラー出力とは、先述の標準出力とはまた別の出力の事で、エラー情報として出力される値のことである。ここではその方法についてを示す。
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
