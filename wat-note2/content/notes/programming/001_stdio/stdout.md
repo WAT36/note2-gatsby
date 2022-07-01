@@ -1,7 +1,7 @@
 ---
 title: "標準出力"
 date: "2019-10-12T17:19:30+09:00"
-tags: ["Java","Python","Javascript"]
+tags: ["Java","Python","Node.js"]
 ---
 
 標準出力とはプログラムから値を出力することで、通常はコンソール画面上に出力される。ここではその方法について示す。
@@ -39,15 +39,14 @@ Pythonでコンソール画面への出力を扱うには組み込み関数の *
 
 
 </div>
-<div class="note_content_by_programming_language" id="note_content_Javascript">
-
-Javascriptはブラウザ上で扱う言語のため、ここではブラウザ上のログ画面への出力という意味で記す。
-
-Javascriptでは、**console.log()** を利用する。
-引数には出力したい値及び変数を入力する。
+<div class="note_content_by_programming_language" id="note_content_Node.js">
 
 ```javascript
-console.log(5)
+console.log(変数もしくは値)
 ```
+
+Javascript及びNode.jsでは、**console.log()** 関数を利用する。
+引数には出力したい値及び変数を入力する。
+
 
 </div>
