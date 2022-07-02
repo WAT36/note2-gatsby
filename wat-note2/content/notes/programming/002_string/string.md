@@ -32,31 +32,18 @@ String型の場合は文字列をダブルクォート("")で囲んで宣言す�
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
-Pythonでは文字列を扱うには
 
 ```
 (変数) = "文字列"
-```
-
-または
-
-```
 (変数) = '文字列'
 ```
 
-のようにする。
+Pythonでは文字列を宣言するには上記のようにする。
+
 Javaとは違い、Pythonでは文字列を宣言するときにはシングルクォート('')、ダブルクォート("")のどちらを利用しても
 よい。
 
-```python
->>> s = "a"
->>> print(s)
-a
->>> c = 'c'
->>> print(c)
-c
->>> 
-```
+またPythonは動的片付けのため、Javaと違い型名の指定は基本不要である。
 
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
