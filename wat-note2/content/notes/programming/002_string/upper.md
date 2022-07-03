@@ -38,13 +38,19 @@ AAA
 <div class="note_content_by_programming_language" id="note_content_Python">
 
 ```python
-s = "test"
+s = "aaa"
 s = s.upper()
 ```
 
-Pythonは文字列型のstrオブジェクトにメソッド **upper()** があり、これにより文字列を全て大文字にできる。<br>
+Pythonは文字列型のstrオブジェクトにメソッド **upper()** があり、これにより文字列を全て大文字にできる。
+
 ただし、これも文字列自体が変換されるわけではないので、反映させたい場合は出力を元の変数に代入してやる必要がある。
 
+出力
+```
+>>> print(s)
+AAA
+```
 
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
