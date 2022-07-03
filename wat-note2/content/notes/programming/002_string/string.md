@@ -48,12 +48,12 @@ Javaとは違い、Pythonでは文字列を宣言するときにはシングル�
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
-Javascriptでも、シングルクォート('')、ダブルクォート("")を利用して文字列を宣言する。
-
 ```Javascript
 var h1 = 'Hello! World!'
 var h2 = "Hello! World!"
 ```
+
+Javascriptでも、シングルクォート('')、ダブルクォート("")を利用して文字列を宣言する。
 
 </div>
 
