@@ -56,6 +56,10 @@ class Constants {
         "001_search"            :"探索",
         "002_data_structure"    :"データ構造",
         "003_graph"             :"グラフ",
+
+        //// フロントエンド以下
+        "001_html"              :"HTML",
+        "002_css"               :"CSS",
     }
 
 
