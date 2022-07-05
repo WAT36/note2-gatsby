@@ -59,7 +59,7 @@ class Constants {
 
         //// フロントエンド以下
         "001_html"              :"HTML",
-        "002_css"               :"CSS",
+        "002_CSS"               :"CSS",
     }
 
 
