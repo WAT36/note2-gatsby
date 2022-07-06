@@ -6,23 +6,32 @@ tags: ["Java","Python","Javascript"]
 ---
 
 英字の文字列を全て小文字にする方法について。
-小文字の場合も、大文字同様にほとんどの言語で関数やメソッドが用意されているので、それを利用する。
+
+同じように例えば`"AAA"`という値を`"aaa"`という値に変換したい場合はどうするか。その方法をここで述べる。
 
 <div class="note_content_by_programming_language" id="note_content_Java">
-
-クラスはここではMain.javaとする
 
 ```java
 class Main{
     public static void main(String args[]){
-      String s = "test";
+      String s = "aaa";
+
+      // 文字列を小文字にする
       s = s.toLowerCase();
     }
 }
 ```
 
-JavaではStringクラスに **toLowerCase()** というメソッドがあり、これにより文字列を全て英小文字に変換して表示してくれる。<br>
+クラスはここではMain.javaとする
+
+JavaではStringクラスに **toLowerCase()** というメソッドがあり、これにより文字列を全て英小文字に変換して表示してくれる。
+
 ただし、これも文字列自体が変換されるわけではないので、反映させたい場合は出力を元の変数に代入してやる必要がある。
+
+変数を出力
+```
+aaa
+```
 
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
