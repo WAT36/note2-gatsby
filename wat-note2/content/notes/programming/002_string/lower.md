@@ -14,7 +14,7 @@ tags: ["Java","Python","Javascript"]
 ```java
 class Main{
     public static void main(String args[]){
-      String s = "aaa";
+      String s = "AAA";
 
       // 文字列を小文字にする
       s = s.toLowerCase();
