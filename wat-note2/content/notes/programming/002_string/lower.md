@@ -37,12 +37,18 @@ aaa
 <div class="note_content_by_programming_language" id="note_content_Python">
 
 ```python
-s = "test"
+s = "AAA"
 s = s.lower()
 ```
 
-Pythonは文字列型のstrオブジェクトにメソッド **lower()** があり、これにより文字列を全て小文字にできる。<br>
+Pythonは文字列型のstrオブジェクトにメソッド **lower()** があり、これにより文字列を全て小文字にできる。
+
 ただし、これも文字列自体が変換されるわけではないので、反映させたい場合は出力を元の変数に代入してやる必要がある。
+
+変数を出力
+```
+aaa
+```
 
 
 </div>
