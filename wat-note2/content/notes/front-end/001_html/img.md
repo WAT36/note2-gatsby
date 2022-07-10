@@ -23,12 +23,12 @@ img要素は画像を表示させたい時、及びそれが利用できない�
 使用例
 
 ```
-<img src="./img.jpg" width="100" height="100" alt="宗谷岬、青空">
+<img src="/front-end/img.jpg" width="100" height="100" alt="宗谷岬、青空">
 ```
 
 実行例
 
-<img src="./img.jpg" width="100" height="100" alt="宗谷岬、青空">
+<img src="/front-end/img.jpg" width="100" height="100" alt="宗谷岬、青空">
 <hr>
 
 
@@ -53,16 +53,18 @@ source要素は、picture要素・video要素・audio要素の子要素として
 
 ```
 <picture>
-    <source media="(min-width: 200em)" srcset="./img3.jpg" title="img3.jpg">
-    <source media="(min-width: 100em)" srcset="./img2.jpg" title="img2.jpg">
+    <source media="(min-width: 200em)" srcset="/front-end/img3.jpg" title="img3.jpg">
+    <source media="(min-width: 100em)" srcset="/front-end/img2.jpg" title="img2.jpg">
+    <img src="/front-end/img.jpg" width="100" height="100" alt="宗谷岬、青空">
 </picture>
 ```
 
-実行例
+実行例（表示する画面により表示される画像が分かれる）
 
 <picture>
-    <source media="(min-width: 200em)" srcset="./img3.jpg" title="img3.jpg">
-    <source media="(min-width: 100em)" srcset="./img2.jpg" title="img2.jpg">
+    <source media="(min-width: 200em)" srcset="/front-end/img3.jpg" title="img3.jpg">
+    <source media="(min-width: 100em)" srcset="/front-end/img2.jpg" title="img2.jpg">
+    <img src="/front-end/img.jpg" width="100" height="100" alt="宗谷岬、青空">
 </picture>
 <hr>
 
@@ -87,11 +89,11 @@ video要素は、動画を再生するための要素である。
 例を以下に示す。
 
 ```
-<video src="/img/front-end/IMG_3279.MOV.mp4" controls muted width="500" height="200" ></video>
+<video src="/front-end/IMG_3279.MOV.mp4" controls muted width="500" height="200" ></video>
 ```
 
 実行例
-<video src="./IMG_3279.MOV.mp4" controls muted width="500" height="200" ></video>
+<video src="/front-end/IMG_3279.MOV.mp4" controls muted width="500" height="200" ></video>
 <hr>
 
 (ちなみにこの動画は私が学生時代に研究室の窓から外の吹雪を撮ったものである)
@@ -115,12 +117,12 @@ audio要素は音声を再生するための要素である。
 先程の動画ファイルをaudio要素で表示させてみよう。
 
 ```
-<audio src="./IMG_3279.MOV.mp4" controls ></audio>
+<audio src="/front-end/IMG_3279.MOV.mp4" controls ></audio>
 ```
 
 実行例は以下の通り。
 
-<audio src="./IMG_3279.MOV.mp4" controls ></audio>
+<audio src="/front-end/IMG_3279.MOV.mp4" controls ></audio>
 <hr>
 
 
@@ -152,10 +154,10 @@ track要素はvideo要素やaudio要素の子要素として利用する要素�
 先程の動画ファイルを利用して実行例を示す。
 
 ```
-<video src="./IMG_3279.MOV.mp4" controls muted width="500" height="200" >
+<video src="/front-end/IMG_3279.MOV.mp4" controls muted width="500" height="200" >
     <track default kind="captions"
            srclang="ja"
-           src="./track.vtt">
+           src="/front-end/track.vtt">
 </video>
 ```
 
@@ -173,10 +175,10 @@ WEBVTT
 
 表示例（使用環境により、表示されない場合もあります・・）
 
-<video src="./IMG_3279.MOV.mp4" controls muted width="500" height="200" >
+<video src="/front-end/IMG_3279.MOV.mp4" controls muted width="500" height="200" >
     <track default kind="captions"
            srclang="ja"
-           src="./track.vtt">
+           src="/front-end/track.vtt">
 </video>
 <hr>
 
@@ -228,10 +230,10 @@ area要素は、イメージマップにおいて指定した領域を指定し�
 |poly|多角形|各座標をx座標、y座標の順に指定|
 |default|画像全体|(指定しない)|
 
-<!-- 使用例
+使用例
 
 ```
-<img src="./area.png" usemap="#top" width="100" height="100">
+<img src="/front-end/area.png" usemap="#top" width="100" height="100">
 
 <map name="top">
     <area href="https://wat36.github.io/note2-gatsby/" shape="rect" coords="0,0,100,50"></area>
@@ -241,13 +243,13 @@ area要素は、イメージマップにおいて指定した領域を指定し�
 
 表示例（画像の上半分がこのブログのトップ、下半分は私のGithubへのリンク）
 
-<img src="./area.png" usemap="#top" width="100" height="100">
+<img src="/front-end/area.png" usemap="#top" width="100" height="100">
 
 <map name="top">
     <area href="https://wat36.github.io/note2-gatsby/" shape="rect" coords="0,0,100,50"></area>
     <area href="https://github.com/WAT36" shape="rect" coords="0,50,100,100"></area>
 </map>
-<hr> -->
+<hr>
 
 
 # object要素
