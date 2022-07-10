@@ -136,7 +136,7 @@ type属性に指定できる値と意味は以下の通り。
     </tr>
     <tr>
         <td style="border:none;">image</td>
-        <td style="border:none;"><input type="image" src="/img/front-end/img.jpg" width=25% height=25%></td>
+        <td style="border:none;"><input type="image" src="/front-end/img.jpg" width=25% height=25%></td>
     </tr>
     <tr>
         <td style="border:none;">color</td>
@@ -224,7 +224,7 @@ type属性に指定できる値と意味は以下の通り。
     </tr>
     <tr>
         <td style="border:none;">image</td>
-        <td style="border:none;"><input type="image" src="/img/front-end/img.jpg" width=25% height=25%></td>
+        <td style="border:none;"><input type="image" src="/front-end/img.jpg" width=25% height=25%></td>
     </tr>
     <tr>
         <td style="border:none;">color</td>
