@@ -44,14 +44,14 @@ figure要素は、それが文書から参照される、自己完結型のコ�
 
 ```
 <figure id="fig">
-    <img src="./img.jpg" width="100" height="100" alt="宗谷岬、青空">
+    <img src="/front-end/img.jpg" width="100" height="100" alt="宗谷岬、青空">
 </figure>
 ```
 
 表示例
 
 <figure id="fig">
-    <img src="./img.jpg" width="100" height="100" alt="宗谷岬、青空">
+    <img src="/front-end/img.jpg" width="100" height="100" alt="宗谷岬、青空">
 </figure>
 <hr>
 
@@ -66,7 +66,7 @@ figcaption要素は、figure要素で示したコンテンツにキャプショ�
 ```
 <figure id="fig">
     <figcaption>宗谷岬の交差点</figcaption>
-    <img src="./img.jpg" width="100" height="100" alt="宗谷岬、青空">
+    <img src="/front-end/img.jpg" width="100" height="100" alt="宗谷岬、青空">
 </figure>
 ```
 
@@ -74,7 +74,7 @@ figcaption要素は、figure要素で示したコンテンツにキャプショ�
 
 <figure id="fig">
     <figcaption>宗谷岬の交差点</figcaption>
-    <img src="./img.jpg" width="100" height="100" alt="宗谷岬、青空">
+    <img src="/front-end/img.jpg" width="100" height="100" alt="宗谷岬、青空">
 </figure>
 <hr>
 
@@ -147,13 +147,13 @@ iframe要素は、文書の中で別の文書を表示する領域(ブラウジ�
 使用例を以下に示す。
 
 ```
-<iframe width="200" height="150">
+<iframe>
 </iframe>
 ```
 
 表示例
 
-<iframe width="200" height="150">
+<iframe>
 </iframe>
 <hr>
 
