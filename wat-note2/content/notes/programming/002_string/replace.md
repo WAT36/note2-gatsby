@@ -6,26 +6,33 @@ tags: ["Java","Python","Javascript"]
 ---
 
 文字列を別の文字列に置換する方法。
-その文字列全ての他、文字列の一部分または文字列中の条件に合う文字列に対する置換も行える。
+
+例えば"a"という文字を全て"e"に変えたいとなった時
+
+```
+"a" -> "e"
+"and" -> "end"
+```
+
+など、指定した文字列全ての他、文字列の一部分または文字列中の条件に合う文字列に対する置換を行う方法を示す。
 
 <div class="note_content_by_programming_language" id="note_content_Java">
-
-javaで文字列を置換したい時は **replace()** メソッドを使う。<br>
-使用法は以下の通り。
 
 ```java
 文字列.replace(置換前の文字列,置換後の文字列);
 ```
 
+javaで文字列を置換したい時は **replace()** メソッドを使う。
+
 以下に使用例を示す。
 
 ```java
-String s = "test";
-String t = s.replace("t","b");
-System.out.println(t); // besb
+String s = "and";
+String t = s.replace("a","e");
+System.out.println(t); // end
 ```
 
-上記例では"test"という文字列をreplaceメソッドで"t"を"b"に置換し、結果を表示している。結果として"besb"という文字列が表示される。
+上記例では"and"という文字列をreplaceメソッドで"a"を"e"に置換し、結果を表示している。結果として"end"という文字列が表示される。
 
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
