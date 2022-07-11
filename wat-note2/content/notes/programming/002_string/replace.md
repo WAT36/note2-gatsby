@@ -37,26 +37,28 @@ System.out.println(t); // end
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
-Pythonでは文字列型のstrオブジェクトにメソッド **replace()** があり、これにより文字列中の文字を置換できる。<br>
-使用法は以下の通り。
-
 ```python
 文字列.replace(old,new [,count]);
 ```
 
+Pythonでは文字列型のstrオブジェクトにメソッド **replace()** があり、これにより文字列中の文字を置換できる。
+
 これにより文字列中のoldの部分をnewに変換する。
+
 また、オプション引数countがあり、指定すると先頭からcount個分のoldのみを置換する。  
+
 なお、文字列にoldが無い場合は、置換されずにそのまま出力される。  
 
 使用例を以下に示す。
 
 ```python
-s = "test"
-t = s.replace("t","b")
-print(t)  # "besb"
+s = "and"
+t = s.replace("a","e")
+print(t)  # "end"
 
-t = s.replace("t","b",1)
-print(t)  # "best"
+s = "andand"
+t = s.replace("a","e",1)
+print(t)  # "endand"
 ```
 
 </div>
