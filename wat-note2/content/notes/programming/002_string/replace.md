@@ -64,12 +64,11 @@ print(t)  # "endand"
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
-Javscriptでは文字列のにメソッド **replace()** があり、これにより文字列中の文字を置換できる。<br>
-使用法は以下の通り。
-
 ```javascript
 文字列.replace(old,new);
 ```
+
+Javscriptでは文字列のメソッド **replace()** があり、これにより文字列中の文字を置換できる。
 
 置換対象の文字列oldは、文字列の他に正規表現の形でも入力できる。  
 
@@ -80,19 +79,12 @@ Javscriptでは文字列のにメソッド **replace()** があり、これに�
 使用例を以下に示す。
 
 ```javascript
-var s = "test"
-var t = s.replace("t","b")
-console.log(t)  // "best"
+var s = "and and"
+var t = s.replace("a","e")
+console.log(t)  // "end and"
 
-t = s.replace(/t/g,"b")
-console.log(t)  // "besb"
-```
-
-実行結果
-
-```
-best
-besb
+t = s.replace(/a/g,"e")
+console.log(t)  // "end end"
 ```
 
 </div>
