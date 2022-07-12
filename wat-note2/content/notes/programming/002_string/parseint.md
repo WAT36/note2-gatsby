@@ -5,43 +5,43 @@ description: "文字列を数値型データに変換する方法。"
 tags: ["Java","Python","Javascript"]
 ---
 
-文字列型データで定義された数字を数値型データに変換する方法を述べる。  
-ちなみに、逆の数値を文字列型にする方法もある。
+文字列型で定義された数字を数値型データに変換する方法を述べる。  
+
+例えば、文字列として定義した`"10"`という値を数値型の`10`に置き換えたい時など。
+
+ちなみに、逆の数値型を文字列型にする方法もある。
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-クラスはここではMain.javaとする
-
 ```java
-class Main{
-    public static void main(String args[]){
-      String s = "1";
-      
-      int i = Integer.parseInt(s);
+String s = "10";
+int i = Integer.parseInt(s);
+System.out.println(i); // 10
 
-      System.out.println(i) // 1
-    }
-}
+s = "AA";
+i = Integer.parseInt(s); // NumberFormatExceptionエラーが発生
 ```
 
 Javaでは各数値型のラッパークラスに **parsexxx(String s)** というメソッドがあり、これにより文字列を数値リテラルに変換してくれる。   
+
 int型の場合はintのラッパークラスIntegerに **parseInt** というメソッドがあり、そのメソッドに文字列を入力すると、対応する数値に変換してくれる。上記例では"1"という文字列をparseIntに入力すると、int型(数値リテラル)の1が返る。  
+
 数値リテラルに変換できないような文字列を入力すると```NumberFormatException```という例外エラーが発生する。
 
 他の数値型に変換したいときは、それぞれ対応するラッパークラスにparsexxメソッドがあるのでそれを活用する。
 
-```java
-class Main{
-    public static void main(String args[]){
-      String s = "1";
-      
-      long l = Long.parseLong(s); //"1"をLong型に変換
-      byte b = Byte.parseByte(s); //"1"をByte型に変換
 
-      double d = Double.parseDouble(s); //"1"をDouble型に変換
-      float  f = Float.parseFloat(s);   //"1"をFloat型に変換
-    }
-}
+上記コードの実行例
+
+```
+$ javac Main.java 
+$ java Main
+10
+Exception in thread "main" java.lang.NumberFormatException: For input string: "AA"
+        at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+        at java.lang.Integer.parseInt(Integer.java:580)
+        at java.lang.Integer.parseInt(Integer.java:615)
+        at Main.main(Main.java:10)
 ```
 
 </div>
