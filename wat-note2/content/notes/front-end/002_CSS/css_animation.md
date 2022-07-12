@@ -557,6 +557,7 @@ p.animation-duration {
 }
 </style>
 <p class="animation-duration">色変化！（一回のみ）</p>
+<p class="after-animation-space"></p>
 <hr>
 
 

@@ -405,7 +405,7 @@ backgroundプロパティは、これまでに出てきた背景関連のプロ�
 ```
 <style type="text/css">
     div.all {
-        background: gray url(/front-end/img_small.jpg) no-repeat fixed 100% 100%;
+        background: gray url(/front-end/img_small.jpg) no-repeat fixed center;
     }
 
     h4.all {
@@ -426,7 +426,7 @@ backgroundプロパティは、これまでに出てきた背景関連のプロ�
 
 <style type="text/css">
     div.all {
-        background: gray url(/front-end/img_small.jpg) no-repeat fixed 100% 100%;
+        background: gray url(/front-end/img_small.jpg) no-repeat fixed center;
     }
 
     h4.all {
