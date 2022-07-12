@@ -47,26 +47,28 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: "A
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
-Pythonで数値の文字列を数値リテラルに変換したい時は組み込み関数の **int()** や **float()** を利用する。
-
 ```python
-s = "1"
-print(s) #'1'
+s = "10"
+print(int(s)) # 10
+print(float(s)) # 10.0
 
-s = int(s)
-print(s) # 1
-
-s = float(s)
-print(s) # 1.0
+s="AA"
+print(int(s))
 ```
 
+Pythonで数値の文字列を数値リテラルに変換したい時は組み込み関数の **int()** や **float()** などを利用する。
+
 数値リテラルに変換できないような文字列を入力したときは、例外```ValueError```を返す。
-```python
->>>s = "+"
->>>s = int(s)
+
+実行例
+
+```
+10
+10.0
 Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-ValueError: invalid literal for int() with base 10: '+'
+  File "main.py", line 6, in <module>
+    print(int(s))
+ValueError: invalid literal for int() with base 10: 'AA'
 ```
 
 </div>
