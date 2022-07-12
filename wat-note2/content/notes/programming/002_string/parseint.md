@@ -74,10 +74,6 @@ ValueError: invalid literal for int() with base 10: 'AA'
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
-Javascriptで数値の文字列を数値型に変換したい時は、
-
-関数 **Number()** 、 **parseInt()** 、 **parseFloat()** を利用する。
-
 ```javascript
 var s = "1"
 console.log(s); 
@@ -88,6 +84,10 @@ console.log(parseInt(s));
 console.log(parseFloat(s));
 ```
 
+Javascriptで数値の文字列を数値型に変換したい時は、
+
+関数 **Number()** 、 **parseInt()** 、 **parseFloat()** を利用する。
+
 実行結果
 
 ```
@@ -97,6 +97,6 @@ console.log(parseFloat(s));
 1
 ```
 
-(ログだと分からんか・・)
+(ログだと区別つかんか・・)
 
 </div>
