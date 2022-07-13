@@ -6,38 +6,49 @@ tags: ["Java","Python","Javascript"]
 ---
 
 コンピュータは二進数しか扱えないため、文字データも二進数（つまり整数）として扱われる。
-つまり１文字に対して対応する整数が割り当てられており、コンピュータはその数を特定の文字と思い込み処理する。この数の事を文字コードという。
-文字１文字から、その文字の文字コードを取得する方法をまとめる。
+
+つまり１文字のデータに対して対応する整数が割り当てられており、コンピュータはその数を特定の文字と認識し処理する。この数の事を文字コードという。
+
+文字１文字から、その文字の文字コードを取得する方法を記載する。
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-クラスはここではMain.javaとする
-
 ```java
-class Main{
-    public static void main(String args[]){
-      char c = 'a';
-      int a = c;
-      System.out.println(a); // 97
-    
-      String s = "aaaaa";
-      a = s //コンパイルエラー
+char c = 'a';
+int a = c;              // char型データ'a'を文字コードに変換
+System.out.println(a);  // 97
 
-      c = s.charAt(0) // sの0文字目をchar型で返す 
-      System.out.println(c); // a
-      a = c;
-      System.out.println(a); // 97
-    }
-}
+String s = "aaaaa";
+c = s.charAt(0);        // sの0文字目をchar型で返す 
+System.out.println(c);  // a
+a = c;
+System.out.println(a);  // 97
+
+//a = s                 // Stringをそのまま文字コード変換するとコンパイルエラー
 ```
 
+クラスはここではMain.javaとする
+
 Javaでは１文字のchar型と文字列のString型があるが、
+
 文字コードに変換できるのは **char型** のほうであり、String型の変換はできない。
+
 char型のデータをint型の変数に代入するのは可能なのか？という疑問もあるだろうが、
-Javaには代入する変数とデータの型が違っていても、片方がもう片方の型に変換が可能であれば代入は行える。
+
+Javaには代入する変数とデータの型が違っていても、片方がもう片方の型に変換が可能であれば代入は行える。（キャスト,型変換）
+
 char型の変数はint型、double型などの数値データ型に変換が可能であり、この例ではint型の変数に代入できる。
+
 対してString型はint,doubleなどの数値データ型には変換できないので、変換したい1文字をchar型として取り出してから行う。
 
+実行結果
+```
+$ javac Main.java 
+$ java Main
+97
+a
+97
+```
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
