@@ -10,12 +10,6 @@ tags: ["Java","Python","Javascript"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-Javaで文字列の分割を行うにはStringのメソッドである**split**を利用する。  
-`public String[] split(String regex, int limit)`  
-第1引数には分割する際の境目となる文字列を**正規表現**で入力し、  
-第2引数には分割を行う回数を入力する。負の数を入力すると無制限に分割を行う。０を入力した場合、分割後の末尾が空白になる場合はそれを格納しない。  
-使用例を以下に示す。
-
 ```java
 import java.util.Arrays;
 class Main{
@@ -33,7 +27,25 @@ class Main{
 }
 ```
 
+Javaで文字列の分割を行うにはStringのメソッドである**split**を利用する。  
+
+`public String[] split(String regex, int limit)`  
+
+第1引数には分割する際の境目となる文字列を**正規表現**で入力し、  
+
+第2引数には分割を行う回数を入力する。負の数を入力すると無制限に分割を行う。０を入力した場合、分割後の末尾が空白になる場合はそれを格納しない。  
+
 splitメソッドの返り値はString型の配列になるので、結果を格納したい場合はString型の配列を用意する。
+
+実行結果
+
+```
+$ javac Main.java 
+$ java Main
+[apple, banana, cherry, durian, , ]
+[apple, banana, cherry, durian]
+[apple, banana-cherry-durian--]
+```
 
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
