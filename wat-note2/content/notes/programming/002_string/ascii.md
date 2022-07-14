@@ -52,6 +52,10 @@ a
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
+```python
+ord("文字")
+```
+
 Pythonで文字から文字コードを取得するには **ord()** 関数を利用する。
 ord()関数は1文字を受け取りその文字コードを出力する。入力する文字は半角でも全角でも良い。
 ２文字以上を入力するとエラーになる。
