@@ -73,7 +73,7 @@ Javascriptでも" **+** " 演算子を使って文字列を連結できる。
 
 ```javascript
 var str = 'Hello!' + 'World!'
-console.log(str)
+console.log(str) // Hello!World!
 ```
 
 </div>
