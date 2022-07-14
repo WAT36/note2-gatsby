@@ -48,14 +48,20 @@ System.out.println(sb.toString()); // 1test1
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
-Pythonでも " **+** "," **+=** " 演算子を使って文字列を連結できる。<br>
+Pythonでも " **+** "," **+=** " 演算子を使って文字列を連結できる。
+
 また" * "演算子を使って同じ文字を指定回数連結することもできる。
+
 以下に使用例を示す。
 
 ```python
 s = "test"
 t = s + "1"
 print(t) # s1
+
+t += "1"
+print(t) # s11
+
 t = s * 5
 print(t) # testtesttesttesttest
 ```
