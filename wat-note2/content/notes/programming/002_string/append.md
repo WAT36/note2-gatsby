@@ -5,28 +5,36 @@ description: "文字列に別の文字列を追加する方法"
 tags: ["Java","Python","Javascript"]
 ---
 
-文字列の末尾に別の文字列を繋げる方法についてまとめる。
+文字列の末尾に別の文字列を繋げて新しい文字列としてデータを作る方法についてをまとめる。
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-javaの場合は使用しているクラスにより方法が異なる。<br>
-Stringでは **+** 演算子を使うっことで文字列を連結できる。<br>
-文字列の先頭・末尾に連結する場合はこれで良いが、文字列の途中に別の文字列を追加したい場合は、String. **substring(int beginindex, int endindex)** メソッドで文字列の一部分のみを取り出せるので、これと + 演算子を利用して連結する。
-ちなみにsubstringメソッドはbeginindex〜(endindex-1)までの位置の文字列を取ってくるので注意。<br>
+javaの場合は使用しているクラスにより方法が異なる。
+
+Stringでは **+** 演算子を使うことで文字列を連結できる。
+
+文字列の先頭・末尾に連結する場合はこれで良いが、文字列の途中に別の文字列を追加したい場合は、
+
+String. **substring(int beginindex, int endindex)** メソッドで文字列の一部分のみを取り出せるので、これと + 演算子を利用して連結する。
+
+ちなみにsubstringメソッドはbeginindex〜(endindex-1)までの位置の文字列を取ってくるので注意。
+
 以下に使用例を示す。
 
 ```java
 String s = "test";
 String t = "1" + s;
 System.out.println(t); // 1test
-String t = "1" + s;
+String t = s + "1";
 System.out.println(t); // test1
 String t = s.substring(0,2) + "1" s.substring(2,4);
 System.out.println(t); // te1st
 ```
 
-また、StringBuilderクラスを使っている場合は、**append(追加する値)** メソッドを使うと末尾に追加されるので便利。<br>
+また、StringBuilderクラスを使っている場合は、**append(追加する値)** メソッドを使うと末尾に追加されるので便利。
+
 指定した位置に追加したい場合は **insert(追加する位置,追加する値)** メソッドを使う。
+
 ちなみに、これらメソッドは引数の型にかかわらず入力でき、引数は自動的に文字列型に置き換えられて追加される。
 
 ```java
