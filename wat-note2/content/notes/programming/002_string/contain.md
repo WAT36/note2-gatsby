@@ -39,7 +39,12 @@ false
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
-pythonで文字列中にある文字列が含まれているかを確認するには**in**演算子を使う。   
+pythonで文字列中にある文字列が含まれているかを確認するには **in** 演算子を使う。   
+
+文字列A中に文字列Bが含まれているか確認したい場合は以下のようにする。
+
+`文字列B in 文字列A`
+
 含まれているとTrue、そうでない場合はFalseを返す。
 
 ```python
