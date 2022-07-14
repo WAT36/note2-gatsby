@@ -50,12 +50,6 @@ $ java Main
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
-pythonで文字列を分割するには文字列(str)の**split**関数を使う。   
-`str.split(sep=None, maxsplit=-1)`   
-第1引数sep には区切り文字を入れる。入力しない場合は、デフォルトで空白文字が使われる。またこの時、連続している空白文字は一つの区切り文字として扱われる。  
-第2引数maxsplitには分割する回数を入力する。-1の場合、無制限に分割する。入力しない場合はデフォルトで-1が入る。  
-戻り値はリストになる。
-
 ```python
 >>> s = "apple-banana-cherry-durian--"
 >>> print(s.split("-",-1))
@@ -67,10 +61,17 @@ pythonで文字列を分割するには文字列(str)の**split**関数を使う
 >>>
 ```
 
-> cf. 組み込み型 - split() 
-> https://docs.python.org/ja/3/library/stdtypes.html#str.split
+pythonで文字列を分割するには文字列(str)の**split**関数を使う。   
 
-また、改行文字で分割したいときは**splitlines()**関数を利用する。
+`str.split(sep=None, maxsplit=-1)`   
+
+第1引数sep には区切り文字を入れる。入力しない場合は、デフォルトで空白文字が使われる。またこの時、連続している空白文字は一つの区切り文字として扱われる。  
+
+第2引数maxsplitには分割する回数を入力する。-1の場合、無制限に分割する。入力しない場合はデフォルトで-1が入る。  
+
+戻り値はリストになる。
+
+また、改行文字で分割したいときは **splitlines()** 関数を利用する。
 
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
