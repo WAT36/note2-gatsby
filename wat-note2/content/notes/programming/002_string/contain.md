@@ -61,22 +61,20 @@ False
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
-Javascriptでは ** String.includes() ** メソッドで判別が行える。利用方法は以下の通り。
-
-```
-(元の文字列).includes(検索する文字列)
-```
-
-の形式である文字列に指定した文字列が含まれているかを判別でき、含まれているとtrue、そうでない場合はfalseを返す。
-
-使用例
-
 ```javascript
 var s = 'apple,banana,cherry';
 
 console.log(s.includes('banana'));
 console.log(s.includes('durian'));
 ```
+
+Javascriptでは **String.includes()** メソッドで判別が行える。利用方法は以下の通り。
+
+```
+(元の文字列).includes(検索する文字列)
+```
+
+の形式である文字列に指定した文字列が含まれているかを判別でき、含まれているとtrue、そうでない場合はfalseを返す。
 
 実行結果
 
