@@ -10,9 +10,6 @@ tags: ["Java","Python","Javascript"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-Javaで文字列中にある文字列が含まれているかを確認するにはStringのメソッドである**contains()**を利用する。  
-`public boolean split(String s)`  
-呼び出し元の文字列中に引数に指定した文字列が含まれていればtrue、そうでない場合はfalseを返す。
 ```java
 class Main{
     public static void main(String args[]){
@@ -24,10 +21,17 @@ class Main{
 }
 ```
 
-実行結果を以下に示す。
+Javaで文字列中にある文字列が含まれているかを確認するにはStringのメソッドである **contains()** を利用する。  
+
+`public boolean contain(String s)`  
+
+呼び出し元の文字列中に引数に指定した文字列が含まれていればtrue、そうでない場合はfalseを返す。
+
+実行結果
 
 ```
-> java Main
+$ javac Main.java 
+$ java Main
 true
 false
 ```
