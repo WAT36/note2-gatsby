@@ -5,18 +5,24 @@ description: "文字列中にある文字列が含まれているときにその
 tags: ["Java","Python","Javascript"]
 ---
 
+先程の文字列中に指定文字列が含まれるか　の派生で、具体的にその位置を確認したい場合どうするか？
 
-文字列中に特定の文字列が含まれていた時、その位置を確認したい場合どうするか？
 ここではその方法についてを示す。
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-JavaではStringのメソッドである **indexOf()** を利用する。  
 `public int indexOf(String str)`  
+
+JavaではStringのメソッドである **indexOf()** を利用する。  
+
 このメソッドは、文字列内で指定された部分文字列が最初に出現する位置のインデックスを返す。   
+
 文字列の途中の位置から検索したい場合は下記のメソッドを利用する。  
+
 `public int indexOf(String str, int fromIndex)`  
+
 このメソッドは文字列のfromIndex番目以降の文字列で部分文字列が最初に出現する位置のインデックスを返す。   
+
 ちなみに部分文字列が存在しない場合は-1を返す。
 
 ```java
@@ -31,7 +37,8 @@ class Main{
 ```
 
 ```
-> java Main
+$ javac Main.java 
+$ java Main
 6
 -1
 ```
