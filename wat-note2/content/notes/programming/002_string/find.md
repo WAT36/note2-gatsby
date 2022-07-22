@@ -46,11 +46,17 @@ $ java Main
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
-pythonでは文字列strの関数**find**関数を使う。  
 `str.find(sub[, start[, end]])`  
+
+pythonでは文字列strの関数**find**関数を使う。  
+
+
 subには検索したい部分文字列を入力する。  
+
 実行結果には、strの中でsubが最初に現れる位置のインデックスが返される。  
+
 存在しない場合には-1が返る。  
+
 strの指定した範囲内だけで検索したい場合には、引数start,endに値を指定して実行する。  
 
 ```python
@@ -65,6 +71,7 @@ strの指定した範囲内だけで検索したい場合には、引数start,en
 ```
 
 また、文字列を右から検索する関数**rfind**もある。
+
 ```python
 >>> s.rfind("banana") 
 6
