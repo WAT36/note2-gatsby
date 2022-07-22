@@ -9,13 +9,13 @@ tags: ["Java","Python","Javascript"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-JavaではStringクラスに **length()** というメソッドがあり、これはその文字列の長さ（＝文字数）を返す。  
 `public int length()`
+
+JavaではStringクラスに **length()** というメソッドがあり、これはその文字列の長さ（＝文字数）を返す。  
 
 実行例を以下に示す。
 
 ```java
-import java.lang.Math;
 class Main{
     public static void main(String args[]){
         String a = "ab";
@@ -32,7 +32,8 @@ class Main{
 実行結果
 
 ```
-> java Main      
+$ javac Main.java 
+$ java Main
 2
 8
 14
