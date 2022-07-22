@@ -64,6 +64,8 @@ Pythonでは引数の文字列の長さ（＝文字数）を返す関数 **len()
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
+`String.length`
+
 Javascriptでは文字列に長さ（＝文字数）を保持しているプロパティ **length** があるので、それを利用する。
 
 ```javascript
