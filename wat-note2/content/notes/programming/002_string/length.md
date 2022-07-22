@@ -42,6 +42,8 @@ $ java Main
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
+`len(str)`
+
 Pythonでは引数の文字列の長さ（＝文字数）を返す関数 **len()** があるので、それを利用する。
 
 ```python
