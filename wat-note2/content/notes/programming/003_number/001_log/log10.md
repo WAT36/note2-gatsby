@@ -41,6 +41,8 @@ $ java Main
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
+`math.log10(x)`
+
 pythonで常用対数を算出するにはmathモジュールにある関数 **log10()** 関数を使用する。  
 使用するにはmathモジュールをインポートする。  
 
@@ -49,9 +51,9 @@ pythonで常用対数を算出するにはmathモジュールにある関数 **l
 >>> a = 100     
 >>> b = 500 
 >>> 
->>> print(math.log10(a))
+>>> math.log10(a)
 2.0
->>> print(math.log10(b))
+>>> math.log10(b)
 2.6989700043360187
 >>>
 ```
