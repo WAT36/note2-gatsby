@@ -57,9 +57,11 @@ pythonで自然対数を算出するにはmathモジュールにある関数 **l
 ```
 
 </div>
+<div class="note_content_by_programming_language" id="note_content_Javascript">
 
-{{< /tab >}}
-{{< tab "Javascript" >}}
+```javascript
+Math.log(x)
+```
 
 Javascriptで自然対数を算出するにはMathオブジェクトにある **log()** 関数を使用する。  
 
@@ -78,4 +80,5 @@ console.log(Math.log(b))
 6.214608098422191
 ```
 
+</div>
 
