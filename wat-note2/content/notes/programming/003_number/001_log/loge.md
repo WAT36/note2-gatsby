@@ -37,8 +37,9 @@ class Main{
 ```
 
 </div>
-{{< /tab >}}
-{{< tab "Python" >}}
+<div class="note_content_by_programming_language" id="note_content_Python">
+
+`math.log10(x)`
 
 pythonで自然対数を算出するにはmathモジュールにある関数 **log()** 関数を使用する。  
 使用するにはmathモジュールをインポートする。  
@@ -54,6 +55,8 @@ pythonで自然対数を算出するにはmathモジュールにある関数 **l
 6.214608098422191
 >>>
 ```
+
+</div>
 
 {{< /tab >}}
 {{< tab "Javascript" >}}
@@ -75,6 +78,4 @@ console.log(Math.log(b))
 6.214608098422191
 ```
 
-{{< /tab >}}
-{{< /tabs >}}
 
