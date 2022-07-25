@@ -7,12 +7,12 @@ tags: ["Java","Python","Javascript"]
 
 自然対数を算出する方法についてを示す。
 
-{{< tabs "loge" >}}
-{{< tab "Java" >}}
+<div class="note_content_by_programming_language" id="note_content_Java">
+
+`public static double log(double a)`   
 
 Javaではjava.lang.Mathクラス内にある**log()**メソッドがこの役割を果たす。  
 利用するにはjava.lang.Mathクラスをインポートする。  
-`public static double log(double a)`   
 
 
 ```java
@@ -36,6 +36,7 @@ class Main{
 6.214608098422191
 ```
 
+</div>
 {{< /tab >}}
 {{< tab "Python" >}}
 
