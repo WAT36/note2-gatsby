@@ -14,6 +14,7 @@ log<sub>a</sub>b = log<sub>c</sub>b / log<sub>c</sub>a
 <div class="note_content_by_programming_language" id="note_content_Java">
 
 Javaには任意の底での対数を算出するメソッドは無いため、  
+
 底の変換公式  を用いて前述の**log10()**、**loge()** を利用し算出する。
 
 ```java
