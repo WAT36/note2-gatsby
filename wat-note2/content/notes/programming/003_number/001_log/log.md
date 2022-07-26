@@ -72,6 +72,7 @@ yを略した場合（引数１つの場合）、底は自動的にeとなり、
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
 Javascriptにも任意の底での対数を算出する関数は無いため、  
+
 底の変換公式  を用いて前述の **Math.log()** などを利用し算出する。
 
 ```javascript
