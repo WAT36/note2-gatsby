@@ -42,13 +42,16 @@ class Main{
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
-pythonには任意の数を底とする対数を算出する関数が存在し、  
-それは自然対数を算出する時にも利用したmathモジュールにある**log()**関数である。  
-
 `math.log(x,y)`  
 
+pythonには任意の数を底とする対数を算出する関数が存在し、  
+
+それは自然対数を算出する時にも利用したmathモジュールにある**log()**関数である。  
+
 log(x,y)関数は、yを底としたxの対数を返す。  
+
 yを略した場合（引数１つの場合）、底は自動的にeとなり、自然対数になる。(→自然対数)  
+
 使用するにはmathモジュールをインポートする。    
 
 ```python
