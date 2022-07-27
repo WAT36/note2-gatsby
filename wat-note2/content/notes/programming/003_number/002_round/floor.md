@@ -83,6 +83,10 @@ pythonにもmathモジュールに**floor()**関数がある。それを利用�
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
+```javascript
+Math.floor(x)
+```
+
 JavascriptにはMathオブジェクトに **floor()** 関数がある。それを利用すると小数点以下切り捨てが行える。
 
 ```javascript
