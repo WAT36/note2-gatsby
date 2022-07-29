@@ -9,8 +9,10 @@ tags: ["Java","Python","Javascript"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-JavaではMathクラスにあるメソッド**ceil()**を利用することで小数点以下切り上げを行える。  
 `public static double ceil(double d)`  
+
+JavaではMathクラスにあるメソッド**ceil()**を利用することで小数点以下切り上げを行える。  
+
 このメソッドは引数に入力した数値以上で最も大きい整数を返す。戻り値はdouble型。  
 
 ```java
