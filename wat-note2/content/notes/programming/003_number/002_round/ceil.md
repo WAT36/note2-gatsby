@@ -44,6 +44,8 @@ class Main{
 
 主に方法は二つある。
 
+`math.ceil(x)`
+
 pythonにもmathモジュールに **ceil()** 関数がある。それを利用すると小数点以下切り上げが行える。
 
 ```python
