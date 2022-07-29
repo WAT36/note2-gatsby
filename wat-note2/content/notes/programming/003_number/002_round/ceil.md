@@ -85,6 +85,10 @@ pythonにもmathモジュールに **ceil()** 関数がある。それを利用�
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
+```javascript
+Math.ceil(x)
+```
+
 JavascriptにはMathオブジェクトに **ceil()** 関数がある。それを利用すると小数点以下切り上げが行える。
 
 ```javascript
