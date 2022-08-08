@@ -72,11 +72,11 @@ a<=b
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
-JavascriptでもJavaと同じく三項演算子 "**?**" が実装されている。利用法も同じで
-
 `a ? b : c`    
 
-である。条件式aがtrueならb、falseならcを実行する。
+JavascriptでもJavaと同じく三項演算子 "**?**" が実装されている。利用法も同じである。
+
+条件式aがtrueならb、falseならcを実行する。
 
 </div>
 
