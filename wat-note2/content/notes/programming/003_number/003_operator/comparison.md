@@ -5,12 +5,10 @@ description: "数値の比較をする方法。"
 tags: ["Java","Python","Javascript"]
 ---
 
-比較演算子についてをまとめておく。
+比較演算子についてをまとめる。
 
 
 <div class="note_content_by_programming_language" id="note_content_Java">
-
-Javaでの主な比較演算子は以下の通り。
 
 |演算子|意味|例|
 |:---|:---|:---|
@@ -21,6 +19,7 @@ Javaでの主な比較演算子は以下の通り。
 | == |等しい| a == b |
 | != |等しく無い| a != b |
 
+Javaでの主な比較演算子は上の通り。
 
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
