@@ -24,8 +24,6 @@ Javaでの主な比較演算子は上の通り。
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
-Pythonでの主な比較演算子は以下の通り。
-
 |演算子|意味|例|
 |:---|:---|:---|
 | < |未満| a < b|
@@ -34,6 +32,8 @@ Pythonでの主な比較演算子は以下の通り。
 | >= |以上| a >= b |
 | == |等しい| a == b |
 | != |等しく無い| a != b |
+
+Pythonでの主な比較演算子は上の通り。
 
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
