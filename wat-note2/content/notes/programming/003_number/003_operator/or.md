@@ -50,6 +50,8 @@ false
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
+`(左辺) | (右辺)`  
+
 ビット演算に関してはpythonもjavaと同じで **|** を使用する。
 
 ```python
