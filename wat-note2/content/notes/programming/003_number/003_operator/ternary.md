@@ -10,9 +10,10 @@ tags: ["Java","Python","Javascript"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-Javaでは三項演算子 " **?** " が実装されている。 例えば  
 `a ? b : c`    
-としたとき、aがtrueならbを、falseならcを返すという事になる。  
+
+Javaでは三項演算子 " **?** " が実装されている。 例えば上のような式としたとき、aがtrueならbを、falseならcを返すという事になる。  
+
 三項演算子の前（上記例でいうa）には必ずboolean値を返すような式にする。  
 
 実行例を以下に示す。  
