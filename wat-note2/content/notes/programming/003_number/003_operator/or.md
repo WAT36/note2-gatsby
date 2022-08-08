@@ -5,12 +5,15 @@ description: "ORビット演算を利用する方法。"
 tags: ["Java","Python","Javascript"]
 ---
 
-ORのビット演算をする方法についてを示す。
+ORビット演算をする方法についてを示す。
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-JavaではORのビット演算子 **|** を使用する。論理演算の時とは違い、こちらは|1個なので注意。数値型リテラルでも、boolean型でも入力可。  
 `(左辺) | (右辺)`  
+
+JavaではORのビット演算子 **|** を使用する。
+
+論理演算の時とは違い、こちらは | 1個なので注意。数値型リテラルでも、boolean型でも入力可。  
 
 ```java
 class Main{
