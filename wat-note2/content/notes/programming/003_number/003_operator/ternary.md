@@ -42,11 +42,14 @@ a<=b
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
-Pythonには三項演算子は実装されてはいない。  
-しかし、if,elseを利用することで三項演算子と同様の動作を行う式を実装することはできる。  
-使用法を以下に示す。  
 `b  if  a  else  c`  
+
+Pythonには三項演算子は実装されてはいない。  
+
+しかし、上記のようなif,elseを利用することで三項演算子と同様の動作を行う式を実装することはできる。  
+
 この式では、aがTrueの時bを、Falseならcを返すという意味である。  
+
 無論だが、aにはTrueまたはFalseを返すような式を入力する。  
 
 実行例を以下に示す。
