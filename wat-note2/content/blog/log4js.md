@@ -99,3 +99,47 @@ $ node test.js
 [2022-07-30T12:05:20.314] [INFO] default - info test messages
 [2022-07-30T12:05:20.319] [INFO] cheese - info cheese fondu
 ```
+
+## ログの設定
+
+ロガーの設定をjson形式で設定し、それを読み込むことで一挙に使える
+log4js.configureで設定を行う。
+```
+import log4js from 'log4js'
+
+log4js.configure({
+	// 設定を書く
+})
+```
+
+log4js.configureの中でさらに細かい設定が行える。内容を以下に示す。
+
+### appenders
+
+appendersはログの出力処理を設定する。
+複数設定し、それぞれに名前をつけて管理することができる。
+
+```javascript
+import log4js from 'log4js'
+
+log4js.configure({
+	appenders: {
+		out: { type: 'stdout' }, 
+		app: { type: 'file', filename: 'application.log' }
+	}
+})
+```
+
+appenders下の項目は以下の通り。
+
+- type:ログ出力の設定。具体的に示す値は以下
+ - console: コンソール出力
+ - dateFile: 日付毎にログファイル作って出力・filenameも指定する。numBackupsで何個分まで保存できるかが決められる？？？
+ - file: ログファイル作って出力。filenameも指定する
+ - stdout: コンソール出力するのみ
+
+- filename: ログファイル名のプレフィクス
+- pattern: dateFileでの日付出力のパターン(yyyy-MM-ddなど)
+
+他にもいろいろあるが、詳しくは以下参照
+https://log4js-node.github.io/log4js-node/appenders.html
