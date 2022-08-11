@@ -155,3 +155,24 @@ appenderに、layouts を指定することで、ログの出力形式を指定�
 
 またpatternプロパティで細かい出力内容を決めることができる。
 
+### categories
+
+categoriesはログ出力グループを分けて管理し設定することができる。
+ここで指定された内容をもとにrログ出力が行われる。
+
+```
+import log4js from 'log4js'
+
+log4js.configure({
+	appenders: {
+		out: { type: 'stdout' }, 
+		app: { type: 'file', filename: 'application.log' }
+	},
+	categories: {
+		default: { type: 'stdout',  level: 'all'}, 
+		logfile: { type: 'file', filename: 'application.log' }
+	}
+},
+
+})
+```
