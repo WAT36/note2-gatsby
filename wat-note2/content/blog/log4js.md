@@ -143,3 +143,15 @@ appenders下の項目は以下の通り。
 
 他にもいろいろあるが、詳しくは以下参照
 https://log4js-node.github.io/log4js-node/appenders.html
+
+#### layouts
+
+appenderに、layouts を指定することで、ログの出力形式を指定することができる
+指定できる値は以下
+
+- basic ：通常通り。タイムスタンプ、ログレベル、カテゴリ、内容
+- coloured：レベルごとに色付きで表示できる（fileではやらないこと）
+- messagePassThrough: ログの内容だけを表示
+
+またpatternプロパティで細かい出力内容を決めることができる。
+
