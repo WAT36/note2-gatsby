@@ -9,8 +9,9 @@ XORのビット演算をする方法についてを示す。
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-JavaではXORのビット演算子 **^** を使用する。数値型リテラルでも、boolean型でも入力可。  
 `(左辺) ^ (右辺)`  
+
+JavaではXORのビット演算子 **^** を使用する。数値型リテラルでも、boolean型でも入力可。  
 
 ```java
 class Main{
