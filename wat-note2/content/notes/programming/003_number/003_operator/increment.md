@@ -68,6 +68,11 @@ a:2
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
+```
+x = x + 1
+x = x - 1
+```
+
 PythonではJava等のようなインクリメント・デクリメント用の演算子は**存在しない**。  
 そのため、インクリメントは```(変数) += 1```、デクリメントは ```(変数) -= 1``` という形で行う。  
 
