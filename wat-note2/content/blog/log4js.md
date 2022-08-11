@@ -63,4 +63,39 @@ logger.level = 'all'
 |TRACE|TRACE以上のレベルのログを出力。|
 |ALL|全てのログレベルの出力を行う|
 
+## ロガーのグループ分け
 
+ロガーオブジェクトをグループ分け、要はログ設定を分けて管理することができる。
+
+カテゴリ分けする際は、ロガーオブジェクト生成時にカテゴリ名を引数に入力する。
+
+```javascript
+const logger = log4js.getLogger('カテゴリ名')
+```
+
+何も指定しない場合、 default というグループになる。
+
+例を以下に示す。
+
+```
+import log4js from 'log4js'
+
+// 通常時
+const logger = log4js.getLogger()
+logger.level = 'all'
+logger.info('info test messages')
+
+// 別のロガーオブジェクト定義
+const cheese = log4js.getLogger('cheese')
+cheese.level = 'all'
+cheese.info('info cheese fondu')
+
+```
+
+実行結果
+
+```
+$ node test.js 
+[2022-07-30T12:05:20.314] [INFO] default - info test messages
+[2022-07-30T12:05:20.319] [INFO] cheese - info cheese fondu
+```
