@@ -94,6 +94,11 @@ PythonではJava等のようなインクリメント・デクリメント用の�
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
+```
+x++;
+x--;
+```
+
 Javascriptにもインクリメント・デクリメント演算子が（ **++**、**--** ）がそれぞれ用意されている。  
 
 利用法はJavaと同じ。
