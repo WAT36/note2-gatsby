@@ -176,3 +176,7 @@ log4js.configure({
 
 })
 ```
+
+# 参考
+
+https://log4js-node.github.io/log4js-node/index.html
