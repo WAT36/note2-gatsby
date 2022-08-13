@@ -77,7 +77,7 @@ const logger = log4js.getLogger('カテゴリ名')
 
 例を以下に示す。
 
-```
+```javascript
 import log4js from 'log4js'
 
 // 通常時
@@ -134,8 +134,9 @@ appenders下の項目は以下の通り。
 
 - type:ログ出力の設定。具体的に示す値は以下
  - console: コンソール出力
- - dateFile: 日付毎にログファイル作って出力・filenameも指定する。numBackupsで何個分まで保存できるかが決められる？？？
  - file: ログファイル作って出力。filenameも指定する
+ - dateFile: 日付毎にログファイル作って出力・filenameも指定する。numBackupsで何日分まで保存できるかが決められる
+ - numBackups: dateFileで利用する属性で、ログを何日分まで保存するかを定義する。(integer)
  - stdout: コンソール出力するのみ
 
 - filename: ログファイル名のプレフィクス
@@ -158,7 +159,7 @@ appenderに、layouts を指定することで、ログの出力形式を指定�
 ### categories
 
 categoriesはログ出力グループを分けて管理し設定することができる。
-ここで指定された内容をもとにrログ出力が行われる。
+ここで指定された内容をもとにログ出力が行われる。
 
 ```
 import log4js from 'log4js'
@@ -172,8 +173,6 @@ log4js.configure({
 		default: { type: 'stdout',  level: 'all'}, 
 		logfile: { type: 'file', filename: 'application.log' }
 	}
-},
-
 })
 ```
 
