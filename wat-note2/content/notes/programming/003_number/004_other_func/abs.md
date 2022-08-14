@@ -9,11 +9,14 @@ tags: ["Java","Python","Javascript"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-Javaではjava.lang.Mathクラス内にある **abs()** メソッドがこの役割を果たす。   
-利用するにはjava.lang.Mathクラスをインポートする。  
 `public static int abs(int a)`  
 
+Javaではjava.lang.Mathクラス内にある **abs()** メソッドがこの役割を果たす。   
+
+利用するにはjava.lang.Mathクラスをインポートする。  
+
 この例ではint型だが、int型に限らずdouble型、float型、long型などもオーバーロードとして定義されている。  
+
 いずれの場合も利用するには引数、返り値を格納する変数の型は一致させておく必要がある。 
 
 ```java
