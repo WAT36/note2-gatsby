@@ -94,7 +94,9 @@ pythonにはmathモジュールに階乗計算を行う関数**factorial()**  �
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
 Javascriptにも階乗計算を行うライブラリは現時点ではない（はず）。
+
 そのため、独自で階乗計算を行うメソッドを実装する必要がある。  
+
 階乗計算を行う上で有名なのが、再帰を使った方法である。実装例を以下に示す。
 
 ```javascript
@@ -112,6 +114,7 @@ console.log(factorial(10))
 ```
 
 再帰計算を用いることにより、上記メソッドfactorial(n)はn!を意味する。
+
 実行結果は以下の通り。
 
 ```
