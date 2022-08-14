@@ -11,7 +11,7 @@ Node.jsでログ出力を行える「log4js」というフレームワークが�
 
 log4jsとは、Node.jsでログ出力を行えるフレームワークである。
 
-コード中でログ出力を定義することで、ログの出力・記録を行える。ログは別ファイルに出力して保存したり、発生した日別にファイル分けして管理（ログローテーション）することができる。
+コード中でログ出力を定義することで、ログの出力・記録を行える。ログは別ファイルに出力して保存したり、発生した日別にファイル分けして管理（ログローテーション）することが可能になる。
 
 
 # インストール
@@ -22,7 +22,7 @@ $ npm install log4js
 
 # Loggers(ロガーオブジェクト)
 
-実際に利用するには、'log4js'をインポートし、getLogger()メソッドを使ってロガーオブジェクトを得て利用する。
+実際に利用するには、'log4js'をインポートし、**getLogger()** メソッドを使いロガーオブジェクトを得て利用する。
 
 ```javascript
 import log4js from 'log4js'
@@ -87,9 +87,9 @@ logger.level = 'all'
 logger.info('info test messages')
 
 // 別のカテゴリでロガーオブジェクト定義(cheese)
-const cheese = log4js.getLogger('cheese')
-cheese.level = 'all'
-cheese.info('info cheese fondu')
+const cheeseLogger = log4js.getLogger('cheese')
+cheeseLogger.level = 'all'
+cheeseLogger.info('info cheese fondu')
 
 ```
 
@@ -105,7 +105,7 @@ $ node test.js
 
 ロガーの設定をjson形式で設定し、それを読み込むことで一挙に使える。
 
-log4js.configureで設定を行う。
+設定を行うにはlog4jsの **configure** 関数で設定を行う。
 
 ```
 import log4js from 'log4js'
@@ -115,7 +115,7 @@ log4js.configure({
 })
 ```
 
-log4js.configureの中でさらに細かい設定が行える。内容を以下に示す。
+configure 関数の中で行える設定内容を以下に示す。
 
 ### appenders
 
@@ -133,17 +133,16 @@ log4js.configure({
 })
 ```
 
-appenders下の項目は以下の通り。
+appenders内の項目は以下の通り。
 
 - type:ログ出力の設定。具体的に示す値は以下
-  - console: コンソール出力
-  - file: ログファイル作って出力。filenameも指定する
-  - dateFile: 日付毎にログファイル作って出力・filenameも指定する。numBackupsで何日分まで保存できるかが決められる
-  - stdout: コンソール出力するのみ
+  - console: コンソール出力（ログレベル指定に関わらず全て出力）
+  - file: ログファイルを作りそこに出力。filename項目も指定する
+  - dateFile: 日付毎のログファイル作ってそこに出力。filename項目も指定する。またnumBackups項目で何日分まで保存できるかが決められる
 
 - numBackups: dateFileで利用する属性で、ログを何日分まで保存するかを定義する。(integer)
 - filename: ログファイル名のプレフィクス
-- pattern: dateFileでの日付出力のパターン(yyyy-MM-ddなど)
+- pattern: dateFileでの日付毎のファイル名のパターン(yyyy-MM-ddなど)
 
 他にもいろいろあるが、詳しくは以下参照
 
@@ -151,15 +150,17 @@ https://log4js-node.github.io/log4js-node/appenders.html
 
 #### layouts
 
-appenderに、layouts を指定することで、ログの出力形式を指定することができる
-指定できる値は以下
+appendersに、layouts を指定することで、ログの出力形式を指定することができる。
+
+指定できる値を以下に示す。
 
 - basic ：通常通り。タイムスタンプ、ログレベル、カテゴリ、内容
 - coloured：レベルごとに色付きで表示できる（fileではやらないこと）
 - messagePassThrough: ログの内容だけを表示
 - pattern: ログメッセージの形式を指定できる。
 
-patternプロパティでは細かい出力内容を決めることができる。
+patternプロパティでは細かい出力項目、形式を定めることができる。
+
 例えば以下のような形式など。
 
 ```
@@ -172,9 +173,9 @@ https://log4js-node.github.io/log4js-node/layouts.html#pattern-format
 
 ### categories
 
-categoriesでは先述のカテゴリの設定することができる。
+categoriesでは先述のカテゴリに関する内容を設定することができる。
 
-ここで指定されたカテゴリを読み込んでログ出力も行える。
+ここで指定されたカテゴリを読み込んでログ出力を行うこともできる。
 
 ```
 import log4js from 'log4js'
