@@ -61,6 +61,8 @@ pythonで数値の絶対値を算出するには組み込み関数の**abs**関�
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
+`Math.abs(x)`
+
 Javascriptで数値の絶対値を算出するにはMathオブジェクトの**abs()**メソッドを使用する。
 
 ```javascript
