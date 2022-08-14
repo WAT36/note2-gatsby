@@ -43,6 +43,8 @@ class Main{
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
+`abs(x)`
+
 pythonで数値の絶対値を算出するには組み込み関数の**abs**関数を使用する。
 
 ```python
