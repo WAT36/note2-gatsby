@@ -195,6 +195,48 @@ log4js.configure({
 const logger = log4js.getLogger('logfile');
 ```
 
+# 実際に利用
+
+ここまでの設定を行い、実際にlog4jsを使ってログ出力を行うにはどうするか？
+
+ログ出力を行いたいファイル内でロガーオブジェクトを作成、読み込み、ログ出力を行いたい場所で
+
+`(ロガーオブジェクト).(ログレベル)(ログ出力内容)`
+
+を行うことでログ出力が行える。
+
+例を以下に示す。
+
+```javascript
+const log4js = require('log4js');
+
+log4js.configure({
+    appenders: {
+        out:{
+            type: "dateFile",
+            filename: "all-the-logs.log",
+            pattern: "-yyyy-MM-dd",
+            numBackups: 5
+        }
+    },
+    categories: {
+        default: {
+            appenders: ["out"],
+            level: "info",
+        }
+    }
+});
+
+const logger = log4js.getLogger();
+logger.info("I will be logged this as info in all-the-logs.log");
+```
+
+出力例（ログファイル）
+
+```
+[2022-08-14T22:10:03.860] [INFO] default - I will be logged this as info in all-the-logs.log
+```
+
 # 参考
 
 https://log4js-node.github.io/log4js-node/index.html
