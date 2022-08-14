@@ -63,11 +63,13 @@ class Main{
 ```
 
 但し、再帰計算は線形的に計算を行うため、計算量もO(n)となり、大きな数を入力すると計算に時間がかかる。
-  
+
 上記メソッドfactorialは引数n以下の全ての数字の階乗の結果も計算するので、複数回計算を行う場合にはそれまでの計算結果も別の配列などに保存しておくと、階乗計算が1回で済むので計算時間もいくらか短縮される（これでも足りない場合もあるが）
 
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
+
+`math.factorial(x)`
 
 pythonにはmathモジュールに階乗計算を行う関数**factorial()**  があるのでこれを利用する。
 
