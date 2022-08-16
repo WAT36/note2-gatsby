@@ -9,15 +9,20 @@ tags: ["Java","Python","Javascript"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-Javaでは **java.lang.Math** クラス内にある **max()** メソッドがこの役割を果たす。
-利用するにはjava.lang.Mathクラスをインポートする。
-
 `public static int max(int a,int b)`
 
+Javaでは **java.lang.Math** クラス内にある **max()** メソッドがこの役割を果たす。
+
+利用するにはjava.lang.Mathクラスをインポートする。
+
 また、int型に限らず、double型、float型、long型などもオーバーロードとして定義されている。
+
 無論だが、いずれの場合も利用するには引数、返り値の型は一致させておく必要がある。
+
 ちなみに、引数は２つしか指定できないので、２値間での最大値しか測れない。
+
 ３つ以上の値で最大値を取りたい場合は、maxメソッドを入れ子にして利用するなどする。
+
 使用例を以下に示す。(クラスはここではMain.javaとする)
 
 ```java
