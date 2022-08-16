@@ -74,7 +74,10 @@ javaと違い、こちらは引数の数に制限はないため、比較した�
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
+`Math.max(x0,x1,x2,,)`
+
 JavascriptではMathオブジェクトの **max()** 関数を利用する。
+
 こちらも引数の数に制限はないため、比較したい値をいくらでも入力できる。
 
 ```javascript
