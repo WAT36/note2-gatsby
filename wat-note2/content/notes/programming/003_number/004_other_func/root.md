@@ -115,6 +115,12 @@ Pythonにはmathモジュールに **sqrt()** という関数があり、これ�
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
+`Math.sqrt(x)`
+
+`Math.cbrt(x)`
+
+`Math.sqrt(x,y)`
+
 JavascriptにはMathオブジェクトに指定した数値の平方根を計算するメソッド **sqrt()** 、また立方根を計算するメソッド **cbrt()** がある。
 
 また、n乗根を計算するには、指定した数の累乗を計算するメソッド **pow()** を利用して行う。
