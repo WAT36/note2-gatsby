@@ -46,7 +46,7 @@ TRACE < DEBUG < INFO < WARN < ERROR < FATAL
 
 そして、このロガーオブジェクトのプロパティ **level** にここで示したレベルの値を指定することで、どの重要度以上のログレベルを出力するかを指定できる。
 
-```
+```javascript
 const logger = log4js.getLogger()
 logger.level = 'all'
 ```
@@ -107,7 +107,7 @@ $ node test.js
 
 設定を行うにはlog4jsの **configure** 関数で設定を行う。
 
-```
+```javascript
 import log4js from 'log4js'
 
 log4js.configure({
@@ -133,20 +133,17 @@ log4js.configure({
 })
 ```
 
-appenders内の項目は以下の通り。
+appenders内に設定できる主な項目は以下の通り。
 
 - type:ログ出力の設定。具体的に示す値は以下
   - console: コンソール出力（ログレベル指定に関わらず全て出力）
   - file: ログファイルを作りそこに出力。filename項目も指定する
   - dateFile: 日付毎のログファイル作ってそこに出力。filename項目も指定する。またnumBackups項目で何日分まで保存できるかが決められる
+  - stdout: 標準出力（consoleと同じ？）
 
 - numBackups: dateFileで利用する属性で、ログを何日分まで保存するかを定義する。(integer)
 - filename: ログファイル名のプレフィクス
 - pattern: dateFileでの日付毎のファイル名のパターン(yyyy-MM-ddなど)
-
-他にもいろいろあるが、詳しくは以下参照
-
-https://log4js-node.github.io/log4js-node/appenders.html
 
 #### layouts
 
@@ -167,9 +164,6 @@ patternプロパティでは細かい出力項目、形式を定めることが�
 pattern: "%d %p %c %x{user} %m%n",
 ```
 
-指定できる値は以下を参考。
-
-https://log4js-node.github.io/log4js-node/layouts.html#pattern-format
 
 ### categories
 
@@ -177,7 +171,7 @@ categoriesでは先述のカテゴリに関する内容を設定することが�
 
 ここで指定されたカテゴリを読み込んでログ出力を行うこともできる。
 
-```
+```javascript
 import log4js from 'log4js'
 
 log4js.configure({
@@ -195,7 +189,7 @@ log4js.configure({
 const logger = log4js.getLogger('logfile');
 ```
 
-# 実際に利用
+# 実際に利用する
 
 ここまでの設定を行い、実際にlog4jsを使ってログ出力を行うにはどうするか？
 
@@ -210,6 +204,7 @@ const logger = log4js.getLogger('logfile');
 ```javascript
 const log4js = require('log4js');
 
+// ログ設定
 log4js.configure({
     appenders: {
         out:{
@@ -227,7 +222,9 @@ log4js.configure({
     }
 });
 
+// ロガーオブジェクト生成
 const logger = log4js.getLogger();
+// ログ出力
 logger.info("I will be logged this as info in all-the-logs.log");
 ```
 
