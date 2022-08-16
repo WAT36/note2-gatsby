@@ -71,6 +71,10 @@ root 5:2.23606797749979
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
+`math.sqrt(x)`
+
+`x ** n`
+
 Pythonにはmathモジュールに **sqrt()** という関数があり、これを利用することで平方根が求められる。
 
 または累乗の演算子＊＊も利用できる。
