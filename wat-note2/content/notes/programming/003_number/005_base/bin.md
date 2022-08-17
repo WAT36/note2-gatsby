@@ -54,7 +54,10 @@ pythonに関しては、数値を2進数に変換して表示する組み込み�
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
-Javascriptは関数 **toString()** を利用して変換を行う。
+`NNumber.prototype.toString(radix)`
+
+Javascriptは数値型の関数 **toString()** を利用して変換を行う。
+
 数値の関数として利用し、引数には変換したい進数の値を入力する。今回は2進数なので2を入力する。
 
 ```javascript
