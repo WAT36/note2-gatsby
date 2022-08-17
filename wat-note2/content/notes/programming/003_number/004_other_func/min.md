@@ -9,15 +9,20 @@ tags: ["Java","Python","Javascript"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-Javaでは **java.lang.Math** クラス内にある **min()** メソッドがこの役割を果たす。
-利用するにはjava.lang.Mathクラスをインポートする。
-
 `public static int min(int a,int b)`
 
+Javaでは **java.lang.Math** クラス内にある **min()** メソッドがこの役割を果たす。
+
+利用するにはjava.lang.Mathクラスをインポートする。
+
 max()の時と同様に、int型に限らずdouble型、float型、long型などもオーバーロードとして定義されている。
+
 無論だが、いずれの場合も利用するには引数、返り値の型は一致させておく必要がある。
+
 ちなみに、引数は２つしか指定できないので、２値間での最小値しか測れない。
+
 ３つ以上の値で最小値を取りたい場合は、minメソッドを入れ子にして利用するなどする。
+
 使用例を以下に示す。(クラスはここではMain.javaとする)
 
 ```java
