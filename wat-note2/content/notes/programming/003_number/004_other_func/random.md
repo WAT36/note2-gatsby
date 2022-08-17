@@ -68,6 +68,7 @@ Math.random[4]:69
 <div class="note_content_by_programming_language" id="note_content_Python">
 
 pythonでは**random**モジュールを利用することで乱数を取り扱える。  
+
 randomモジュールの中に乱数に関する関数が多くあるので、それぞれの説明はここでは省略する。詳しくは公式レファレンスを参照。
 
 実行例を以下に示す。
