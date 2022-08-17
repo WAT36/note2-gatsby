@@ -55,7 +55,10 @@ $ java Main
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
+`min(x0,x1,x2...)`
+
 Pythonでは組み込み関数の**min()**関数を利用する。
+
 javaと違い、こちらは引数の数に制限はないため、比較したい値をいくらでも入力できる。
 
 ```python
