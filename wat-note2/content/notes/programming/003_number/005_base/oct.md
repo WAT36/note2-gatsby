@@ -36,7 +36,10 @@ class Main{
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
+`oct(x)`
+
 pythonに関しては、数値を8進数に変換して表示する組み込み関数**oct()**がある。  
+
 表示される文字はプレフィックスとして"0o"が頭について表示される。
 
 ```python
