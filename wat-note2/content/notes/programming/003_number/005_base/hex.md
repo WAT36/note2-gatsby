@@ -9,8 +9,10 @@ tags: ["Java","Python","Javascript"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-JavaではラッパークラスIntegerに数値を16進数に変換するメソッド **toHexString()** があるのでそれを利用する。  
 `public static String toHexString(int i)`  
+
+JavaではラッパークラスIntegerに数値を16進数に変換するメソッド **toHexString()** があるのでそれを利用する。  
+
 戻り値はStringであり、引数の数値を16進数に表記したものが出力される。
 
 
