@@ -36,7 +36,10 @@ a
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
+`hex()`
+
 pythonに関しては、数値を16進数に変換して表示する組み込み関数 **hex()** がある。  
+
 表示される文字はプレフィックスとして"0x"が頭について表示される。
 
 ```python
