@@ -53,7 +53,10 @@ pythonに関しては、数値を16進数に変換して表示する組み込み
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
+`Number.prototype.toString(radix)`
+
 2進数の時と同様に、Javascriptは関数 **toString()** を利用して変換を行う。
+
 数値の関数として利用し、引数には変換したい進数の値を入力する。今回は16進数なので16を入力する。
 
 ```javascript
