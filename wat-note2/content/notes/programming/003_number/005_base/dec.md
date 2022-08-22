@@ -94,9 +94,9 @@ ValueError: invalid literal for int() with base 2: '0xAA'
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
-Javascriptも文字列を数値に変換する の所で述べた **parseInt()** 関数を利用する。  
-
 ` parseInt(x, base)`  
+
+Javascriptも文字列を数値に変換する の所で述べた **parseInt()** 関数を利用する。  
 
 parseInt関数で第1引数に数値に変換したい文字列、第2引数には変換元の(文字列で表した)数値の基数を入力する。  
 
