@@ -57,11 +57,12 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: "2
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
-Pythonでも文字列を数値に変換する の所で述べた**int()**関数を利用する。  
-
 ` class int(x, base=10)`  
 
+Pythonでも文字列を数値に変換する の所で述べた**int()**関数を利用する。  
+
 この通り、int関数には第1引数に数値に変換したい文字列、第2引数baseには変換元の(文字列で表した)数値の基数を入力する。  
+
 変換できないような値を入力するとエラーになる。  
 
 実行例を以下に示す。  
