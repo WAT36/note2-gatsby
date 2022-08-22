@@ -9,12 +9,14 @@ tags: ["Java","Python","Javascript"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-Javaでは文字列を数値に変換する の所で述べたメソッド**Integer.parseInt()**を利用する。  
-
 `public static int parseInt(String s,int radix)`  
 
+Javaでは文字列を数値に変換する の所で述べたメソッド**Integer.parseInt()**を利用する。  
+
 前述の章で述べたところのメソッドとは別に、オーバーロードとして引数に`int radix`を加えたものが定義されている。  
+
 入力された(文字列で表した)数値sを、radix進数の数値とみて10進数に変換し、返すというメソッドである。  
+
 変換できないような組み合わせを入力するとエラーが発生する。  
 
 ```java
