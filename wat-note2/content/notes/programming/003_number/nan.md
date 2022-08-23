@@ -19,6 +19,7 @@ Javaでは通常NaNが出る事はないが、数値演算のライブラリで�
 
 例を以下に示す。
 
+
 ```java
 import java.lang.Math;
 
