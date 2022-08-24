@@ -87,15 +87,16 @@ pythonで数値をゼロ詰めして表示するには文字列の組み込み�
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
+`slice(beginindex[,endindex])`
+
 Javascriptでは数値をゼロ詰めして表示する用の関数は存在しない（調べ）ため、他の関数を応用して行う。
+
 方法としては、文字列の関数 **slice()** を利用する。
 
-```
-slice(beginindex[,endindex])
-```
-
 slice関数は、文字列の指定した位置以降(から指定した位置まで)を切り出す関数である。
+
 負の数を入力すると、文字列の後ろから数えられる。
+
 これを利用し、文字列の頭に'0'を連続した文字列を連結し、その後にゼロ詰した後の文字数をsliceで入力すればゼロ詰が行える。
 
 実行例を以下に示す。今回は5文字で切り出す。
