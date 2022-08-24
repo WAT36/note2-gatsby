@@ -48,6 +48,8 @@ class Main{
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
+`str(i)`
+
 Pythonでは値を文字列に変換する組み込み関数 **str()** があるので、それを利用して数値を文字列に変換する。
 
 ```python
