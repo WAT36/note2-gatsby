@@ -62,6 +62,8 @@ Pythonでは値を文字列に変換する組み込み関数 **str()** がある
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
+`String(i)`
+
 Javascriptでは値を文字列に変換する関数 **String()** があるので、それを利用して数値を文字列に変換する。
 
 ```javascript
