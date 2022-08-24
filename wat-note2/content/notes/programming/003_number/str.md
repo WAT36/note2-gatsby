@@ -6,10 +6,15 @@ tags: ["Java","Python","Javascript"]
 ---
 
 
-文字列を数値にする方法があったように、逆の数値を文字列に変換する方法も存在する。  
+文字列を数値にする方法があったように、逆の数値を文字列に変換する方法も存在する。
+
 ここではその方法を示す。
 
 <div class="note_content_by_programming_language" id="note_content_Java">
+
+`String.valueOf(int i)`
+
+`Integer.toString(int i)`
 
 Javaでは主に2つ方法がある。  
 
