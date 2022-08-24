@@ -11,7 +11,7 @@ tags: ["Java","Python","Javascript"]
 
 `public static double floor(double d)`
 
-JavaではMathクラスにあるメソッド**floor()**を利用することで小数点以下切り捨てを行える。
+JavaではMathクラスにあるメソッド **floor()** を利用することで小数点以下切り捨てを行える。
 
 このメソッドは引数に入力した数値以下で最も大きい整数を返す。戻り値はdouble型。
 
@@ -46,7 +46,7 @@ class Main{
 
 `math.floor(x)`
 
-pythonにもmathモジュールに**floor()**関数がある。それを利用すると小数点以下切り捨てが行える。
+pythonにもmathモジュールに **floor()** 関数がある。それを利用すると小数点以下切り捨てが行える。
 
 ```python
 >>> import math
@@ -83,9 +83,7 @@ pythonにもmathモジュールに**floor()**関数がある。それを利用�
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
-```javascript
-Math.floor(x)
-```
+`Math.floor(x)`
 
 JavascriptにはMathオブジェクトに **floor()** 関数がある。それを利用すると小数点以下切り捨てが行える。
 

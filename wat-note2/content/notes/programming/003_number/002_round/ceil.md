@@ -11,7 +11,7 @@ tags: ["Java","Python","Javascript"]
 
 `public static double ceil(double d)`  
 
-JavaではMathクラスにあるメソッド**ceil()**を利用することで小数点以下切り上げを行える。  
+JavaではMathクラスにあるメソッド **ceil()** を利用することで小数点以下切り上げを行える。  
 
 このメソッドは引数に入力した数値以上で最も大きい整数を返す。戻り値はdouble型。  
 
@@ -63,6 +63,8 @@ pythonにもmathモジュールに **ceil()** 関数がある。それを利用�
 >>>
 ```
 
+<hr>
+
 また、もう一つの方法として、割り算の結果を切り上げしたい時は   
 以下の計算式により結果を切り上げることができる。    
 (a÷bの結果を切り上げたい時)   
@@ -85,9 +87,7 @@ pythonにもmathモジュールに **ceil()** 関数がある。それを利用�
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
-```javascript
-Math.ceil(x)
-```
+`Math.ceil(x)`
 
 JavascriptにはMathオブジェクトに **ceil()** 関数がある。それを利用すると小数点以下切り上げが行える。
 
