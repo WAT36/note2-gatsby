@@ -18,8 +18,9 @@ tags: ["Java","Python","Javascript"]
 
 Javaでは主に2つ方法がある。  
 
-- Stringクラスの**valueOf()**メソッドを使う  
-- 数値型の各ラッパークラス(Integerなど)にある**toString()**メソッドを使う  
+・Stringクラスの **valueOf()** メソッドを使う  
+
+・数値型の各ラッパークラス(Integerなど)にある **toString()** メソッドを使う  
 
 どちらを利用してもよい。  
 

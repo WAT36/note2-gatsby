@@ -65,7 +65,7 @@ ZeroDivisionError: division by zero
 
 JavascriptではInfinityはグローバルオブジェクトのプロパティとして扱われており、普通にInfinityと宣言することで利用できる。通常では数値を0で除算するなどした時に(0/0はNaNになる)、Infinityが出力される。
 
-また、グローバルオブジェクトの**isFinite()**を使用すると、その値が有限の値であるかを判別できる。Infinity,NaNを入れた場合はfalseを返す。
+また、グローバルオブジェクトの **isFinite()** を使用すると、その値が有限の値であるかを判別できる。Infinity,NaNを入れた場合はfalseを返す。
 
 例（Infinity * 0はNaNになる）
 
