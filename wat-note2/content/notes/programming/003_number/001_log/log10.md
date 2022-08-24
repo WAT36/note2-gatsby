@@ -61,9 +61,7 @@ pythonで常用対数を算出するにはmathモジュールにある関数 **l
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
-```javascript
-Math.log10(x)
-```
+`Math.log10(x)`
 
 Javascriptで常用対数を算出するにはMathオブジェクトにある関数 **log10()** 関数を使用する。  
 

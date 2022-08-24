@@ -11,7 +11,7 @@ tags: ["Java","Python","Javascript"]
 
 `public static double log(double a)`   
 
-Javaではjava.lang.Mathクラス内にある**log()**メソッドがこの役割を果たす。  
+Javaではjava.lang.Mathクラス内にある **log()** メソッドがこの役割を果たす。  
 利用するにはjava.lang.Mathクラスをインポートする。  
 
 
@@ -59,9 +59,7 @@ pythonで自然対数を算出するにはmathモジュールにある関数 **l
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
-```javascript
-Math.log(x)
-```
+`Math.log(x)`
 
 Javascriptで自然対数を算出するにはMathオブジェクトにある **log()** 関数を使用する。  
 
