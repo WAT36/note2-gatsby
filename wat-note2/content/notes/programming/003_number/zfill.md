@@ -58,8 +58,10 @@ class Main{
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
-pythonで数値をゼロ詰めして表示するには文字列の組み込み関数の**zfill()**を利用する。  
 `str.zfill(width)`  
+
+pythonで数値をゼロ詰めして表示するには文字列の組み込み関数の**zfill()**を利用する。  
+
 この場合、文字strが長さwidthになるように、strの左から0を詰めていく。
 
 実行例を以下に示す。
