@@ -6,12 +6,17 @@ tags: ["Java","Python","Javascript"]
 ---
 
 重要な定数は大体ライブラリ（モジュール）内で定義されていることが多い。
+
 ここでは円周率(π)を参照する方法についてを示す。
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
+`Math.PI`
+
 Javaではjava.lang.Mathクラス内にフィールド変数 **PI** が定義されており、これがJava上で円周率に最も近い数とされている。  
+
 利用するにはjava.lang.Mathクラスをインポートする。  
+
 ちなみに型はDouble型である。  
 
 ```java
