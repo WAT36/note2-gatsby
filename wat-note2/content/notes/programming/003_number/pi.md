@@ -38,7 +38,10 @@ class Main{
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
+`math.pi`
+
 pythonではmathモジュールに定数 **pi** が定義されており、これがpython上で最も円周率に近い数とされている。
+
 利用するにはmathモジュールをインポートする。
 
 ```python
