@@ -12,6 +12,9 @@ tags: ["Java","Python","Javascript"]
 ```
 x++;
 x--;
+// または
+++x;
+--x;
 ```
 
 Javaではインクリメント・デクリメントの演算子（ **++**、**--** ）がそれぞれ用意されている。  
@@ -69,8 +72,8 @@ a:2
 <div class="note_content_by_programming_language" id="note_content_Python">
 
 ```
-x = x + 1
-x = x - 1
+x = x + 1 # (x += 1)
+x = x - 1 # (x -= 1)
 ```
 
 PythonではJava等のようなインクリメント・デクリメント用の演算子は**存在しない**。  
@@ -97,6 +100,9 @@ PythonではJava等のようなインクリメント・デクリメント用の�
 ```
 x++;
 x--;
+// または
+++x;
+--x;
 ```
 
 Javascriptにもインクリメント・デクリメント演算子が（ **++**、**--** ）がそれぞれ用意されている。  
