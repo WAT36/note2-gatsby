@@ -6,6 +6,7 @@ tags: ["Java","Python","Javascript"]
 ---
 
 整数の桁数を調べる方法については、
+
 数値を文字列に変換してその文字列の長さを取得すればよい。
 
 <div class="note_content_by_programming_language" id="note_content_Java">
