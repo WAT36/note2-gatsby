@@ -11,14 +11,14 @@ tags: ["Java","Python","Javascript"]
 
 Javaでは主に以下の２つの方法がある。
 
-1. **java.util.Random**クラスを用いる。
+・ **java.util.Random**クラスを用いる。
 
 Random()クラスのインスタンスを生成し、Randomクラスにある多種多様なメソッドを利用する事で数値をランダムに取得することができる。  
 
 メソッドの数は多いため、ここでは割愛する。詳しくは公式レファレンスを参照。
 
 
-2. java.lang.Mathクラスにある**random**メソッドを使う。
+・ java.lang.Mathクラスにある**random**メソッドを使う。
 
 `public static double random()`  
 
@@ -104,11 +104,13 @@ randomモジュールの中に乱数に関する関数が多くあるので、�
 
 `Math.random()`
 
-JavascriptではMathモジュールの**random()**関数を利用することで、0以上1以下の数をランダムで得られる。  
+JavascriptではMathモジュールの **random()** 関数を利用することで、0以上1以下の数をランダムで得られる。  
 
-任意の２数min,max間でのランダムな値を取り出したい時は、```Math.random() * (max - min) + min```という様にする。
+任意の２数min,max間でのランダムな値を取り出したい時は、
 
-実行例を以下に示す。
+```Math.random() * (max - min) + min```
+
+という様にする。実行例を以下に示す。
 
 ```javascript
 console.log(Math.random())

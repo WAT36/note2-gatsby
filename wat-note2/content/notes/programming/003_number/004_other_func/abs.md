@@ -63,7 +63,7 @@ pythonで数値の絶対値を算出するには組み込み関数の**abs**関�
 
 `Math.abs(x)`
 
-Javascriptで数値の絶対値を算出するにはMathオブジェクトの**abs()**メソッドを使用する。
+Javascriptで数値の絶対値を算出するにはMathオブジェクトの **abs()** メソッドを使用する。
 
 ```javascript
 let a = 1
