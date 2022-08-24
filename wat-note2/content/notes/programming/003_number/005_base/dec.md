@@ -11,7 +11,7 @@ tags: ["Java","Python","Javascript"]
 
 `public static int parseInt(String s,int radix)`  
 
-Javaでは文字列を数値に変換する の所で述べたメソッド**Integer.parseInt()**を利用する。  
+Javaでは文字列を数値に変換する の所で述べたメソッド **Integer.parseInt()** を利用する。  
 
 前述の章で述べたところのメソッドとは別に、オーバーロードとして引数に`int radix`を加えたものが定義されている。  
 
@@ -59,7 +59,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: "2
 
 ` class int(x, base=10)`  
 
-Pythonでも文字列を数値に変換する の所で述べた**int()**関数を利用する。  
+Pythonでも文字列を数値に変換する の所で述べた **int()** 関数を利用する。  
 
 この通り、int関数には第1引数に数値に変換したい文字列、第2引数baseには変換元の(文字列で表した)数値の基数を入力する。  
 

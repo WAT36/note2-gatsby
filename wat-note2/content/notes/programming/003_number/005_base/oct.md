@@ -11,7 +11,7 @@ tags: ["Java","Python","Javascript"]
 
 `public static String toOctalString(int i)`  
 
-JavaではラッパークラスIntegerに数値を8進数に変換するメソッド**toOctalString()**があるのでそれを利用する。  
+JavaではラッパークラスIntegerに数値を8進数に変換するメソッド **toOctalString()** があるのでそれを利用する。  
 
 戻り値はStringであり、引数の数値を8進数に表記したものが出力される。
 
@@ -38,7 +38,7 @@ class Main{
 
 `oct(x)`
 
-pythonに関しては、数値を8進数に変換して表示する組み込み関数**oct()**がある。  
+pythonに関しては、数値を8進数に変換して表示する組み込み関数 **oct()** がある。  
 
 表示される文字はプレフィックスとして"0o"が頭について表示される。
 

@@ -5,8 +5,6 @@ description: "数値を２進数に変換して表示する方法"
 tags: ["Java","Python","Javascript"]
 ---
 
-# 2進数に変換して表示
-
 数値を2進数に変換して表示する方法についてを示す。
 
 <div class="note_content_by_programming_language" id="note_content_Java">
