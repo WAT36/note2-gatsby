@@ -9,9 +9,9 @@ tags: ["Java","Python","Javascript"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-JavaではStringクラスにある **format()** メソッドで頭をゼロ詰めして表示することができる。  
-
 `public static String format(String format,Object... args)`
+
+JavaではStringクラスにある **format()** メソッドで頭をゼロ詰めして表示することができる。  
 
 第1引数(format)には、値をどのような形式で表示するかを指定する。  
 例えば5桁でゼロ詰めしたい時は下記の値を入力する。
