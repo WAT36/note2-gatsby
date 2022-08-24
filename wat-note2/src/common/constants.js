@@ -10,6 +10,7 @@ class Constants {
         "programming":"プログラミング",
 
         //プログラミング以下
+        "000_runtime"   :"実行環境",
         "001_stdio"     :"標準入力・出力",
         "002_string"    :"文字列",
         "003_number"    :"数値",
