@@ -30,11 +30,11 @@ Javaでは、上記の形式で配列を宣言する。
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
-Javascriptでは以下の形式で配列を宣言する。Javaのような要素数の指定は不要である。
-
 ```
 var 配列名 = [(値、カンマ区切りで複数入力可)]
 ```
+
+Javascriptでは上記の形式で配列を宣言する。(ここではvarになっているがletでもconstでも良い) Javaのような要素数の指定は不要である。
 
 配列への値の代入及び取得は、Javaと同じようにインデックスを指定して行う。
 
