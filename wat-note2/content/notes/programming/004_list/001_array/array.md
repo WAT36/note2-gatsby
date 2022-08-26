@@ -11,11 +11,11 @@ tags: ["Java","Javascript"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-Javaでは以下の形式で配列を宣言する。
-
 ```
 データ型[] 配列名 = new データ型[要素数];
 ```
+
+Javaでは、上記の形式で配列を宣言する。
 
 この方法により、配列内に指定したデータ型の値を、指定した要素数の数まで入れることができる。
 
