@@ -46,10 +46,28 @@ class Main{
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
-JavascriptもJavaと同じく配列に**length**という属性がある。それが配列の長さを示している。
-
 ```
 配列.length
+```
+
+JavascriptもJavaと同じく配列に**length**という属性がある。それが配列の長さを示している。
+
+実行例を以下に示す。
+
+```
+// 配列の宣言
+var nums = [0,1,2,3,4];
+console.log(nums);
+
+// 配列の長さ
+console.log(nums.length);
+```
+
+実行結果
+
+```
+[0, 1, 2, 3, 4]
+5
 ```
 
 </div>
