@@ -26,6 +26,38 @@ Javaでは、上記の形式で配列を宣言する。
 変数 = 配列名[インデックス];
 ```
 
+実行例を以下に示す。
+
+```java
+import java.util.Arrays;
+
+class Main{
+    public static void main(String args[]){
+        //int型の配列宣言
+        int[] nums = new int[5];
+
+        //配列の表示（表示方法については、後の章で述べる）
+        System.out.println(Arrays.toString(nums));
+
+        //要素の代入
+        nums[0] = 1;
+
+        //配列の表示
+        System.out.println(Arrays.toString(nums));
+
+        //要素の表示
+        System.out.println(nums[0]);
+    }
+}
+```
+
+実行結果
+
+```
+[0, 0, 0, 0, 0]
+[1, 0, 0, 0, 0]
+1
+```
 
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
