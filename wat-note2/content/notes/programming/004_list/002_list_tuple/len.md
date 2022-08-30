@@ -40,6 +40,8 @@ class Main{
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
+`len()`
+
 Pythonでは **len()** という関数があり、引数のリストの長さ（リスト内の要素の数）を返してくれる。
 
 ```python
