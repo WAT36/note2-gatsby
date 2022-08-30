@@ -50,16 +50,19 @@ class Main{
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
+(リストの末尾に要素xを追加したい時)  
+`list.append(x)`  
+(リストの指定した位置iに要素xを追加したい時)  
+`list.insert(i, x)`
+
 Pythonではリストの関数として  
 
 - リストの末尾に要素を追加したい場合は**append()**  
 - リストの末尾以外の指定した位置に要素を追加したい場合は**insert()**  
 
 の関数があるので、適宜使い分ける。  
-(リストの末尾に要素xを追加したい時)  
-`list.append(x)`  
-(リストの指定した位置iに要素xを追加したい時)  
-`list.insert(i, x)`
+
+実行例を以下に示す。
 
 ```python
 >>> a=[]
