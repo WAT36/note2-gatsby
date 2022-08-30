@@ -18,6 +18,8 @@ Javaにはリスト中の全要素を合計するメソッドはない（はず�
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
+`sum()`
+
 Pythonでは組み込み関数として **sum()** という関数があり、引数として受け取ったイテラブルな値（リストなど）の全要素の合計値を算出してくれる。  
 文字列など、計算が行えない値が入っていた場合はエラーになる。  
 
