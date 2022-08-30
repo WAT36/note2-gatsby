@@ -9,11 +9,16 @@ tags: ["Java","Python"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-JavaではListクラスに **add()** というメソッドがあり、引数の要素をリストの最後に追加する。  
 `boolean add(E e)`  
+
+JavaではListクラスに **add()** というメソッドがあり、引数の要素をリストの最後に追加する。  
+
 型の問題などで要素を追加できない時はエラーとなる。  
-また、オーバーロードとしてリストの指定した位置に要素を追加するaddメソッドもある。  
+
+また、オーバーロード(多重定義)としてリストの指定した位置に要素を追加するaddメソッドもある。  
+
 `void add(int index, E element)`  
+
 実行例を以下に示す。
 
 ```java
