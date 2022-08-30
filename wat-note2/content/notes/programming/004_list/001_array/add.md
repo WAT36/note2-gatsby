@@ -14,15 +14,15 @@ Javascriptでは配列の長さは固定されてはおらず、リストのよ�
 
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
-Javascriptでは以下の形式で配列に要素を追加できる。
-
 ```
 配列.push(要素)
 ```
 
+Javascriptでは上記の形式で配列に要素を追加できる。
+
 実行例を以下に示す。
 
-```
+```javascript
 // 配列の宣言
 var nums = [0,1,2,3,4];
 console.log(nums);

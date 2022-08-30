@@ -50,15 +50,15 @@ $ java Main
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
-Javascriptでは以下の形式で宣言する。なお、JavascriptではJavaとは違い、配列内に入る配列の長さは全て等しくなくても良い。また、宣言時に初期値も入力できる。
-
 ```
 var 配列名 = [[]]
 ```
 
+Javascriptでは上記の形式で宣言する。なお、JavascriptではJavaとは違い、配列内に入る配列の長さは全て等しくなくても良い。また、宣言時に初期値も入力できる。
+
 配列への値の代入及び取得は、Javaと同じようにインデックスを指定して行えば良い。ただし、こちらも次元には注意する。
 
-```
+```javascript
 // 配列の宣言
 var nums = [[0,1,2],[3,4,5],[6,7,8]];
 console.log(nums);

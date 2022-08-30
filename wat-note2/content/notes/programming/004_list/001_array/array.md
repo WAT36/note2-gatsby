@@ -77,7 +77,7 @@ Javascriptでは上記の形式で配列を宣言する。(ここではvarにな
 
 実行例
 
-```
+```javascript
 // 配列の宣言
 var nums = [0,1,2,3,4];
 console.log(nums);
