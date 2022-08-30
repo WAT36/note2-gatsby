@@ -9,6 +9,11 @@ tags: ["Java","Python"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
+```
+import java.util.Collections;
+Collectionns.sort(List<>)
+```
+
 Javaではリストに関するメソッドがあるライブラリ **java.util.Collections** に、リストをソートするメソッド **sort()** があるので、それを利用する。  
 
 ```java
