@@ -5,12 +5,14 @@ description: "リストの全要素の合計値を調べる方法"
 tags: ["Java","Python"]
 ---
 
-リスト中の全要素を合計した値を取得する方法についてを示す。  
+リスト中の全要素を合計した値を取得する方法についてを示す。
+
 またここで扱うリスト内の要素は全て数値であることを前提とする。  
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
 Javaにはリスト中の全要素を合計するメソッドはない（はず・・）  
+
 そのため、for文ループで一つずつ計算するなどし、算出する。
 
 </div>
