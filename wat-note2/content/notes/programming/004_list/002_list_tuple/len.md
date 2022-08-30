@@ -9,8 +9,10 @@ tags: ["Java","Python"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
+`List.size()`    
+
 JavaではListクラスに **size()** というメソッドがあり、これはリストに入っているデータの個数（＝リストの長さ）を返してくれる。  
-`int size()`    
+
 実行例を以下に示す。  
 
 
