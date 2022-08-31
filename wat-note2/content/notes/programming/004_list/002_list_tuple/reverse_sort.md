@@ -50,7 +50,9 @@ class Main{
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
-Pythonでは[リストをソート]({{< relref "/docs/programming/list/sort.md" >}})する方法で述べた2つの関数において、それぞれ引数**reverse**があり、それをTrueに設定してやると逆順にソートしてくれる。（デフォルトではこの引数reverseはFalseになっている）  
+Pythonではリストをソートする方法で述べた2つの関数において、それぞれ引数**reverse**があり、それをTrueに設定してやると逆順にソートしてくれる。（デフォルトではこの引数reverseはFalseになっている）  
+
+実行例
 
 ```python
 >>> a=[1,9,8,7,6,5,3,2]
