@@ -5,12 +5,17 @@ description: "リストを逆順にする方法"
 tags: ["Java","Python"]
 ---
 
-リスト内の要素を逆順にする方法についてを示す。
+リスト内の要素を逆順に並べ替える方法についてを示す。
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
+```
+import java.util.Collections;
+public static void reverse(List<?> list)
+```  
+
 Javaではライブラリ **java.util.Collections** に、リスト内の要素を逆にするメソッド **reverse()** があるので、それを利用する。    
-`public static void reverse(List<?> list)`  
+
 実行例を以下に示す。
 
 ```java
