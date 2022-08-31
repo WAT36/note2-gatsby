@@ -9,7 +9,8 @@ tags: ["Java","Python"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-Javaではリストを逆順にソートするメソッドは無いため、前述の[リストのソート]({{< relref "/docs/programming/list/sort.md" >}})と[リストを逆順にする]({{< relref "/docs/programming/list/reverse.md" >}})方法を組み合わせて利用する。  
+Javaではリストを逆順にソートするメソッドは無いため、前述のリストのソートとリストを逆順にする方法を組み合わせて利用する。  
+
 実行例を以下に示す。  
 
 ```java
