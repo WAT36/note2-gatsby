@@ -76,6 +76,7 @@ a or b: 0 1 2 3 100 4
 <div class="note_content_by_programming_language" id="note_content_Python">
 
 Pythonではリストをset型に変換し、その後 **|** 演算子を使うと、両リストの少なくとも一つにある要素が残る。  
+
 リストに戻したい時は、計算後のsetをlist()で変換してリストにする。
 
 ```python
