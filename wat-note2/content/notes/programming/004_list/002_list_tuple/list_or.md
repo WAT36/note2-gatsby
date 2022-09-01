@@ -6,6 +6,7 @@ tags: ["Java","Python"]
 ---
 
 2つのリストの少なくとも一つに入っている要素のみを表示する方法についてを示す。  
+
 なお、リスト内の要素に重複している要素はないことを前提とする。  
 
 <div class="note_content_by_programming_language" id="note_content_Java">
