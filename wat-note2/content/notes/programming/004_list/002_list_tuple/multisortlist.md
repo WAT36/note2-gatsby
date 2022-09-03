@@ -6,15 +6,18 @@ tags: ["Java","Python"]
 ---
 
 リストの中に更にリストが入っているようなリストをソートした時どうなるか？
+
 各要素(リスト)の0番目の項、1番目の...でソートしたいということは無いだろうか？
+
 ここではその方法についてを示す。
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-Javaではリストのソートの記事で述べた **Collections.sort()** メソッドを用いる。  
-違う点は、sort()メソッドにソートしたいリストだけでなく、リストをどのように順序付けるかを定義する **Comparator** を定義させる。  
-
 `public static <T> void sort(List<T> list,Comparator<? super T> c)`  
+
+Javaではリストのソートの記事で述べた **Collections.sort()** メソッドを用いる。  
+
+違う点は、sort()メソッドにソートしたいリストだけでなく、リストをどのように順序付けるかを定義する **Comparator** を定義させる点である。
 
 例えば、数値のリストの1番目の要素でソートさせたい時は、Comparatorを以下のようにする。  
 
