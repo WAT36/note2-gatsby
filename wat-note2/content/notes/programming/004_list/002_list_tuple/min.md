@@ -64,7 +64,10 @@ a c banana 010101
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
+`min()`
+
 Pythonには組み込み関数 **min()** があり、引数として受け取ったイテラブルな値の最小値を返してくれる。  
+
 要素が文字列の場合は、辞書順に並べたときの一番初めの値が返される。
 
 ```python
