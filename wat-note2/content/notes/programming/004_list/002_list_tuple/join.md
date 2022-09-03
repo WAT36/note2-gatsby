@@ -29,7 +29,7 @@ class Main{
     l.add("ccc");
     l.add("dddd");
 
-    System.out.println(l + " -> " + String.join("-",l));
+    System.out.println(l + " -> " + String.join("",l));
   }
 }
 ```
@@ -37,13 +37,16 @@ class Main{
 実行結果
 ```
 > java Main      
-[a, bb, ccc, dddd] -> a-bb-ccc-dddd
+[a, bb, ccc, dddd] -> abbcccdddd
 ```
 
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
+`str.join(list)`
+
 Pythonでは文字列の関数に**join()**というのがあり、引数にリスト等を指定してやると、リスト内の要素を呼び出し元の文字列で繋げた文字列を返す。
+
 呼び出し元を **""** にすると、リスト内の要素が全て連結された形で出てくる。
 
 使用例を以下に示す。  
