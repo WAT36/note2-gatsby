@@ -9,16 +9,17 @@ tags: ["Java","Python"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-JavaではListクラスにある **indexOf()** というメソッドで、要素があるインデックスを取得することができる。  
-
 `int indexOf(Object o)`  
 
-なお、リスト内に指定した要素が複数入っていた場合は、一番最初にある要素のインデックスを返す。  
+`int lastIndexOf(Object o)`  
+
+JavaではListクラスにある **indexOf()** というメソッドで、要素があるインデックスを取得することができる。  
+
+なお、リスト内に指定した要素が複数入っていた場合は、一番最初にある要素のインデックスを返す。
+
 指定した要素がリスト内にない場合は、-1を返す。  
 
 また、リストで後ろの方から検索を行う **lastIndexOf()** というメソッドもある。
-
-`int lastIndexOf(Object o)`  
 
 indexOfとは逆に、リスト内に指定した要素が複数入っていた場合は、一番最後にある要素のインデックスを返す。  
 
