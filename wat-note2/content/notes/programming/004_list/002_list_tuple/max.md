@@ -9,7 +9,10 @@ tags: ["Java","Python"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
+`static <T> max(Collection<? extends T> coll)`
+
 Javaではリストに関するメソッドがあるライブラリ **java.util.Collections** に、リスト内の要素の最大値を取得するメソッド **max()** があるので、それを利用する。  
+
 Stringなど文字列のリストの場合は、値を辞書順に並べたときの一番後ろの値が返される。
 
 ```java
