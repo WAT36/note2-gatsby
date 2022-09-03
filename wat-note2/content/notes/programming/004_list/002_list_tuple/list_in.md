@@ -54,7 +54,10 @@ false
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
+`(要素) in (リスト)`
+
 Pythonでは **in** 演算子が利用でき、これにより指定した要素がリスト内に含まれているかを確認できる。  
+
 含まれている場合はTrueを、そうでない場合はFalseを返す。
 
 ```python
