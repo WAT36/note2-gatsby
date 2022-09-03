@@ -76,11 +76,17 @@ last index of '5': -1
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
-Pythonではリストの関数に **index()** というのがあり、引数に指定した要素のリスト内でのインデックスを返してくれる。  
 `list.index(x[, start[, end]])`   
+
+Pythonではリストの関数に **index()** というのがあり、引数に指定した要素のリスト内でのインデックスを返してくれる。  
+
 指定した要素xがリスト内に複数ある場合は、リスト内の最初の要素のインデックスを返す。  
+
 リストの指定した範囲内のみで調べたい場合は、引数start,endに値を設定して行うと、指定した範囲内で行える。  
+
 指定した要素xがリスト内に無い場合ValueErrorが返される。  
+
+実行例
 
 ```python
 >>> a=[1,3,100,0,3] 
