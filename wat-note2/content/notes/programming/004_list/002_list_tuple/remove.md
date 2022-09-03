@@ -1,7 +1,7 @@
 ---
-title: "指定した要素を削除"
+title: "指定した値の要素を削除"
 date: "2019-10-15T23:25:30+09:00"
-description: "リストの指定した要素を削除する方法"
+description: "リストの指定した値の要素を削除する方法"
 tags: ["Java","Python"]
 ---
 
@@ -9,8 +9,10 @@ tags: ["Java","Python"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-JavaではListクラスにリストの指定した要素を削除するメソッド **remove()** がある。    
 `boolean remove(Object o)`   
+
+JavaではListクラスにリストの指定した要素を削除するメソッド **remove()** がある。    
+
 このメソッドはリストから指定した要素を削除する。複数ある場合は最初のもののみを削除する。  
 
 ## intのリストで使いたい時は？
@@ -19,8 +21,9 @@ intのリストでこのメソッドを使いたい時、先述の リストの�
 
 `E remove(int index)`   
 
-と混同するだろう。しかしListのメソッドremoveはintの値を入力した場合、このインデックスから要素を削除する方のメソッドが使われる。  
-指定したintの要素を削除したい時はどうするか？  
+と混同するだろう。しかしListのメソッドremoveはintの値を入力した場合、こちらのインデックスを元に要素を削除する方のメソッドが使われる。  
+
+int型のListに対して指定した値の要素を削除したい時はどうするか？  
   
 方法は、intのラッパークラス **Integer** を利用する。そのメソッドvalueOfを使ってintの値をIntegerに置き換えてremoveメソッドを使うと、前者の指定した要素を削除するremoveが使われる。  
 
