@@ -59,6 +59,7 @@ l-m:[1, 3]
 <div class="note_content_by_programming_language" id="note_content_Python">
 
 Pythonではリストをset型に変換し、その後 **-** 演算子を使うと、引かれたsetにのみある要素のみが残る。  
+
 リストに戻したい時は、計算後のsetをlist()で変換してリストにする。
 
 ```python
