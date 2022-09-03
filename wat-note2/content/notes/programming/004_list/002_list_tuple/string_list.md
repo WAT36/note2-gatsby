@@ -55,6 +55,8 @@ l: a,p,p,l,e, ,b,a,n,a,n,a,
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
+`list()`
+
 Pythonでは文字列をそのまま **list()** の引数に指定してやると、文字列を１文字ずつのリストに変換してくれる。  
 
 使用例を以下に示す。  
