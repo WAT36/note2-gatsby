@@ -6,13 +6,14 @@ tags: ["Java","Python"]
 ---
 
 リストの全要素を連結して1つの文字列にする方法についてを示す。
+
 なお、前提としてここでいうリスト内にある要素は全て文字列型とする。
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-JavaではStringに **join()** というメソッドがある。これは引数にデリミタとIterable変数を指定し、Iterableの中にある要素を全てデリミタで繋げて出力するというメソッドである。  
-
 `public static String join(CharSequence delimiter, Iterable<? extends CharSequence> elements)`
+
+JavaではStringに **join()** というメソッドがある。これは引数にデリミタとIterable変数を指定し、Iterableの中にある要素を全てデリミタで繋げて出力するというメソッドである。  
 
 使用例を以下に示す。  
 
@@ -28,7 +29,7 @@ class Main{
     l.add("ccc");
     l.add("dddd");
 
-    System.out.println(l + " -> " + String.join("",l));
+    System.out.println(l + " -> " + String.join("-",l));
   }
 }
 ```
@@ -36,7 +37,7 @@ class Main{
 実行結果
 ```
 > java Main      
-[a, bb, ccc, dddd] -> abbcccdddd
+[a, bb, ccc, dddd] -> a-bb-ccc-dddd
 ```
 
 </div>
