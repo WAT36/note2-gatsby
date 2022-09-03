@@ -9,9 +9,9 @@ tags: ["Java","Python"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-JavaではListクラスに **contains()** というメソッドがある。これは呼び出し元のリストに引数に指定した要素が含まれていた場合にtrue、そうでない場合falseを返すメソッドである。  
-
 `boolean contains(Object o)`  
+
+JavaではListクラスに **contains()** というメソッドがある。これは呼び出し元のリストに引数に指定した要素が含まれていた場合にtrue、そうでない場合falseを返すメソッドである。  
 
 使用例を以下に示す。  
 
