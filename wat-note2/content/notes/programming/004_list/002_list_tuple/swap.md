@@ -9,9 +9,11 @@ tags: ["Java","Python"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-JavaはListの親クラスであるCollectionsクラスに **swap()** メソッドがあるので、これを利用する。  
-
 `public static void swap(List<?> list,int i,int j)`  
+
+JavaはListの親クラスであるCollectionsクラスに **swap()** メソッドがあるので、これを利用する。
+
+引数にはリストと、入れ替える位置2つを入力する。
 
 使用例を以下に示す。
 
