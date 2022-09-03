@@ -9,8 +9,10 @@ tags: ["Java","Python"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-JavaではListクラスにリストの指定した位置（インデックス）の要素を削除するメソッド **remove()** がある。    
 `E remove(int index)`  
+
+JavaではListクラスにリストの指定した位置（インデックス）の要素を削除するメソッド **remove()** がある。    
+
 このメソッドはリストから指定したインデックスの要素を取り出して返す。その後リストでは取り出されたインデックスよりも後続の要素を左に移動する動作を行う。
 
 ```java
