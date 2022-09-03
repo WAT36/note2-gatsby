@@ -72,9 +72,14 @@ class Main{
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
+`list.remove(x)`
+
 Pythonにはリストに指定した要素を削除する関数**remove()**があるので、これを利用する。  
+
 引数にはリストから削除したい要素を入力する。    
+
 指定した要素がリスト内に複数ある場合は、最初のもののみを削除する。  
+
 リストに存在しない値を入力するとエラーになる。
 
 ```python
