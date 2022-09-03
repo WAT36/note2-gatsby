@@ -10,7 +10,10 @@ tags: ["Java","Python"]
 <div class="note_content_by_programming_language" id="note_content_Java">
 
 Javaでは具体的なメソッドが(調べたところ)無いため、リストの要素を一個一個見ていって調べる。  
+
 （他に方法があるかもしれないので、後に要調査。）
+
+実装例
 
 ```java
 iimport java.util.ArrayList;
