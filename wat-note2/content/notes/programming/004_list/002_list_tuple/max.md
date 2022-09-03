@@ -64,7 +64,10 @@ c
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
+`max()`
+
 Pythonには組み込み関数 **max()** があり、引数として受け取ったイテラブルな値の最大値を返してくれる。  
+
 要素が文字列の場合は、辞書順に並べたときの一番後ろの値が返される。
 
 ```python
