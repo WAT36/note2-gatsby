@@ -54,6 +54,8 @@ a:3
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
+`list.count(x)`
+
 Pythonではリストの関数に **count()** があり、これは引数に指定した要素がリスト内にいくつあるかを返してくれる。  
 
 ```python
