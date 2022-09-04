@@ -9,8 +9,10 @@ tags: ["Java","Python"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-JavaではListクラスにリストが空であるかを判別するメソッド **isEmpty()** がある。  
 `boolean isEmpty()`
+
+JavaではListクラスにリストが空であるかを判別するメソッド **isEmpty()** がある。  
+
 空の場合はtrueを、そうでない場合はfalseを返す。  
 
 ```java
