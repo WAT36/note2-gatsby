@@ -53,7 +53,12 @@ $ java Main
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
-PythonでSet型変数を作るには中括弧 **{}** または **set** 関数を利用する。(set関数を利用する場合は文字列またはリストを入力する)  
+`{}`
+
+`set()`
+
+PythonでSet型データを作るには中括弧 **{}** または **set** 関数を利用する。(set関数を利用する場合は文字列またはリストを入力する)  
+
 実行例を以下に示す。  
 
 ```python
