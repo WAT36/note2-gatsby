@@ -49,6 +49,8 @@ clear後[]
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
+`list.clear()`
+
 Pythonではリストにある関数 **clear()** を使う。
 
 ```python
