@@ -66,10 +66,9 @@ class Main{
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
-Pythonにもfor文はあるが、Javaの時とは違い初期値や条件は設定しない。  
-Pythonでは、リストなどのシーケンス型の値を用いてループ処理を実装する。記法は以下の通り。  
-
 `for 変数 in シーケンス値`
+
+Pythonでは、上記のようにリストなどのシーケンス型の値を用いてループ処理を実装する。 Javaの時とは違い初期値や条件は設定しない。  
 
 上記のように書くことで、シーケンス値に入っている値が1回のループで頭から順番に1個ずつ取り出され、それを元にfor文の処理が実行される。Javaの拡張for文と似たようなものである。  
 
