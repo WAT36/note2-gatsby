@@ -60,8 +60,6 @@ $ java Main 2
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
-Pythonでの記法は以下の通り。
-
 ```
 if 条件1:
     #条件1がTrueならこの処理実行
@@ -71,8 +69,12 @@ else:
     #条件1,2ともfalseならこの処理実行
 ```
 
-条件にはbool値またはそれを返す式にする。  
-また、if,elif,elseの後にはコロン":"をつける。  
+Pythonでの記法は上記の通り。
+
+条件にはbool値またはそれを返す式にする。
+
+また、if,elif,elseの後にはコロン":"をつける。
+
 elifは限りなく設定できる。  
 
 実行例
