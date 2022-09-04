@@ -96,8 +96,6 @@ elifは限りなく設定できる。
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
-Javascriptでの記法は以下のとおり。
-
 ```
 if (条件式1) {
   //条件式1がtrueならこの処理実行
@@ -108,11 +106,32 @@ if (条件式1) {
 }
 ```
 
+Javascriptでの記法は上記の通り。
+
 なお、Javascriptでは、条件式のところに **数値または文字列** 及びその値が入った変数を設定することもできる。
 
 数値を設定した場合は、値が0の場合falseとみなし、それ以外の値は全てtrueとみなされる。
 
 文字列の場合は、空文字('')の場合falseとみなされ、それ以外の値の場合は全てtrueとみなされる。
+
+使用例
+
+```javascript
+var x = 0;
+if(x < 0){
+  console.log("マイナス")
+}else if(x === 0){
+  console.log("ゼロ")
+}else{
+  console.log("プラス")
+}
+```
+
+実行結果
+
+```
+ゼロ
+```
 
 </div>
 
