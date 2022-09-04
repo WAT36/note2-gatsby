@@ -106,16 +106,42 @@ range(0, 5)
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
-Javascriptでのfor文も、Javaと記法・フロー共に同じである。
-
-記法
-
 ```
 for(初期化式;条件式;変化式){
     //処理
 }
 ```
 
+Javascriptでのfor文も、Javaと記法・フロー共に同じである。
+
+使用例
+
+```javascript
+for(var i=0;i<5;i++){
+  console.log(i);
+}
+
+var j=0;
+for(;j<5;){
+  console.log(j);
+  j++;
+}
+```
+
+実行結果
+
+```
+0
+1
+2
+3
+4
+0
+1
+2
+3
+4
+```
 
 </div>
 
