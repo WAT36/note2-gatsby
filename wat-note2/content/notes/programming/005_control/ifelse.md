@@ -11,8 +11,6 @@ tags: ["Java","Python","Javascript"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-Javaでの記法は以下の通り。
-
 ```
 if(条件1){
     //条件1がtrueならこの処理実行
@@ -22,6 +20,8 @@ if(条件1){
     //条件1,2ともfalseならこの処理実行
 }
 ```
+
+Javaでの記法は上記の通り。
 
 if,else if後の()内にはboolean値またはbooleanを返すような式にする。  
 
