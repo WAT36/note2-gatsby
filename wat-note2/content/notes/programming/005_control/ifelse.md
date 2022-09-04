@@ -6,6 +6,7 @@ tags: ["Java","Python","Javascript"]
 ---
 
 指定した条件に応じて処理を分岐させる時に使うのがif-else文である。  
+
 これはほぼ全てのプログラミング言語に実装されている。言語ごとの記法を示す。
 
 <div class="note_content_by_programming_language" id="note_content_Java">
@@ -23,7 +24,8 @@ if(条件1){
 ```
 
 if,else if後の()内にはboolean値またはbooleanを返すような式にする。  
-else ifは限りなく設けることができる。  
+
+`else if`は限りなく設けることができる。  
 
 実行例
 
