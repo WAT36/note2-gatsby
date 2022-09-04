@@ -45,14 +45,16 @@ false
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
-Pythonにはリストが空であるかを判別するための関数は無い。  
+Pythonにはリストが空であるかを判別するための関数は無い。
+
 リストが空であるかを判別するには、以下の方法を利用するなどしてみる。
 
 - リストの長さが0であるかで確認する
 - 関数bool()を使ってBoolean値に変換する。この時リストが空ならFalse、そうでない時はTrueを返す。
 
-リストの長さが0であるかを調べるには単純にlen(リスト) == 0を行えばよいが、  
-もう一つの、実はリストが空でない場合、boolで変換するとTrueを返す特性があるという。これを使用してもよい。  
+リストの長さが0であるかを調べるには単純にlen(リスト) == 0を行えばよいが、
+
+もう一つの、実はリストが空でない場合、boolで変換するとTrueを返す特性があるという。これを使用してもよい。
 
 ```python
 >>> a=[]
@@ -74,6 +76,13 @@ False
 >>> bool(b)     #空でないリストをboolで変換する
 True
 >>>
+>>> if([1,2,3]):
+...     print("this list is not empty.")
+... else:
+...     print("this list is empty.")
+... 
+this list is not empty.
+>>> 
 ```
 
 </div>
