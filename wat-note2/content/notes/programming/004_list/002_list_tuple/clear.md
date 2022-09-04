@@ -9,9 +9,9 @@ tags: ["Java","Python"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-JavaではListクラスにあるメソッド **clear()** を利用する。  
-
 `void clear()`  
+
+JavaではListクラスにあるメソッド **clear()** を利用する。  
 
 実行例を以下に示す。
 
