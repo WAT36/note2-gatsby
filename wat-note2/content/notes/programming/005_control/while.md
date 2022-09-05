@@ -11,13 +11,13 @@ tags: ["Java","Python","Javascript"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-Javaでの記法は以下の通り。
-
 ```
 while(条件式){
     //処理
 }
 ```
+
+Javaでの記法は以下の通り。
 
 上記におけるフローは以下の通り。  
 
