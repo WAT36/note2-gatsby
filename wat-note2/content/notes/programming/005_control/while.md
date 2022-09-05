@@ -121,14 +121,14 @@ Pythonでの記法は以下の通り。
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
-Javascriptでのwhile文の記法は以下の通り。
-
-```javascript
+```
 while(条件){
     //条件が真だった場合に実行される処理
     ・・・
 }
 ```
+
+Javascriptでのwhile文の記法は以下の通り。
 
 条件式がtrueである限り、while文内の処理を実行し続ける。
 
