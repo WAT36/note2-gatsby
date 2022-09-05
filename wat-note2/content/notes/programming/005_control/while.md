@@ -92,13 +92,13 @@ while(i<5)
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
-Pythonでの記法は以下の通り。
-
 ```
 while 条件式:
     #処理
     ・・・
 ```
+
+Pythonでの記法は以下の通り。
 
 条件式がTrueである限り、while文以下の処理を実行し続ける。
 
