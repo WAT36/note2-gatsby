@@ -108,8 +108,7 @@ default
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
-break文の使い方はPythonもjavaと同じ。  
-途中で中断したいfor,whileループの中に設定する。
+実行例を記載する。
 
 ```python
 >>> for i in range(5): 
