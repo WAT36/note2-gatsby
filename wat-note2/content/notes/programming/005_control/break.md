@@ -139,10 +139,7 @@ default
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
-Javascriptにおいてもbreak文の使い方は同じである。  
-途中で中断したいfor,whileループの中に設定する。
-
-使用例
+実行例を記載する。
 
 ```javascript
 for(var i=0;i<10;i++){
