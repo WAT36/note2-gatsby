@@ -6,11 +6,13 @@ tags: ["Java","Python","Javascript"]
 ---
 
 continue文はfor文、while文のループ処理において、そのループ1回分の処理をそこで終了し、 条件式の判定（for文の場合は変化式を行ってから）に移らせる文である。   
+
 continue文についてを示す。
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
 Javaでcontinue文を設定したい時は、設定したいfor文、while文のループ処理内に設定する。    
+
 実行例を以下に示す。  
 
 ```java
@@ -64,6 +66,7 @@ class Main{
 <div class="note_content_by_programming_language" id="note_content_Python">
 
 Pythonにもcontinue文があり、使い方はjavaと同じ。  
+
 for,whileループの中で設定する。
 
 ```python
@@ -95,6 +98,7 @@ for,whileループの中で設定する。
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
 Javascriptにおいてもcontinue文の使い方は同じである。  
+
 設定したいfor,whileループの中に設定する。
 
 使用例
