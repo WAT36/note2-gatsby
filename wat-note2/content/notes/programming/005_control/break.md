@@ -7,10 +7,13 @@ tags: ["Java","Python","Javascript"]
 
 ループを抜け出す際に用いるbreak文についてを示す。
 
+ループ処理のfor文、while文において、処理の途中にbreakがあった場合、ループを途中で中断し、ループから抜け出してくれる。  
+
+ループを何重にも重ねていた場合は、そのbreakがある一番内側のループにbreakが適用される。  
+
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-ループ処理のfor文、while文において、処理の途中にbreakがあった場合、ループを途中で中断し、ループから抜け出してくれる。  
-ループを何重にも重ねていた場合は、そのbreakがある一番内側のループにbreakが適用される。  
+実行例を記載する
 
 ```java
 class Main{
