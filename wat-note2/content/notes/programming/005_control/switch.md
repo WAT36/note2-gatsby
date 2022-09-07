@@ -5,12 +5,11 @@ description: "switch文について"
 tags: ["Java","Python","Javascript"]
 ---
 
-switch文は一つの式の結果から多くの処理に分岐させたいときに用いる。  
+switch文は一つの式の結果から多くの処理に分岐させたいときに用いる。
+
 ここではそのswitch文についてを示す。
 
 <div class="note_content_by_programming_language" id="note_content_Java">
-
-Javaでのswitch文での記法は以下の通り。  
 
 ```
 switch (式) {
@@ -27,6 +26,8 @@ switch (式) {
         break;
 }
 ```
+
+Javaでのswitch文での記法は上記の通り。  
 
 case,default後の処理の最後には必ず **break** を書く。書かないとその後ろのcase文の処理も実行してしまう。  
 
