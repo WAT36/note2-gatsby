@@ -77,8 +77,6 @@ Pythonには **switch文が存在しない** 。
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
-Javascriptには**switch文**が存在し、利用法はJavaと同じである。
-
 ```
 switch (式) {
     case 定数１:
@@ -95,6 +93,7 @@ switch (式) {
 }
 ```
 
+Javascriptには**switch文**が存在し、利用法はJavaと同じである。
 
 </div>
 
