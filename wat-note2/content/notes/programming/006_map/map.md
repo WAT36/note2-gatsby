@@ -49,8 +49,9 @@ class Main{
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
-Pythonでは辞書という名前で呼ばれ、**{}** のカッコ内で囲まれたものが辞書となる。   
 `{キー: 値}`
+
+Pythonでは辞書という名前で呼ばれ、**{}** のカッコ内で囲まれたものが辞書となる。   
 
 ```python
 >>> a={}
