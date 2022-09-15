@@ -66,13 +66,18 @@ Pythonでは辞書という名前で呼ばれ、**{}** のカッコ内で囲ま�
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
+```
+{}
+```
+
 Javascriptでは連想配列と呼ばれるデータ構造が該当する。
-定義は普通の配列と同じ。
+
+定義は上記のような方法。
 
 例を以下に示す。
 
 ```javascript
-var 変数名 = new Array();
+var 変数名 = {};
 ```
 
 </div>
