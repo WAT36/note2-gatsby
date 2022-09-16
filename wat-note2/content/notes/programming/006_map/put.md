@@ -70,13 +70,17 @@ Pythonでは上記のような記法で辞書にキー・値を追加できる�
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
+```
+連想配列[キー] = 値
+```
+
 Javascriptにおいて、連想配列にデータを追加する方法は普通の配列と同じようにすれば良い。
 添字には任意の文字列を指定する。
 
 例を以下に示す。
 
 ```javascript
-var temperature = new Array();
+var temperature = {};
 
 temperature['Tokyo'] = 20;
 temperature['Sapporo'] = 15;
