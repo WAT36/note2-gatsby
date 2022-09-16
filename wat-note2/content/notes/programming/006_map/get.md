@@ -88,6 +88,10 @@ KeyError: 'key3'
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
+```
+連想配列[キー]
+```
+
 Javascriptにおいて、連想配列からデータを取得する方法は普通の配列と同じように添字を指定すれば良い。
 
 例を以下に示す。
