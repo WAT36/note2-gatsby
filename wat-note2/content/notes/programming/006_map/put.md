@@ -9,8 +9,10 @@ tags: ["Java","Python","Javascript"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-JavaではMapクラスに **put()** というメソッドがあり、引数にキー・値を指定すると、そのMap内にキー・値が入る。  
 `V put(K key, V value)`   
+
+JavaではMapクラスに **put()** というメソッドがあり、引数にキー・値を指定すると、そのMap内にキー・値が入る。  
+
 既に同じキーがあった場合は上書きされて入る。  
 
 実行例を以下に示す。  
