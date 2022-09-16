@@ -48,10 +48,10 @@ null
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
-Pythonでは以下の二つの方法がある。  
-
 - 単に `辞書[キー]` と書く
 - 辞書のメソッド**get()**を使う (使用例： `辞書.get(キー)` )
+
+Pythonでは上記の二つの方法がある。  
 
 存在しないキーを指定した場合、  
 前者はエラーになるが、後者はデフォルト値としてNoneが返る。このデフォルト値は自分で指定でき、指定したい場合はgetメソッドの第２引数に指定する（省略した場合はNoneになる）。  
