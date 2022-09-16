@@ -9,8 +9,9 @@ tags: ["Java","Python","Javascript"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-JavaではMapクラスに **get()** というメソッドがあり、引数にキーを指定すると、Map内でそのキーに対応づけられている値が返る。  
 `V get(Object key)`   
+
+JavaではMapクラスに **get()** というメソッドがあり、引数にキーを指定すると、Map内でそのキーに対応づけられている値が返る。  
 
 指定したキーがMapに無い場合はnullが返る。  
 
