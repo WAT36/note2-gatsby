@@ -43,9 +43,9 @@ class Main{
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
-Pythonでは以下のような記法で辞書にキー・値を追加できる。  
-
 `辞書[キー] = 値`  
+
+Pythonでは上記のような記法で辞書にキー・値を追加できる。  
 
 既に同じキーがあった場合は、値が上書きされる。  
 実行例を以下に示す。  
