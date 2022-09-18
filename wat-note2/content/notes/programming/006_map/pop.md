@@ -57,10 +57,10 @@ class Main{
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
-Pythonでは以下の二つの方法がある。  
-
 - **del** 文を使い要素を削除する (使用例： `del 辞書[キー]`)
 - 辞書の関数 **pop()** を使う (使用例： `辞書.pop(キー)` )
+
+Pythonでは上記の二つの方法がある。  
 
 どちらの方法でも削除は行える。違う点は、del文の場合は実行した時何も返されないが、pop関数の場合は削除された値が返される。  
 存在しないキーを指定した場合はエラーになる。    
