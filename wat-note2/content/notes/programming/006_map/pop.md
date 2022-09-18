@@ -112,15 +112,13 @@ KeyError: 'key3'
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
-Javascriptにおいて、連想配列から指定した添字のデータを削除するには、特殊演算子 **delete** を利用する。
-
-使用法は以下の通り。
-
 ```javascript
 delete 連想配列.添字
 //または
 delete 連想配列[添字]
 ```
+
+Javascriptにおいて、連想配列から指定した添字のデータを削除するには、特殊演算子 **delete** を利用する。
 
 例を以下に示す。
 
