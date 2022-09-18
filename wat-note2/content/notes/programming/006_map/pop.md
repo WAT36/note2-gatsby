@@ -9,8 +9,9 @@ tags: ["Java","Python","Javascript"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-JavaではMapクラスに **remove()** というメソッドがあり、引数にキーを指定すると、Map内でそのキーの要素が削除される。  
 `V remove(Object key)`   
+
+JavaではMapクラスに **remove()** というメソッドがあり、引数にキーを指定すると、Map内でそのキーの要素が削除される。  
 
 指定したキーがMapに無い場合はnullが返る。  
 
