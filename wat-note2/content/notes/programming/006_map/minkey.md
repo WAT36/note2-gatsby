@@ -53,6 +53,8 @@ min key: key
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
+ `min()`
+
 Pythonでは単に組み込み関数 **min()** を使えば、辞書にある最小のキーを取得できる。  
 
 ```python
