@@ -53,6 +53,8 @@ max key: key3
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
+`max()`
+
 Pythonでは単に組み込み関数 **max()** を使えば、辞書にある最大のキーを取得できる。  
 
 ```python
