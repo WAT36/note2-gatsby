@@ -9,10 +9,10 @@ tags: ["Java","Python"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-JavaでMapにある値の最小値を取得するには、最大値の時と同様に以下の手順で行う。  
-
 - Mapのメソッド **values()** を使い、値のみを格納したListを取得する
 - その値のListをCollectionsクラスの **min()** メソッドを用いて最小値を取得する(参考：リストの内一番小さい要素を調べる)
+
+JavaでMapにある値の最小値を取得するには、最大値の時と同様に上記の手順で行う。  
 
 実行例を以下に示す。  
 
