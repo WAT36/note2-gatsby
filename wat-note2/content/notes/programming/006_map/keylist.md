@@ -77,6 +77,8 @@ dict_keys(['key', 'key2', 'key3'])
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
+`Object.keys()`
+
 Javascriptにおいて、連想配列の添字のリストを取得するには、 **Object.keys()** メソッドを利用する。引数には連想配列のオブジェクトを指定する。
 
 使用法は以下の通り。
