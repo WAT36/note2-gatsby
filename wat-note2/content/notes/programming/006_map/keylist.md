@@ -52,6 +52,8 @@ class Main{
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
+`辞書.keys()`
+
 Pythonは辞書の関数に **keys()** という関数があり、これを利用することで辞書のキーのイテラブルオブジェクトを取得できる。  
 ただし、このkeys関数で返されるオブジェクトはリストではなくdict_keys型なので注意。リストに変換したい場合はlist()を使って変換する。  
 for文でループさせたい時は `for i in 辞書.keys()` のようにすればよい。  
