@@ -9,9 +9,9 @@ tags: ["Java","Python","Javascript"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-JavaではMapクラスに **keySet()** というメソッドがある。これによりMapのキーをSetで取得することができる。  
-
 `Set<K> keySet()`  
+
+JavaではMapクラスに **keySet()** というメソッドがある。これによりMapのキーをSetで取得することができる。  
 
 Listに変換したい時はListの変数の初期化時にこのSetを指定してやればよい。  
 実行例を以下に示す。
