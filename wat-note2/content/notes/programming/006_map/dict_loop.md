@@ -9,14 +9,14 @@ tags: ["Java","Python"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-JavaでMapにループを掛けるには、Mapのメソッドである**entrySet()**を利用してMap内の全てのキー・値の組み合わせを取得し、それを拡張for文などでループさせる。
-
 ```
 for( Map.entry<キーの型,値の型> entry: (Mapの変数).entrySet() ){
     キーの型 key = entry.getKey();
     値の型 value = entry.getValue();
 }
 ```
+
+JavaでMapにループを掛けるには、Mapのメソッドである**entrySet()**を利用してMap内の全てのキー・値の組み合わせを取得し、それを拡張for文などでループさせる。
 
 実行例を以下に示す。
 
