@@ -22,12 +22,12 @@ Javaでのクラス定義方法は上記の通り。
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
-Pythonでのクラスを定義するときの記法は以下の通り。
-
 ```
 class クラス名:
     //文
 ```
+
+Pythonでのクラスを定義するときの記法は上記の通り。
 
 </div>
 
