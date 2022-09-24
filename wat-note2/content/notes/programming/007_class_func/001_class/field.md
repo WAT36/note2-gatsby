@@ -90,6 +90,14 @@ carname :lexus
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
+```
+class クラス名:
+  // フィールド変数
+  変数1 = 値1
+  変数2 = 値2
+
+```
+
 Pythonにもクラス変数とインスタンス変数がある。  
 クラス変数はクラス内、各関数外に定義し、クラス、インスタンスオブジェクトから参照することができる。  
 インスタンス変数は、後述するがクラスの__init__関数で定義する。ここで定義した変数はインスタンスからしか参照できない。  
