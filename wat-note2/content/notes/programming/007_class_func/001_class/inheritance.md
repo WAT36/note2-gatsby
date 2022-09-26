@@ -11,13 +11,13 @@ tags: ["Java","Python","Javascript"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-Javaでのクラスの継承の方法は以下の通り。
-
 ```
 [アクセス修飾子]　class クラス名 extends 継承元クラス(スーパークラス)名 {
   //文
 }
 ```
+
+Javaでのクラスの継承の方法は上記の通り。
 
 Javaでは継承する元となるクラスを **スーパークラス** 、継承して作成したクラスを **サブクラス** という。  
 サブクラスはスーパークラスを継承して作成されるため、スーパークラスで定義した変数やメソッドは全て受け継がれる。
