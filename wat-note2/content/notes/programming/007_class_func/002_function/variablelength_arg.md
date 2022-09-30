@@ -13,9 +13,15 @@ tags: ["Java","Python"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
+```
+メソッド(型... 引数名){
+    // メソッドの処理
+}
+```
+
 Javaではメソッドに可変長引数を設定できる仕様がある。
 
-その仕様は以下の通り。
+その仕様は以下の通りで、表記は上記の通り。
 
 - 引数のデータ型の後に「...」と記述する
 - 引数の中で、可変長引数は一番最後に書く
