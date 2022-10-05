@@ -68,9 +68,9 @@ none() Lambda:implemented.
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
-Pythonではキーワード **lambda** を使って定義することで無名関数が書ける。  
-
 `lambda (引数): (返す値、式)`  
+
+Pythonではキーワード **lambda** を使って定義することで無名関数が書ける。  
 
 引数は何個でも設定できる。  
 特徴としてはlambdaの式は変数に格納することができる。  
