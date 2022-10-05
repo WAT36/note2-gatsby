@@ -127,9 +127,6 @@ finally
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
-JavascriptはJavaと形式は同じで **try-catch(-finally)** 文で実行時エラー(例外)のハンドリングを行う。  
-記法は以下の通り。  
-
 ```
 try {
     //処理文
@@ -142,6 +139,9 @@ finally{
     //try文またはcatch文の処理終了時に行う処理
 }
 ```
+
+JavascriptはJavaと形式は同じで **try-catch(-finally)** 文で実行時エラー(例外)のハンドリングを行う。  
+記法は以下の通り。  
 
 JavascriptもJavaと同じでtry{}で囲んだ範囲内で例外が発生すると、処理を中断してcatch文へと飛ぶ。  
 catch文は宣言時に、例外を示す変数を指定する。このcatch文はいくらでも宣言でき、try文内で発生した例外は対応するcatch文へと飛ぶ。
