@@ -57,13 +57,13 @@ throw MyException
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
-Pythonでも **Exception** クラスから継承したクラスを作ると、それがユーザー定義の例外クラスになる。  
-
 ```
 class 例外クラス名(Exception):
     //文
     //(def __init__ など書く)
 ```
+
+Pythonでも **Exception** クラスから継承したクラスを作ると、それがユーザー定義の例外クラスになる。  
 
 実行例を以下に示す。  
 
