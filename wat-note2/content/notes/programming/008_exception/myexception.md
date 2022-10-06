@@ -11,13 +11,13 @@ tags: ["Java","Python"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-Javaでは **Exception** クラスを継承して作る事で自作の例外クラスを定義できる。  
-
 ```
 [修飾子] 自作の例外クラス名 extends Exception {
   // 文
 }
 ```
+
+Javaでは **Exception** クラスを継承して作る事で自作の例外クラスを定義できる。  
 
 実行例を以下に示す。
 
