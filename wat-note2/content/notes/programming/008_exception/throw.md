@@ -9,16 +9,14 @@ tags: ["Java","Python"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-Javaでは **throw** 文を使うことで指定した例外を発生することができる。
-
-使用例
-
 ```
 throw new Exception();
 
 Exception e = new Exception();
 throw e;
 ```
+
+Javaでは **throw** 文を使うことで指定した例外を発生することができる。
 
 実行例を以下に示す。
 
