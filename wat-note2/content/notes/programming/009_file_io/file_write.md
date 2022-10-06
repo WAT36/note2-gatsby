@@ -151,9 +151,9 @@ $ cat testwrite.txt
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
-Pythonでは関数openでファイルを開いた後、ファイルオブジェクトの関数 **write()** を利用してファイルを書き込む。  
-
 `write(文字列)`  
+
+Pythonでは関数openでファイルを開いた後、ファイルオブジェクトの関数 **write()** を利用してファイルを書き込む。  
 
 ファイルへの書き込みを行う際にはopenで開く時にモードを **'w'** または **'a'** と必ず指定する。それ以外の時はwrite関数実行時にエラーになる。
 モードが'w'のときはファイルに上書きされ、'a'の時はファイルの末尾に追記される形で書き込まれる。  
