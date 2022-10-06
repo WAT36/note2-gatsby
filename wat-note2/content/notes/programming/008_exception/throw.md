@@ -42,6 +42,10 @@ null
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
+```
+raise (例外クラス)
+```
+
 Pythonでは **raise** 文を使うことで指定した例外を発生する事ができる。  
 
 ```python
