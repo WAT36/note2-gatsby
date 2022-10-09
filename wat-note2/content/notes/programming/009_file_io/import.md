@@ -9,6 +9,10 @@ tags: ["Java","Python"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
+```
+import (ファイルパス)
+```
+
 Javaでは **import** 文があり、これを利用することで他のプログラムを利用することができる。  
 利用するには、importの後に利用したいクラス名をパッケージ名を含めて記載する。  
 ただし、自分と同じパッケージに属している他クラスはimport文無しでも利用できるので、import文は主に外部パッケージにあるクラスに対し利用する。  
