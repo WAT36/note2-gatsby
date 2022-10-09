@@ -9,8 +9,6 @@ tags: ["Java","Python","Swift","Javascript"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-Javaでの変数の宣言は以下の通り。
-
 ```
 (データ型) (変数名);
 (変数名) = (値);
@@ -19,6 +17,8 @@ Javaでの変数の宣言は以下の通り。
 
 (データ型) (変数名) = (値);
 ```
+
+Javaでの変数の宣言は以下の通り。
 
 Javaは静的型付け言語(コンパイルなどの実行前の段階で、変数の型を決定する言語)のため、変数の宣言時に設定できる値の型を指定してやる必要がある。
 
