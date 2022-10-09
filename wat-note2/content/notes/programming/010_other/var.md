@@ -78,13 +78,11 @@ a = 10
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
-Javascriptでも **var** キーワードを用いて変数を宣言する。
-
-記法は以下のとおり。
-
 ```
 var (変数名)
 ```
+
+Javascriptでも **var** キーワードを用いて変数を宣言する。
 
 Javascriptはスクリプト言語のため、型は宣言しなくても良い。<br>
 （しかし、変数に値が入るとその変数は型を持つ。変数の型を調べるにはtypeofキーワード等を用いる。）
