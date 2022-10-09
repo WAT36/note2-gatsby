@@ -18,7 +18,7 @@ tags: ["Java","Python","Swift","Javascript"]
 (データ型) (変数名) = (値);
 ```
 
-Javaでの変数の宣言は以下の通り。
+Javaでの変数の宣言は上記の通り。
 
 Javaは静的型付け言語(コンパイルなどの実行前の段階で、変数の型を決定する言語)のため、変数の宣言時に設定できる値の型を指定してやる必要がある。
 
@@ -37,11 +37,11 @@ b = 2;
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
-Pythonでの変数の宣言方法は以下の通り。
-
 ```
 (変数名) = (値)
 ```
+
+Pythonでの変数の宣言方法は上記の通り。
 
 Pythonは動的型付け言語のため、変数の型は宣言する必要はない。一つの変数にどのような型の値も入れられる。
 
