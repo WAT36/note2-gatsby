@@ -60,11 +60,11 @@ Pythonは動的型付け言語のため、変数の型は宣言する必要は�
 </div>
 <div class="note_content_by_programming_language" id="note_content_Swift">
 
-Swiftでは **var** キーワードを用いて以下の様に表現する。
-
 ```
 var (変数名):(型名)
 ```
+
+Swiftでは **var** キーワードを用いて上記の様に表現する。
 
 Swiftは静的型付け言語(コンパイルなどの実行前の段階で、変数の型を決定する言語)のため、記載時の段階で変数に入れられる型を決める必要がある。
 
