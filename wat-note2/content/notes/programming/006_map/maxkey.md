@@ -9,8 +9,8 @@ tags: ["Java","Python"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-- Mapのメソッド**keySet()**を使い、キーのみをSetに格納したデータを取得する
-- そのキーのSetをCollectionsクラスの**max()**メソッドを用いて最大値を取得する(参考：リストの内一番大きい要素を調べる)
+- Mapのメソッド **keySet()** を使い、キーのみをSetに格納したデータを取得する
+- そのキーのSetをCollectionsクラスの **max()** メソッドを用いて最大値を取得する(参考：リストの内一番大きい要素を調べる)
 
 JavaでMapにあるキーの最大値を取得するには以下の手順で行う。  
 

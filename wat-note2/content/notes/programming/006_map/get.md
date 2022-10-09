@@ -49,7 +49,7 @@ null
 <div class="note_content_by_programming_language" id="note_content_Python">
 
 - 単に `辞書[キー]` と書く
-- 辞書のメソッド**get()**を使う (使用例： `辞書.get(キー)` )
+- 辞書のメソッド **get()** を使う (使用例： `辞書.get(キー)` )
 
 Pythonでは上記の二つの方法がある。  
 
