@@ -114,11 +114,11 @@ Pythonでは組み込み関数 **type()** を使うことにより、変数に�
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
-Javascriptでは特殊演算子 **typeof** を利用することで、変数の型を調べることができる。
-
 ```javascript
 typeof (変数/定数)
 ```
+
+Javascriptでは特殊演算子 **typeof** を利用することで、変数の型を調べることができる。
 
 使用例
 
