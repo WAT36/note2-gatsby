@@ -76,6 +76,10 @@ f is Cherry?:false
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
+```
+type()
+```
+
 Pythonでは組み込み関数 **type()** を使うことにより、変数にあるデータの型が何であるかが分かる。  
 
 ```python
