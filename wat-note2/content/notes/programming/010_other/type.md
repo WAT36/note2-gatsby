@@ -9,9 +9,9 @@ tags: ["Java","Python","Javascript"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-javaには **instanceof** という演算子がある。  
-
 `変数 instanceof クラス名`
+
+javaには **instanceof** という演算子がある。  
 
 変数に入っているデータの型が右辺のクラスと一致していればtrue、そうでない場合はfalseが返る。  
 この演算子は参照型のクラスにしか使えず、intやcharのような基本データ型には利用できない。(ラッパークラスには利用可能)    
