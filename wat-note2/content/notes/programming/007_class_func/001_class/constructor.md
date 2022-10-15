@@ -54,6 +54,11 @@ Car2:carrola 200-2020 kaki-kukeko
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
+```
+def __init__():
+  # コンストラクタの内容
+```
+
 Pythonでは　**\_\_init()\_\_** という関数がクラスのコンストラクタの役目を果たす。   
 クラスのインスタンス生成後、真っ先にこの関数\_\_init\_\_が実行される。  
 大体はインスタンス変数を設定するために利用されることが多い。そのときは\_\_init\_\_の引数に、変数に設定したい値に加えて**self**を追加することを忘れずに行う。  

@@ -12,8 +12,6 @@ tags: ["Java","Python"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-Javaでのフィールド変数定義方法は以下の通り。
-
 ```
 class クラス名{
 
@@ -25,6 +23,8 @@ class クラス名{
     //文
 }
 ```
+
+Javaでのフィールド変数定義方法は以下の通り。
 
 クラス変数にしたい時は変数の前に **static** をつける。  
 staticをつけない場合はインスタンス変数となる。  
@@ -89,6 +89,14 @@ carname :lexus
 
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
+
+```
+class クラス名:
+  // フィールド変数
+  変数1 = 値1
+  変数2 = 値2
+
+```
 
 Pythonにもクラス変数とインスタンス変数がある。  
 クラス変数はクラス内、各関数外に定義し、クラス、インスタンスオブジェクトから参照することができる。  

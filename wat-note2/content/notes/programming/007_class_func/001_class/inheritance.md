@@ -11,13 +11,13 @@ tags: ["Java","Python","Javascript"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-Javaでのクラスの継承の方法は以下の通り。
-
 ```
 [アクセス修飾子]　class クラス名 extends 継承元クラス(スーパークラス)名 {
   //文
 }
 ```
+
+Javaでのクラスの継承の方法は上記の通り。
 
 Javaでは継承する元となるクラスを **スーパークラス** 、継承して作成したクラスを **サブクラス** という。  
 サブクラスはスーパークラスを継承して作成されるため、スーパークラスで定義した変数やメソッドは全て受け継がれる。
@@ -103,12 +103,12 @@ This screw driver is 1000 yen.
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
-Pythonでのクラスの継承の方法は以下の通り。  
-
 ```
 class クラス名(継承元クラス名):
     //文
 ```
+
+Pythonでのクラスの継承の方法は上記の通り。  
 
 ここで定義したクラスは継承元クラスが持つ変数や関数を受け継ぐので、文中に定義しなくても参照が可能である。  
 別クラスを継承したクラスに定義した変数や関数はそのクラスのみが持ち、継承元のクラスは利用できない。  
