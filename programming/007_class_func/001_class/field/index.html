@@ -27,7 +27,6 @@ data-styled.g4[id="styled-search-root-sc-m3u7z9-0"]{content:"kQwmzO,"}/*!sc*/
 インスタンス毎に独立して値を保持する変数をインスタンス変数という。<br>
 言語により呼び名が違う？ので注意</p>
 <div class="note_content_by_programming_language" id="note_content_Java">
-<p>Javaでのフィールド変数定義方法は以下の通り。</p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">class クラス名{
 
     //フィールド変数
@@ -37,6 +36,7 @@ data-styled.g4[id="styled-search-root-sc-m3u7z9-0"]{content:"kQwmzO,"}/*!sc*/
 
     //文
 }</code></pre></div>
+<p>Javaでのフィールド変数定義方法は以下の通り。</p>
 <p>クラス変数にしたい時は変数の前に <strong>static</strong> をつける。<br>
 staticをつけない場合はインスタンス変数となる。<br>
 フィールド変数を参照したい時は、クラス変数は <strong>クラス(インスタンス)名.変数名</strong> で参照できる。<br>
@@ -83,6 +83,11 @@ c2:lexus 200-2020 kaki-kukeko
 carname :lexus</code></pre></div>
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">class クラス名:
+  // フィールド変数
+  変数1 = 値1
+  変数2 = 値2
+</code></pre></div>
 <p>Pythonにもクラス変数とインスタンス変数がある。<br>
 クラス変数はクラス内、各関数外に定義し、クラス、インスタンスオブジェクトから参照することができる。<br>
 インスタンス変数は、後述するがクラスの__init__関数で定義する。ここで定義した変数はインスタンスからしか参照できない。</p>

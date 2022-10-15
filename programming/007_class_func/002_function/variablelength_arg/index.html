@@ -26,8 +26,11 @@ data-styled.g4[id="styled-search-root-sc-m3u7z9-0"]{content:"kQwmzO,"}/*!sc*/
 <p>しかし、可変長引数を使うことで、関数やメソッドを任意の個数の引数で利用することができる。</p>
 <p>その方法を以下に示す。</p>
 <div class="note_content_by_programming_language" id="note_content_Java">
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">メソッド(型... 引数名){
+    // メソッドの処理
+}</code></pre></div>
 <p>Javaではメソッドに可変長引数を設定できる仕様がある。</p>
-<p>その仕様は以下の通り。</p>
+<p>その仕様は以下の通りで、表記は上記の通り。</p>
 <ul>
 <li>引数のデータ型の後に「…」と記述する</li>
 <li>引数の中で、可変長引数は一番最後に書く</li>
@@ -52,6 +55,8 @@ $ java Main
 2020/7/19</code></pre></div>
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">def 関数名(*引数名):
+    # 関数の処理</code></pre></div>
 <p>Pythonでは関数を定義するときに引数の頭に*を付けたリストのアンパック型にすると、その部分に入力された値はその引数(タプル)の要素として扱われることになる。アンパック型なので、引数はいくらでも入れられることになり、結果これで可変長引数が実現できることになる。</p>
 <p>実装例</p>
 <div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">variable_args</span><span class="token punctuation">(</span><span class="token operator">*</span>args<span class="token punctuation">,</span>sep<span class="token operator">=</span><span class="token string">"/"</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
