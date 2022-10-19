@@ -37,11 +37,11 @@ data-styled.g4[id="styled-search-root-sc-m3u7z9-0"]{content:"kQwmzO,"}/*!sc*/
 このクラスは宣言時(コンストラクタ)にString型でファイルのパスまたはFile型のオブジェクトを入力する。Fileクラスは宣言時(コンストラクタ)にファイルのパス(相対パス)を文字列型で入力してできるオブジェクトである。これにより、このファイルからの入力ストリームが得られる。</p>
 <p><code class="language-text">FileInputStream(String name) throws FileNotFoundException</code></p>
 <p><code class="language-text">FileInputStream(File file) throws FileNotFoundException</code></p>
-<p>作成した入力ストリームからバイトデータを読み込むメソッドとして、**read()**というメソッドがある。</p>
+<p>作成した入力ストリームからバイトデータを読み込むメソッドとして、 <strong>read()</strong> というメソッドがある。</p>
 <p><code class="language-text">int read() throws IOException</code></p>
 <p>このメソッドは入力ストリームからバイトデータを読み込み、ファイルの終わりに達すると-1を返すメソッドである。
 FileInputStreamクラスではこのメソッドを利用してファイルを読み込む。</p>
-<p>また、読み込みが終わったら入力ストリームを閉じる**close()**メソッドを忘れずに行う。</p>
+<p>また、読み込みが終わったら入力ストリームを閉じる <strong>close()</strong> メソッドを忘れずに行う。</p>
 <p>FileInputStreamのjava実装例を示す。</p>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token keyword">import</span> <span class="token import"><span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span><span class="token class-name">FileInputStream</span></span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token import"><span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span><span class="token class-name">File</span></span><span class="token punctuation">;</span>
@@ -101,12 +101,12 @@ $ java Main
 このクラスもFileInputStreamクラスと同様に、宣言時(コンストラクタ)にString型でファイルパスまたはFile型のオブジェクトを入力する。これにより、このファイルからの入力ストリームが得られる。</p>
 <p><code class="language-text">FileReader(File file) throws FileNotFoundException</code></p>
 <p><code class="language-text">FileReader(String name) throws FileNotFoundException</code></p>
-<p>作成した入力ストリームからバイトデータを読み込むメソッドとして、こちらも**read()**というメソッドがある。</p>
+<p>作成した入力ストリームからバイトデータを読み込むメソッドとして、こちらも <strong>read()</strong> というメソッドがある。</p>
 <p><code class="language-text">int read() throws IOException</code></p>
 <p>このメソッドは入力ストリームから１文字を読み込み、ファイルの終わりに達すると-1を返すメソッドである。<br>
 返すデータはint型だが、このデータはUnicode(16bitデータ)に対応しており、char型に変換すれば対応する文字になって表示してくれる。<br>
 FileReaderクラスではこのメソッドを利用してファイルを読み込む。</p>
-<p>また、読み込みが終わったらこちらも入力ストリームを閉じる**close()**メソッドを忘れずに行う。</p>
+<p>また、読み込みが終わったらこちらも入力ストリームを閉じる <strong>close()</strong> メソッドを忘れずに行う。</p>
 <p>FileReaderのjava実装例を示す。</p>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token keyword">import</span> <span class="token import"><span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span><span class="token class-name">FileReader</span></span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token import"><span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span><span class="token class-name">File</span></span><span class="token punctuation">;</span>
@@ -148,16 +148,16 @@ ccc
 ddd</code></pre></div>
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
-<p>Pythonでは組み込み関数**open()**を利用してファイルを開き、読み込む。</p>
 <p><code class="language-text">open(ファイル名,モード)</code></p>
+<p>Pythonでは組み込み関数 <strong>open()</strong> を利用してファイルを開き、読み込む。</p>
 <p>モードとは読み込んだファイルに対する権限であり、読み込み専用なら <strong>‘r’</strong> 、書き出し専用なら <strong>‘w’</strong>、読み書き両方なら <strong>‘r+’</strong> というように設定する。<br>
 open関数で開いたファイルは、ファイルオブジェクトとして返される。</p>
-<p>読み込んだファイルの中身を表示したい場合はファイルオブジェクトの関数**read()**を利用する。</p>
+<p>読み込んだファイルの中身を表示したい場合はファイルオブジェクトの関数 <strong>read()</strong> を利用する。</p>
 <p><code class="language-text">read(サイズ)</code></p>
 <p>引数にはサイズを入力し、実行するとそのサイズ分を読み込んで返してくれる。サイズを省略した場合はファイルの中身を全て読み込んで返す。<br>
-また、似たような関数として**readline()**という関数もあり、これはファイルオブジェクトから1行読み込んだ内容を返す。</p>
-<p>また、openで開いたファイルでの作業が終わったら、最後にファイルオブジェクトの関数**close()**を利用してファイルをクローズする。これによりオープンしたファイルが占めていたシステムリソースを全て開放する。</p>
-<p>一連の操作についてここまで述べたが、実はこれらの動作を行う際は<strong>with</strong>文を使うのが非常に便利である。<br>
+また、似たような関数として <strong>readline()</strong> という関数もあり、これはファイルオブジェクトから1行読み込んだ内容を返す。</p>
+<p>また、openで開いたファイルでの作業が終わったら、最後にファイルオブジェクトの関数 <strong>close()</strong> を利用してファイルをクローズする。これによりオープンしたファイルが占めていたシステムリソースを全て開放する。</p>
+<p>一連の操作についてここまで述べたが、実はこれらの動作を行う際は <strong>with</strong> 文を使うのが非常に便利である。<br>
 その利点は、with文から抜けるときに自動的にファイルクローズを実行してくれるからであり（途中に例外が発生しても行われる）、同様の処理をtry-except文で実装するよりも簡略化できる。<br>
 使用法は以下の通り。</p>
 <div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'ファイル名'</span><span class="token punctuation">,</span><span class="token string">'モード'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>

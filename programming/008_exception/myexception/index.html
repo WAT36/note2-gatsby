@@ -26,10 +26,10 @@ data-styled.g4[id="styled-search-root-sc-m3u7z9-0"]{content:"kQwmzO,"}/*!sc*/
 この例外を示すクラスをユーザー側で定義し、特定の例外が発生した時にこのクラスを利用することができる。<br>
 ここでは、自分でその例外クラスを実装する方法についてを示す。</p>
 <div class="note_content_by_programming_language" id="note_content_Java">
-<p>Javaでは <strong>Exception</strong> クラスを継承して作る事で自作の例外クラスを定義できる。</p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">[修飾子] 自作の例外クラス名 extends Exception {
   // 文
 }</code></pre></div>
+<p>Javaでは <strong>Exception</strong> クラスを継承して作る事で自作の例外クラスを定義できる。</p>
 <p>実行例を以下に示す。</p>
 <p>MyException(独自の例外)</p>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MyException</span> <span class="token keyword">extends</span> <span class="token class-name">Exception</span><span class="token punctuation">{</span>
@@ -54,10 +54,10 @@ data-styled.g4[id="styled-search-root-sc-m3u7z9-0"]{content:"kQwmzO,"}/*!sc*/
 throw MyException</code></pre></div>
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
-<p>Pythonでも <strong>Exception</strong> クラスから継承したクラスを作ると、それがユーザー定義の例外クラスになる。</p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">class 例外クラス名(Exception):
     //文
     //(def __init__ など書く)</code></pre></div>
+<p>Pythonでも <strong>Exception</strong> クラスから継承したクラスを作ると、それがユーザー定義の例外クラスになる。</p>
 <p>実行例を以下に示す。</p>
 <div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span>
 <span class="token operator">>></span><span class="token operator">></span> <span class="token comment">#偶数だと例外発生、中身は無し</span>

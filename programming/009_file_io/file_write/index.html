@@ -36,12 +36,12 @@ data-styled.g4[id="styled-search-root-sc-m3u7z9-0"]{content:"kQwmzO,"}/*!sc*/
 FileInputStreamと同様に、このクラスは宣言時(コンストラクタ)にString型でファイルのパスまたはFile型のオブジェクトを入力する。Fileクラスは宣言時(コンストラクタ)にファイルのパス(相対パス)を文字列型で入力してできるオブジェクトである。これにより、このファイルへの出力ストリームが得られる。</p>
 <p><code class="language-text">FileOutputStream(String name) throws FileNotFoundException</code></p>
 <p><code class="language-text">FileOutputStream(File file) throws FileNotFoundException</code></p>
-<p>作成した入力ストリームからバイトデータを書き込むメソッドとして、**write()**というメソッドがある。</p>
+<p>作成した入力ストリームからバイトデータを書き込むメソッドとして、 <strong>write()</strong> というメソッドがある。</p>
 <p><code class="language-text">void write(int b) throws IOException</code></p>
 <p><code class="language-text">void write(byte[] b) throws IOException</code></p>
 <p>このメソッドは引数で指定されたバイトデータをファイル出力ストリームに書き出すメソッドである。<br>
 FileOutputStreamクラスではこのメソッドを利用してファイルを書き込む。</p>
-<p>また、書き込みが終わったら入力時と同様にして、出力ストリームを閉じる**close()**メソッドを忘れずに行う。</p>
+<p>また、書き込みが終わったら入力時と同様にして、出力ストリームを閉じる <strong>close()</strong> メソッドを忘れずに行う。</p>
 <p>FileOutputStreamのjava実装例を示す。</p>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token keyword">import</span> <span class="token import"><span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span><span class="token class-name">FileOutputStream</span></span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token import"><span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span><span class="token class-name">File</span></span><span class="token punctuation">;</span>
@@ -78,14 +78,14 @@ testwritec$ </code></pre></div>
 このクラスもFileOutputStreamクラスと同様に、宣言時(コンストラクタ)にFile型のオブジェクトを入力する。これにより、このファイルからの入力ストリームが得られる。</p>
 <p><code class="language-text">FileWriter(File file) throws FileNotFoundException</code></p>
 <p><code class="language-text">FileWriter(String name) throws FileNotFoundException</code></p>
-<p>作成した出力ストリームでバイトデータを書き込むメソッドとして、こちらも**write()**というメソッドがある。</p>
+<p>作成した出力ストリームでバイトデータを書き込むメソッドとして、こちらも <strong>write()</strong> というメソッドがある。</p>
 <p><code class="language-text">void write(String str) throws IOException</code></p>
 <p>このメソッドは引数に入力した文字列をバッファに書き込むメソッドである。<br>
 この時点ではバッファへの書き込みなので、ファイルへの書き込みは行われていない。<br>
-ファイルに書き込むにはここから、**flush()**というメソッドを利用して書き込む。</p>
+ファイルに書き込むにはここから、 <strong>flush()</strong> というメソッドを利用して書き込む。</p>
 <p><code class="language-text">void flush() throws IOException</code></p>
 <p>FileWriterクラスではこれらのメソッドを利用して書き込みを行う。</p>
-<p>また、読み込みが終わったらこちらも入力ストリームを閉じる**close()**メソッドを忘れずに行う。</p>
+<p>また、読み込みが終わったらこちらも入力ストリームを閉じる <strong>close()</strong> メソッドを忘れずに行う。</p>
 <p>FileWriterのjava実装例を示す。</p>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token keyword">import</span> <span class="token import"><span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span><span class="token class-name">FileWriter</span></span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token import"><span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span><span class="token class-name">File</span></span><span class="token punctuation">;</span>
@@ -123,8 +123,8 @@ $ cat testwrite.txt
 テスト2行目 $ </code></pre></div>
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
-<p>Pythonでは関数openでファイルを開いた後、ファイルオブジェクトの関数 <strong>write()</strong> を利用してファイルを書き込む。</p>
 <p><code class="language-text">write(文字列)</code></p>
+<p>Pythonでは関数openでファイルを開いた後、ファイルオブジェクトの関数 <strong>write()</strong> を利用してファイルを書き込む。</p>
 <p>ファイルへの書き込みを行う際にはopenで開く時にモードを <strong>‘w’</strong> または <strong>‘a’</strong> と必ず指定する。それ以外の時はwrite関数実行時にエラーになる。
 モードが’w’のときはファイルに上書きされ、‘a’の時はファイルの末尾に追記される形で書き込まれる。</p>
 <p>こちらも読み込みの時と同様に、作業が終わったら最後にファイルオブジェクトの関数 <strong>close()</strong> を利用してファイルをクローズする。</p>
@@ -175,5 +175,4 @@ $ python
 <span class="token operator">>></span><span class="token operator">></span> quit<span class="token punctuation">(</span><span class="token punctuation">)</span>
 $ cat test<span class="token punctuation">.</span>txt
 use <span class="token keyword">with</span> <span class="token keyword">and</span> overwrite</code></pre></div>
-<p>{{&#x3C; /tab >}}
-{{&#x3C; /tabs >}}</p></section><hr/><footer><div class="bio"><p>Written by <strong>Tatsuroh Wakasugi(WAT)</strong> </p></div></footer></article></main><footer>© <!-- -->2022<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.com">Gatsby</a></footer></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/programming/009_file_io/file_write/";window.___webpackCompilationHash="8635d3d75daf74782ef6";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-67664a8ccc6c9f02b880.js"],"app":["/app-39101f60e94db1a2c2cc.js"],"component---src-pages-404-js":["/component---src-pages-404-js-d772b3f3428b7f3cfa48.js"],"component---src-pages-about-js":["/component---src-pages-about-js-210ffd145303ca55a166.js"],"component---src-pages-blog-top-js":["/component---src-pages-blog-top-js-57d3d2e78c6817acda5d.js"],"component---src-pages-disclaimer-js":["/component---src-pages-disclaimer-js-494abec0fe165386f1ae.js"],"component---src-pages-index-js":["/component---src-pages-index-js-d32a0ba4e8392edaad0f.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-0cecce3b9d7e60de4d54.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-e28b5b4cd4852fefabad.js"],"component---src-templates-note-dir-js":["/component---src-templates-note-dir-js-2d83e274f5eabfa5e3cf.js"],"component---src-templates-note-js":["/component---src-templates-note-js-867d9cba56558b9ad56f.js"]};/*]]>*/</script><script src="/note2-gatsby/polyfill-67664a8ccc6c9f02b880.js" nomodule=""></script><script src="/note2-gatsby/app-39101f60e94db1a2c2cc.js" async=""></script><script src="/note2-gatsby/framework-e413e527015be9a1bdfd.js" async=""></script><script src="/note2-gatsby/webpack-runtime-2f2de8a37303fd6a04c0.js" async=""></script></body></html>
+</div></section><hr/><footer><div class="bio"><p>Written by <strong>Tatsuroh Wakasugi(WAT)</strong> </p></div></footer></article></main><footer>© <!-- -->2022<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.com">Gatsby</a></footer></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/programming/009_file_io/file_write/";window.___webpackCompilationHash="8635d3d75daf74782ef6";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-67664a8ccc6c9f02b880.js"],"app":["/app-39101f60e94db1a2c2cc.js"],"component---src-pages-404-js":["/component---src-pages-404-js-d772b3f3428b7f3cfa48.js"],"component---src-pages-about-js":["/component---src-pages-about-js-210ffd145303ca55a166.js"],"component---src-pages-blog-top-js":["/component---src-pages-blog-top-js-57d3d2e78c6817acda5d.js"],"component---src-pages-disclaimer-js":["/component---src-pages-disclaimer-js-494abec0fe165386f1ae.js"],"component---src-pages-index-js":["/component---src-pages-index-js-d32a0ba4e8392edaad0f.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-0cecce3b9d7e60de4d54.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-e28b5b4cd4852fefabad.js"],"component---src-templates-note-dir-js":["/component---src-templates-note-dir-js-2d83e274f5eabfa5e3cf.js"],"component---src-templates-note-js":["/component---src-templates-note-js-867d9cba56558b9ad56f.js"]};/*]]>*/</script><script src="/note2-gatsby/polyfill-67664a8ccc6c9f02b880.js" nomodule=""></script><script src="/note2-gatsby/app-39101f60e94db1a2c2cc.js" async=""></script><script src="/note2-gatsby/framework-e413e527015be9a1bdfd.js" async=""></script><script src="/note2-gatsby/webpack-runtime-2f2de8a37303fd6a04c0.js" async=""></script></body></html>
