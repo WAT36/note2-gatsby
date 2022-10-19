@@ -27,7 +27,7 @@ FileInputStreamと同様に、このクラスは宣言時(コンストラクタ)
 
 `FileOutputStream(File file) throws FileNotFoundException`
 
-作成した入力ストリームからバイトデータを書き込むメソッドとして、**write()**というメソッドがある。
+作成した入力ストリームからバイトデータを書き込むメソッドとして、 **write()** というメソッドがある。
 
 `void write(int b) throws IOException`
 
@@ -36,7 +36,7 @@ FileInputStreamと同様に、このクラスは宣言時(コンストラクタ)
 このメソッドは引数で指定されたバイトデータをファイル出力ストリームに書き出すメソッドである。  
 FileOutputStreamクラスではこのメソッドを利用してファイルを書き込む。  
 
-また、書き込みが終わったら入力時と同様にして、出力ストリームを閉じる**close()**メソッドを忘れずに行う。  
+また、書き込みが終わったら入力時と同様にして、出力ストリームを閉じる **close()** メソッドを忘れずに行う。  
 
 FileOutputStreamのjava実装例を示す。
 
@@ -87,7 +87,7 @@ FileWriterクラスはファイルからchar単位で書き込みを行う出力
 
 `FileWriter(String name) throws FileNotFoundException`  
 
-作成した出力ストリームでバイトデータを書き込むメソッドとして、こちらも**write()**というメソッドがある。
+作成した出力ストリームでバイトデータを書き込むメソッドとして、こちらも **write()** というメソッドがある。
 
 
 `void write(String str) throws IOException`
@@ -95,7 +95,7 @@ FileWriterクラスはファイルからchar単位で書き込みを行う出力
 
 このメソッドは引数に入力した文字列をバッファに書き込むメソッドである。  
 この時点ではバッファへの書き込みなので、ファイルへの書き込みは行われていない。   
-ファイルに書き込むにはここから、**flush()**というメソッドを利用して書き込む。  
+ファイルに書き込むにはここから、 **flush()** というメソッドを利用して書き込む。  
 
 
 `void flush() throws IOException`
@@ -103,7 +103,7 @@ FileWriterクラスはファイルからchar単位で書き込みを行う出力
 
 FileWriterクラスではこれらのメソッドを利用して書き込みを行う。  
 
-また、読み込みが終わったらこちらも入力ストリームを閉じる**close()**メソッドを忘れずに行う。  
+また、読み込みが終わったらこちらも入力ストリームを閉じる **close()** メソッドを忘れずに行う。  
 
 FileWriterのjava実装例を示す。
 
@@ -216,7 +216,4 @@ $ cat test.txt
 use with and overwrite
 ```
 
-
-{{< /tab >}}
-{{< /tabs >}}
-
+</div>
