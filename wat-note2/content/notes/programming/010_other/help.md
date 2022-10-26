@@ -10,7 +10,7 @@ tags: ["Python"]
 
 <div class="note_content_by_programming_language" id="note_content_Python">
 
-Pythonに**help()**という組み込み関数がある。引数に関数名を入力すると、文字列として扱われて検索し、得たレファレンスなどを返してくれる。  
+Pythonに **help()** という組み込み関数がある。引数に関数名を入力すると、文字列として扱われて検索し、得たレファレンスなどを返してくれる。  
 help()は、対話モードで使用する。  
 
 例えば関数maxをhelpで調べて見ると以下のようになる。  
