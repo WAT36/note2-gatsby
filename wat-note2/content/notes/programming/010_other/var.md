@@ -9,8 +9,6 @@ tags: ["Java","Python","Swift","Javascript"]
 
 <div class="note_content_by_programming_language" id="note_content_Java">
 
-Javaでの変数の宣言は以下の通り。
-
 ```
 (データ型) (変数名);
 (変数名) = (値);
@@ -19,6 +17,8 @@ Javaでの変数の宣言は以下の通り。
 
 (データ型) (変数名) = (値);
 ```
+
+Javaでの変数の宣言は上記の通り。
 
 Javaは静的型付け言語(コンパイルなどの実行前の段階で、変数の型を決定する言語)のため、変数の宣言時に設定できる値の型を指定してやる必要がある。
 
@@ -37,11 +37,11 @@ b = 2;
 </div>
 <div class="note_content_by_programming_language" id="note_content_Python">
 
-Pythonでの変数の宣言方法は以下の通り。
-
 ```
 (変数名) = (値)
 ```
+
+Pythonでの変数の宣言方法は上記の通り。
 
 Pythonは動的型付け言語のため、変数の型は宣言する必要はない。一つの変数にどのような型の値も入れられる。
 
@@ -60,11 +60,11 @@ Pythonは動的型付け言語のため、変数の型は宣言する必要は�
 </div>
 <div class="note_content_by_programming_language" id="note_content_Swift">
 
-Swiftでは **var** キーワードを用いて以下の様に表現する。
-
 ```
 var (変数名):(型名)
 ```
+
+Swiftでは **var** キーワードを用いて上記の様に表現する。
 
 Swiftは静的型付け言語(コンパイルなどの実行前の段階で、変数の型を決定する言語)のため、記載時の段階で変数に入れられる型を決める必要がある。
 
@@ -78,13 +78,11 @@ a = 10
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
-Javascriptでも **var** キーワードを用いて変数を宣言する。
-
-記法は以下のとおり。
-
 ```
 var (変数名)
 ```
+
+Javascriptでも **var** キーワードを用いて変数を宣言する。
 
 Javascriptはスクリプト言語のため、型は宣言しなくても良い。<br>
 （しかし、変数に値が入るとその変数は型を持つ。変数の型を調べるにはtypeofキーワード等を用いる。）
