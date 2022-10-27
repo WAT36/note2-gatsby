@@ -52,5 +52,21 @@ let a: Int = 123
 ```
 
 </div>
+<div class="note_content_by_programming_language" id="note_content_Javascript">
 
+```
+const 定数名 = 値
+```
+
+Javascriptでは **const** キーワードを用いて定数を宣言する。
+
+一度宣言すると、その定数には値を書き換えられなくなる。
+
+例
+
+```Javascript
+const PI = 3.14
+```
+
+</div>
 
