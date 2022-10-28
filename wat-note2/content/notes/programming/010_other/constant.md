@@ -2,7 +2,7 @@
 title: "定数"
 date: "2019-10-23T19:25:30+09:00"
 description: "定数を宣言する方法について"
-tags: ["Java","Python","Swift"]
+tags: ["Java","Python","Swift","Javascript"]
 ---
 
 変数は値を記憶するための入れ物であり、基本、何度でも値を代入することが可能である。
@@ -52,5 +52,21 @@ let a: Int = 123
 ```
 
 </div>
+<div class="note_content_by_programming_language" id="note_content_Javascript">
 
+```
+const 定数名 = 値
+```
+
+Javascriptでは **const** キーワードを用いて定数を宣言する。
+
+一度宣言すると、その定数には値を書き換えられなくなる。
+
+例
+
+```Javascript
+const PI = 3.14
+```
+
+</div>
 
