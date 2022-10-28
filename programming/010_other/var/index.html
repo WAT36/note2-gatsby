@@ -61,8 +61,15 @@ b <span class="token operator">=</span> <span class="token number">2</span><span
 a <span class="token operator">=</span> <span class="token number">10</span></code></pre></div>
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">var (変数名)</code></pre></div>
-<p>Javascriptでも <strong>var</strong> キーワードを用いて変数を宣言する。</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">var 変数名 [=初期値];
+var 変数1,変数2,..;
+
+let 変数名 [=初期値];</code></pre></div>
+<p>Javascriptでも <strong>var</strong> キーワードを用いて変数を宣言する。
+宣言時に初期値を設定することができ、しない場合は <strong>undefined</strong> が入る。</p>
+<p>また、 <strong>let</strong> キーワードを用いても変数を宣言できる。<br>
+varでの変数宣言と違うのは、varでは同名の変数を宣言できる（後に宣言されたもので上書きされる）のに対し、<br>
+letでは同名の変数の宣言を許可しない（エラーになる）というのがある。</p>
 <p>Javascriptはスクリプト言語のため、型は宣言しなくても良い。<br>
 （しかし、変数に値が入るとその変数は型を持つ。変数の型を調べるにはtypeofキーワード等を用いる。）</p>
 <p>例</p>
