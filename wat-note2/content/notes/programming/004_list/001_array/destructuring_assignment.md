@@ -11,7 +11,12 @@ tags: ["Javascript"]
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
 ```javascript
+// 配列
 let [変数1,変数2,変数3, ...変数x] = 配列
+
+// 連想配列
+let オブジェクト名 = {キー1: 値1,キー2:値2, ・・・}
+let { キー1, キー2,　・・・ } = オブジェクト名
 ```
 
 上記のような形で、配列の中身の要素を１個１個独立した変数にそれぞれ入れることができる。
@@ -35,6 +40,27 @@ console.log(x5)
 ```
 1 – 2 – 3
 [6, 7, 8, 9, 10]
+```
+
+またjavascriptでは配列だけでなく連想配列（オブジェクト）に対しても分割代入が行える。
+
+上記の例で、まずオブジェクトを生成し、   
+その後に {} の中にオブジェクトのキーと同じ名前の変数を宣言すると、オブジェクトの中の同じ名前のキーにある値がその変数に入る。
+オブジェクトにない名前の変数を利用した時は、undefinedが入る。
+
+実行例
+
+```javascript
+let me = {name: '加藤太郎', age:28, sex: 'male'}
+let { name, age, address } = me
+
+console.log(name,age,address)
+```
+
+実行結果
+
+```
+加藤太郎 – 28 – undefined
 ```
 
 </div>
