@@ -15,8 +15,15 @@ tags: ["Javascript"]
 let [変数1,変数2,変数3, ...変数x] = 配列
 
 // 連想配列
-let オブジェクト名 = {キー1: 値1,キー2:値2, ・・・}
-let { キー1, キー2,　・・・ } = オブジェクト名
+let オブジェクト1 = {キー1: 値1,キー2:値2, ・・・}
+let { キー1, キー2,　・・・ } = オブジェクト1
+
+let オブジェクト2 = {キー1: { キー1-1: 値1-1 } ・・・}
+let { キー1: { キー1-1 },　・・・ } = オブジェクト2 // キー1-1 という名前の変数に入る
+
+let オブジェクト3 = {キー1: 値1,キー2:値2, ・・・}
+let { キー1:変数名1, キー2:変数名2,　・・・ } = オブジェクト3 // 変数名1、変数名2という名前の変数に入る
+
 ```
 
 上記のような形で、配列の中身の要素を１個１個独立した変数にそれぞれ入れることができる。
@@ -48,19 +55,30 @@ console.log(x5)
 その後に {} の中にオブジェクトのキーと同じ名前の変数を宣言すると、オブジェクトの中の同じ名前のキーにある値がその変数に入る。
 オブジェクトにない名前の変数を利用した時は、undefinedが入る。
 
+
+
 実行例
 
 ```javascript
-let me = {name: '加藤太郎', age:28, sex: 'male'}
-let { name, age, address } = me
-
+var me = {name: '加藤太郎', age:28, sex: 'male'}
+var { name, age, address } = me
 console.log(name,age,address)
+
+var me2 = {name: {first:"太郎", last:"加藤"}, age:28, sex: 'male'}
+var { name: {first} } = me2
+console.log(first)
+
+var me3 = {name: '加藤太郎', age:28, sex: 'male'}
+var { name: namae, age: nenrei } = me3
+console.log(namae,nenrei)
 ```
 
 実行結果
 
 ```
 加藤太郎 – 28 – undefined
+太郎
+加藤太郎 – 28
 ```
 
 </div>
