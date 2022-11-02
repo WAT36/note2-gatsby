@@ -111,6 +111,11 @@ for(初期化式;条件式;変化式){
   //処理
 }
 
+// 配列(イテレータ系)は以下も可
+for( 仮変数 of 配列 ){
+  //処理
+}
+
 // 連想配列(オブジェクト)は以下も可
 for( 仮変数 in 連想配列 ){
   //処理
@@ -119,7 +124,9 @@ for( 仮変数 in 連想配列 ){
 
 Javascriptでのfor文も、Javaと記法・フロー共に同じである。
 
-また、連想配列に対してfor文のループを行うときは、 `for 仮変数 in 連想配列`　という表記も可能である。
+配列など列挙可能なオブジェクトに対しては、 `for 仮変数 of 配列 ` といったような表記も可能である。
+
+また、連想配列に対してfor文のループを行うときは、 `for 仮変数 in 連想配列 `　という表記も可能である。
 
 ここで、仮変数　の部分には連想配列のキーが入るので注意。
 
@@ -137,6 +144,11 @@ for(;j<3;){
   j++;
 }
 
+var arrayData = ["Tokyo","Osaka","Nagoya"]
+for(var city of arrayData){
+  console.log(city)
+}
+
 var fruitsData = {apple: 100,banana:150,lemon:200}
 for(var key in fruitsData){
   console.log(key);
@@ -152,6 +164,9 @@ for(var key in fruitsData){
 0
 1
 2
+Tokyo
+Osaka
+Nagoya
 apple
 banana
 lemon
