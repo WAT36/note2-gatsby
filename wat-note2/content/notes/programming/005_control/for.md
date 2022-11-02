@@ -106,25 +106,40 @@ range(0, 5)
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
-```
+```javascript
 for(初期化式;条件式;変化式){
-    //処理
+  //処理
+}
+
+// 連想配列(オブジェクト)は以下も可
+for( 仮変数 in 連想配列 ){
+  //処理
 }
 ```
 
 Javascriptでのfor文も、Javaと記法・フロー共に同じである。
 
+また、連想配列に対してfor文のループを行うときは、 `for 仮変数 in 連想配列`　という表記も可能である。
+
+ここで、仮変数　の部分には連想配列のキーが入るので注意。
+
+
 使用例
 
 ```javascript
-for(var i=0;i<5;i++){
+for(var i=0;i<3;i++){
   console.log(i);
 }
 
 var j=0;
-for(;j<5;){
+for(;j<3;){
   console.log(j);
   j++;
+}
+
+var fruitsData = {apple: 100,banana:150,lemon:200}
+for(var key in fruitsData){
+  console.log(key);
 }
 ```
 
@@ -134,13 +149,12 @@ for(;j<5;){
 0
 1
 2
-3
-4
 0
 1
 2
-3
-4
+apple
+banana
+lemon
 ```
 
 </div>
