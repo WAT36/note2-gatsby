@@ -69,11 +69,29 @@ print(t) # testtesttesttesttest
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
+```javascript
+文字列 + 繋げる文字列
+//または
+文字列.concat(繋げる文字列)
+```
+
 Javascriptでも" **+** " 演算子を使って文字列を連結できる。
+
+または、文字列の関数 **String.concat()** を使って連結も行える。
 
 ```javascript
 var str = 'Hello!' + 'World!'
 console.log(str) // Hello!World!
+
+var str2 = 'Hello!'.concat('World!')
+console.log(str2)
+```
+
+実行結果
+
+```
+Hello!World!
+Hello!World!
 ```
 
 </div>
