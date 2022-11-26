@@ -88,7 +88,11 @@ strの指定した範囲内だけで検索したい場合には、引数start,en
 
 `String.indexOf(serachvalue[, fromIndex])`  
 
-javascriptでは文字列Stringの関数**indexOf()**関数を使う。  
+`String.lastIndexOf(serachvalue[, fromIndex])`  
+
+javascriptでは文字列Stringの関数 **indexOf()** または **lastIndexOf()** 関数を使う。  
+
+indexOf関数は文字列前方から検索を行い、lastIndexOf関数は文字列後方から検索を行う。
 
 searchvalueには文字列中で検索したい文字列を入力する。  
 
