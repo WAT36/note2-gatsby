@@ -209,6 +209,28 @@ console.log(s.match(/ap*le/g))
 通常の文字列の置換と同じで、正規表現でも行える。
 
 
+## 正規表現に合致する部分の検索
 
+文字列中から正規表現に合致する部分を検索したいときは以下の通り。
+
+```javascript
+文字列.search(正規表現)
+```
+
+結果としては、一致する最初の文字位置を取得する。
+
+例
+
+```javascript
+var s = "apple,banana,cherry,durian"
+
+console.log(s.search(/an*an/g))
+```
+
+結果
+
+```
+7
+```
 
 </div>
