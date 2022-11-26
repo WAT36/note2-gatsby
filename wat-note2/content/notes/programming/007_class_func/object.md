@@ -286,6 +286,13 @@ true
 false
 ```
 
+# 組み込みオブジェクト
+
+Javascriptでは多くのオブジェクトが公開されている。その中でも基本的なものが **組み込みオブジェクト(Built-in Object)** である。
+
+これは、Javascriptに標準で組み込まれたオブジェクトであり、Javascriptが動作する全ての環境で利用できる。
+
+組み込みオブジェクトの例としては、Object,Array,Map,Set,String,Boolean,Number,,...など色々ある。
 
 # prototype
 
