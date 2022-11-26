@@ -2,7 +2,7 @@
 title: "例外の明示的な発生"
 date: "2019-10-21T19:25:30+09:00"
 description: "例外を発生させる方法について"
-tags: ["Java","Python"]
+tags: ["Java","Python","Javascript"]
 ---
 
 例外(エラー)は実行時にコードの不備によりに起こるのみではなく、（コード中で）自分で意図的に発生させることもできる。ここではその方法についてを示す。
@@ -64,5 +64,14 @@ NameError発生!
 ```
 
 </div>
+<div class="note_content_by_programming_language" id="note_content_Javascript">
 
+```javascript
+throw new Error("エラーメッセージ")
+```
 
+Javascriptでは **throw** 命令により、例外オブジェクトを明示的に発生させることができる。
+
+例外オブジェクトはここではErrorオブジェクトを利用しているが、種類が他にも多くある。そちらはエラーの種類によって使い分ける。
+
+</div>
