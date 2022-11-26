@@ -61,22 +61,28 @@ False
 </div>
 <div class="note_content_by_programming_language" id="note_content_Javascript">
 
+```
+(元の文字列).includes(検索する文字列 [,位置])
+
+// 指定文字列で始まるか終わるかを判別したい場合は以下も可
+(元の文字列).startsWith(検索する文字列 [,位置])
+(元の文字列).endsWith(検索する文字列 [,位置])
+```
+
+Javascriptでは **String.includes()** メソッドで判別が行える。利用方法は上記の通り。
+
+また、文字列が指定した文字列で始まるか、終わるかを判別したい場合は、 **String.startsWith()** と **String.endsWith()** も利用できる。
+
+この方法で、ある文字列に指定した文字列が含まれているかを判別でき、含まれているとtrue、そうでない場合はfalseを返す。
+
+実行結果
+
 ```javascript
 var s = 'apple,banana,cherry';
 
 console.log(s.includes('banana'));
 console.log(s.includes('durian'));
 ```
-
-Javascriptでは **String.includes()** メソッドで判別が行える。利用方法は以下の通り。
-
-```
-(元の文字列).includes(検索する文字列)
-```
-
-の形式である文字列に指定した文字列が含まれているかを判別でき、含まれているとtrue、そうでない場合はfalseを返す。
-
-実行結果
 
 ```
 true
