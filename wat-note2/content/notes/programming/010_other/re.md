@@ -2,7 +2,7 @@
 title: "正規表現"
 date: "2019-10-23T23:26:30+09:00"
 description: "正規表現を利用する方法について"
-tags: ["Python"]
+tags: ["Python","Javascript"]
 ---
 
 文字列に正規表現を適用してある文字列パターンを抽出・検索したいという場合があると思う。
@@ -158,5 +158,44 @@ None
 ```
 
 </div>
+<div class="note_content_by_programming_language" id="note_content_Javascript">
+
+Javascriptでは正規表現は以下のような形で宣言する。
+
+```javascript
+var re = /(正規表現文字列)/(フラグ)
+// または
+var re = new RegExp('正規表現文字列' [,'フラグ'])
+```
+
+なお、上記の(フラグ)は、検索時の条件であり、入る値と効果としては
+- g :グローバル検索(文字列全体を見て一致したものをすべて返す)
+- i :大文字小文字を区別しない検索
+などがある。（他にもあるがここでは割愛）
+
+## 正規表現に合致した部分を取得
+
+文字列中から正規表現に合致する部分を取り出したいときは以下の通り。
+
+```javascript
+文字列.match(正規表現)
+```
+
+結果としては、合致した部分が配列として返ってくる。
+
+例
+
+```javascript
+var s = "apple,banana,cherry,durian"
+
+console.log(s.match(/ap*le/g))
+```
+
+結果
+
+```
+["apple"]
+```
 
 
+</div>
